@@ -127,3 +127,17 @@ Détail et sources dans `docs/scenes/thermopyles.md`, section « Points à véri
 
 - **Manteau rouge des Spartiates.** Le manteau pourpre (phoinikis) est attesté comme tenue militaire spartiate (Xénophon, Constitution des Lacédémoniens, 11, 3 ; Aristophane, Lysistrata, 1140) ; qu'il ait été porté dans la ligne de bataille repose surtout sur Plutarque (Moralia, 238 F), source tardive. Hypothèse : la figurine spartiate porte le manteau et les cheveux longs (Hérodote, VII, 208), sans lambda sur le bouclier, attesté seulement plus tard.
 
+## Scène des Thermopyles, après relecture contradictoire
+
+Remplace ou complète les points de la section « Scène des Thermopyles » ci-dessus ; détail dans `docs/scenes/thermopyles.md`.
+
+- **Phases de la Lune en 480.** Recoupées avec le catalogue de la NASA (Espenak, temps universel) : pleines lunes le 21 juillet (7 h 36 TU), le 19 août (18 h 43 TU, vers 20 h 15 heure locale) et le 18 septembre (5 h 28 TU) ; nouvelle lune et éclipse annulaire le 2 octobre 480 (Hérodote, IX, 10 ; Sacks, Classical Quarterly 26, 1976). L'hypothèse du 20 août reste un choix parmi quatre datations publiées.
+- **Scholie sur la date des Jeux.** Trouvée : scholie à Pindare, Olympiques III, 35 (mois Apollonios ou Parthénios d'Élis, cité par Gongaki et al., Scientific Culture 7, 2021). Lecture « deuxième ou troisième pleine lune après le solstice » : interprétation moderne à confirmer sur l'édition de Drachmann.
+- **Bradford, Greswell.** Connus seulement par le relevé de Gongaki et al. (2021), qui range Bradford (1980) avec Green, Holland et Cartledge vers le 17 au 20 août, et Greswell (1827) en septembre ; « du 8 au 10 septembre » et les pages 162 et 374 restent non vérifiés.
+- **Kraft et al. 1987.** Seuls le résumé et des citations secondaires ont été vus (largeur de 20 à 30 m, enfouissement d'une vingtaine de mètres, carottages). Non contrôlés : côte à 20 à 100 m de la falaise, camp perse sous 15 à 20 m, avancée du rivage de 15 km en 4 500 ans, lecture des figures 2, 4 et 14, siège de Xerxès sur l'éperon d'Anthéla. Lire aussi Vouvalidis et al., Geodinamica Acta (2010), qui restituent un marais d'eau douce à la porte du Milieu.
+- **Nomenclature des portes.** MacKay (Princeton Encyclopedia of Classical Sites) place la défense spartiate au plus oriental des trois rétrécissements ; la proposition parle de porte du Milieu. À trancher sur Kraft et al. et Pritchett.
+- **Sentier de l'Anopée.** L'attribution à Wallace (AJA 84, 1980) d'un départ par Vardates et la brèche de Dhema n'est pas confirmée ; une synthèse récente (Mountains of Greece, université de St Andrews, 2025) rapproche Wallace de Burn et place la partie haute par Eleftherochori et Nevropoli. Pritchett, MacKay et Wallace restent à lire.
+- **Fouilles du Kolonos.** MacKay mentionne les fouilles de Béquignon et de Marinatos et les pointes de flèches rapportées à l'armement perse, sans date ; la date de 1939 vient de Robertson (JHS 59, 1939, p. 199 et 200), cité par Pleiades, non lu.
+- **Hignett et Macan.** Les renvois à Hignett (1963, p. 371 à 378) et à la note de Macan sur VIII, 25 ont été retirés faute de vérification ; Evans (GRBS 5, 1964) est confirmé.
+- **Plutarque sur les Thébains.** De la malignité d'Hérodote : chapitres exacts (vers 31 à 33) à vérifier.
+- **Équipement.** Le manteau pourpre est attesté dès 411 (Aristophane, Lysistrata, 1140) : correction de la mention « décrit seulement au IVe siècle ». Hérodote ne dit pas que les flèches perses ont des pointes de bronze (VII, 61) : la précision vient de l'archéologie.
