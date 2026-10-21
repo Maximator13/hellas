@@ -1,0 +1,74 @@
+import { create } from 'zustand'
+import { routeFromLocation, routeToHash, type Route } from './core/route.ts'
+import { SITE } from './site.ts'
+import { initialQuality, type QualityTier } from './stage/quality.ts'
+import { fullView, type Viewport } from './timeline/viewport.ts'
+
+interface AppState {
+  route: Route
+  view: Viewport
+  quality: QualityTier
+  scenePoint: number
+  failedScene: string | null
+  soundOn: boolean
+  setSoundOn: (soundOn: boolean) => void
+  setRoute: (route: Route) => void
+  setScenePoint: (point: number) => void
+  setFailedScene: (id: string | null) => void
+  setView: (view: Viewport) => void
+  setQuality: (quality: QualityTier) => void
+}
+
+const SOUND_KEY = 'hellas.sound'
+
+function storedSound(): boolean {
+  try {
+    return localStorage.getItem(SOUND_KEY) === 'on'
+  } catch {
+    return false
+  }
+}
+
+function storeSound(soundOn: boolean) {
+  try {
+    localStorage.setItem(SOUND_KEY, soundOn ? 'on' : 'off')
+  } catch {
+    return
+  }
+}
+
+function isSameRoute(first: Route, second: Route): boolean {
+  return routeToHash(first) === routeToHash(second)
+}
+
+export function currentRoute(): Route {
+  return routeFromLocation(location.pathname, location.hash, SITE.base)
+}
+
+export const useApp = create<AppState>()((set) => ({
+  route: currentRoute(),
+  view: fullView(),
+  quality: initialQuality(),
+  scenePoint: 0,
+  failedScene: null,
+  soundOn: storedSound(),
+  setSoundOn: (soundOn) => {
+    storeSound(soundOn)
+    set({ soundOn })
+  },
+  setRoute: (route) =>
+    set((state) => {
+      if (route.name !== 'scene') return { route, failedScene: null }
+      return isSameRoute(state.route, route) ? { route } : { route, scenePoint: 0 }
+    }),
+  setScenePoint: (scenePoint) => set({ scenePoint }),
+  setFailedScene: (failedScene) => set({ failedScene }),
+  setView: (view) => set({ view }),
+  setQuality: (quality) => set({ quality }),
+}))
+
+export function navigate(route: Route) {
+  const url = `${SITE.base}${routeToHash(route)}`
+  if (`${location.pathname}${location.hash}` !== url) history.pushState(null, '', url)
+  useApp.getState().setRoute(route)
+}
