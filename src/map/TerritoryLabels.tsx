@@ -54,7 +54,7 @@ function TrackLabel({ track, slices, height }: { track: Track; slices: Territory
           letterSpacing={0.18}
           color={track.color}
           outlineWidth={0.05}
-          outlineColor="#0b0f14"
+          outlineColor="#0b1117"
           anchorX="center"
           anchorY="middle"
           fillOpacity={0}

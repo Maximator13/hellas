@@ -15,6 +15,7 @@ const ARCHIVE_URL = `https://raw.githubusercontent.com/Seshat-Global-History-Dat
 const ARCHIVE_SHA256 = 'e10a4e429fca708788ff9e7572a95fce801fae55852d217cffabc1c59cd4eed4'
 const CACHE = `.cache/geo/cliopatria-${RELEASE}`
 export const TERRITORIES_FILE = 'public/geo/territories.json'
+export const HAND_DRAWN_FILE = 'scripts/geo/hand-drawn.json'
 export const SIZE_TARGET = 900_000
 const ALIGN_YEARS = 5
 const BRIDGE_YEARS = 10
@@ -78,6 +79,21 @@ const cliopatriaSchema = z.object({
   features: z.array(
     z.object({
       properties: z.object({ Name: z.string(), FromYear: z.number().int(), ToYear: z.number().int(), Type: z.string() }),
+      geometry: geometrySchema,
+    }),
+  ),
+})
+export const handDrawnSchema = z.object({
+  features: z.array(
+    z.object({
+      properties: z.strictObject({
+        track: z.enum(TRACK_IDS),
+        polity: z.string().min(1),
+        from: z.number().int(),
+        to: z.number().int(),
+        sources: z.array(z.string().min(1)).min(1),
+        note: z.string().min(1),
+      }),
       geometry: geometrySchema,
     }),
   ),
@@ -210,6 +226,32 @@ export function planSlices(rows: Row[]): Plan[] {
   return tracks.flatMap(plan)
 }
 
+export function planHandDrawn(track: TrackId, rows: Row[]): Plan[] {
+  const cuts = [...new Set(rows.flatMap((row) => [row.from, row.to + 1]))].sort((a, b) => a - b)
+  return cuts.slice(0, -1).flatMap((from, index) => {
+    const to = (cuts[index + 1] ?? from + 1) - 1
+    const active = rows.filter((row) => row.from <= from && row.to >= to)
+    return active.length === 0 ? [] : [{ track, polity: active.map((row) => row.polity).join(' et '), from, to, rows: active }]
+  })
+}
+
+function readHandDrawn(): Plan[] {
+  if (!existsSync(HAND_DRAWN_FILE)) return []
+  const { features } = handDrawnSchema.parse(JSON.parse(readFileSync(HAND_DRAWN_FILE, 'utf8')))
+  return tracks.flatMap((track) =>
+    planHandDrawn(
+      track.id,
+      features
+        .filter((feature) => feature.properties.track === track.id)
+        .map(({ properties, geometry }) => ({ polity: properties.polity, from: properties.from, to: properties.to, geometry })),
+    ),
+  )
+}
+
+export function byTrackThenStart(a: Pick<Slice, 'track' | 'from'>, b: Pick<Slice, 'track' | 'from'>): number {
+  return TRACK_IDS.indexOf(a.track) - TRACK_IDS.indexOf(b.track) || a.from - b.from
+}
+
 const round = (value: number) => Math.round(value * 100) / 100
 
 function ringArea(ring: LonLat[]): number {
@@ -338,7 +380,7 @@ function serialize(slices: Slice[]): string {
 }
 
 async function main() {
-  const plans = planSlices(await readRows(await cachedArchive()))
+  const plans = [...planSlices(await readRows(await cachedArchive())), ...readHandDrawn()].toSorted(byTrackThenStart)
   const geometries: Geometry[][] = []
   for (const plan of plans) geometries.push(await simplified(plan))
   const drafts: Slice[] = []

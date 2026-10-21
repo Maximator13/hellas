@@ -78,7 +78,7 @@ function CityLabel({ city, height }: { city: City; height: HeightSampler }) {
           fontSize={city.importance === 1 ? 0.95 : 0.72}
           color="#f6ead2"
           outlineWidth={0.06}
-          outlineColor="#1b130c"
+          outlineColor="#0b1117"
           anchorX="center"
           anchorY="bottom"
           fillOpacity={0}
@@ -180,7 +180,7 @@ function SceneGate({ city, scene, height }: { city: City; scene: Scene; height: 
           fontSize={0.8}
           color="#ffe7bd"
           outlineWidth={0.06}
-          outlineColor="#1b130c"
+          outlineColor="#0b1117"
           anchorX="center"
           anchorY="top"
           fillOpacity={0}
@@ -253,7 +253,7 @@ function EventMarker({ height }: { height: HeightSampler }) {
           fontSize={1.1}
           color="#ffe3a8"
           outlineWidth={0.06}
-          outlineColor="#1b130c"
+          outlineColor="#0b1117"
           anchorX="center"
           anchorY="bottom"
           fillOpacity={0}
@@ -308,7 +308,7 @@ function EventPin({ event, lon, lat, height }: { event: HistoricalEvent; lon: nu
           textAlign="center"
           color="#ffe7bd"
           outlineWidth={0.06}
-          outlineColor="#1b130c"
+          outlineColor="#0b1117"
           anchorX="center"
           anchorY="top"
           fillOpacity={0}
@@ -432,7 +432,7 @@ function ItineraryPath({ itinerary, height }: { itinerary: Itinerary; height: He
             fontSize={0.9}
             color="#ffd3b4"
             outlineWidth={0.06}
-            outlineColor="#1b130c"
+            outlineColor="#0b1117"
             anchorX="center"
             anchorY="bottom"
             fillOpacity={0}

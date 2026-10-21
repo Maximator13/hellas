@@ -133,7 +133,7 @@ export function rgbToCss([r, g, b]: Rgb): string {
   return `rgb(${channel(r)} ${channel(g)} ${channel(b)})`
 }
 
-export const BACKGROUND: Rgb = [0.07, 0.05, 0.04]
+export const BACKGROUND: Rgb = [0.047, 0.071, 0.098]
 
 function relativeLuminance([r, g, b]: Rgb): number {
   const linear = (value: number) => (value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4)

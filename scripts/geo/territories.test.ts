@@ -1,10 +1,14 @@
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { tracks } from '../../src/data/tracks.ts'
 import { MAP_BOUNDS } from '../../src/map/geo.ts'
 import {
+  HAND_DRAWN_FILE,
   SIZE_TARGET,
   TERRITORIES_FILE,
+  byTrackThenStart,
+  handDrawnSchema,
+  planHandDrawn,
   cleanRing,
   mergedRuns,
   planTrack,
@@ -95,6 +99,26 @@ describe('slice planning', () => {
   })
 })
 
+describe('hand-drawn territories', () => {
+  it('unions the drawn shapes active together and cuts where one starts or ends', () => {
+    const plans = planHandDrawn('athenes', [row('Attique', -799, -85), row('Empire athénien', -477, -404)])
+    expect(plans.map(({ polity, from, to }) => [polity, from, to])).toEqual([
+      ['Attique', -799, -478],
+      ['Attique et Empire athénien', -477, -404],
+      ['Attique', -403, -85],
+    ])
+  })
+
+  it('keeps every drawn shape inside its track span with sources', () => {
+    if (!existsSync(HAND_DRAWN_FILE)) return
+    const { features } = handDrawnSchema.parse(JSON.parse(readFileSync(HAND_DRAWN_FILE, 'utf8')))
+    for (const { properties } of features) {
+      const track = tracks.find((candidate) => candidate.id === properties.track)
+      expect(track?.spans.some((span) => span.start <= properties.from && properties.to <= span.end), `${properties.track} ${properties.from}`).toBe(true)
+    }
+  })
+})
+
 describe('geometry cleaning', () => {
   it('rounds to two decimals, drops repeated points and closes the ring', () => {
     expect(cleanRing([[1.234, 2.001], [3.001, 2.004], [3.004, 4], [1.2, 4.001]])).toEqual([
@@ -140,14 +164,12 @@ describe('territories file', () => {
     }
   })
 
-  it('sorts slices by track then start and never overlaps them within a track', () => {
-    const order = tracks.map((track) => track.id)
+  it('sorts slices by track then start and never overlaps two slices of one polity', () => {
     slices.forEach((slice, index) => {
       const previous = slices[index - 1]
-      if (!previous) return
-      const trackStep = order.indexOf(slice.track) - order.indexOf(previous.track)
-      expect(trackStep, `${slice.track} ${slice.from}`).toBeGreaterThanOrEqual(0)
-      if (trackStep === 0) expect(slice.from, `${slice.track} ${slice.from}`).toBeGreaterThan(previous.to)
+      if (previous) expect(byTrackThenStart(previous, slice), `${slice.track} ${slice.from}`).toBeLessThanOrEqual(0)
+      const twins = slices.filter((other) => other !== slice && other.track === slice.track && other.polity === slice.polity)
+      expect(twins.some((other) => other.from <= slice.to && slice.from <= other.to), `${slice.track} ${slice.polity} ${slice.from}`).toBe(false)
     })
   })
 

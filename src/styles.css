@@ -1,8 +1,8 @@
 :root {
-  --background: rgb(18 13 10);
-  --ink: rgb(243 234 216);
-  --ink-muted: rgb(203 189 159);
-  --panel: rgb(16 11 8 / 0.93);
+  --background: rgb(12 18 25);
+  --ink: rgb(242 238 228);
+  --ink-muted: rgb(200 194 180);
+  --panel: rgb(11 16 23 / 0.93);
   --line: rgb(255 255 255 / 0.12);
   --accent: rgb(216 178 90);
   --accent-ink: rgb(232 209 156);
@@ -90,7 +90,7 @@ a {
 }
 
 .app--scene::before {
-  background: linear-gradient(to left, rgb(10 7 5 / 0.55) 0%, transparent 40%);
+  background: linear-gradient(to left, rgb(6 10 15 / 0.55) 0%, transparent 40%);
 }
 
 .veil {
@@ -102,14 +102,14 @@ a {
   opacity: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse at 50% 58%, rgb(226 210 184 / 0.96) 0%, rgb(176 154 124 / 0.97) 45%, rgb(64 50 38) 100%);
+    radial-gradient(ellipse at 50% 58%, rgb(226 210 184 / 0.96) 0%, rgb(176 154 124 / 0.97) 45%, rgb(42 54 66) 100%);
 }
 
 .veil__status {
   margin: 0;
   padding: 0 1rem;
   text-align: center;
-  color: rgb(40 30 22);
+  color: rgb(26 35 45);
   font: 400 1rem/1.2 var(--font-display);
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -120,7 +120,7 @@ a {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(to right, rgb(10 7 5 / 0.86) 0%, rgb(10 7 5 / 0.66) 30%, transparent 55%);
+  background: linear-gradient(to right, rgb(6 10 15 / 0.86) 0%, rgb(6 10 15 / 0.66) 30%, transparent 55%);
   pointer-events: none;
 }
 
@@ -130,7 +130,7 @@ a {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.5rem 0.5rem;
-  background: linear-gradient(to bottom, rgb(10 7 5 / 0.7), transparent);
+  background: linear-gradient(to bottom, rgb(6 10 15 / 0.7), transparent);
 }
 
 .brand-title {
@@ -173,7 +173,7 @@ a {
 }
 
 .app--scene .header {
-  background: linear-gradient(to bottom, rgb(10 7 5 / 0.85), rgb(10 7 5 / 0.45) 70%, transparent);
+  background: linear-gradient(to bottom, rgb(6 10 15 / 0.85), rgb(6 10 15 / 0.45) 70%, transparent);
 }
 
 .site-nav a:hover {
@@ -236,7 +236,7 @@ a {
   padding: 0.6rem 1.1rem;
   border: 1px solid var(--accent-ink);
   border-radius: 2px;
-  background: rgb(10 7 5 / 0.6);
+  background: rgb(6 10 15 / 0.6);
   color: var(--ink);
   font: 400 0.85rem/1.2 var(--font-display);
   letter-spacing: 0.12em;
@@ -245,12 +245,12 @@ a {
 }
 
 .button:hover {
-  background: rgb(10 7 5 / 0.85);
+  background: rgb(6 10 15 / 0.85);
 }
 
 .button--primary {
   background: var(--accent-ink);
-  color: rgb(18 13 10);
+  color: rgb(12 18 25);
 }
 
 .button--primary:hover {
@@ -540,7 +540,7 @@ a {
   user-select: none;
   cursor: grab;
   border-top: 1px solid color-mix(in srgb, var(--accent) 60%, transparent);
-  background: linear-gradient(to top, rgb(10 7 5 / 0.97), rgb(10 7 5 / 0.86));
+  background: linear-gradient(to top, rgb(6 10 15 / 0.97), rgb(6 10 15 / 0.86));
 }
 
 .timeline:active {
@@ -564,7 +564,7 @@ a {
   padding: 0 0.5rem;
   border-radius: 2px;
   background: var(--accent-ink);
-  color: rgb(18 13 10);
+  color: rgb(12 18 25);
   font: 600 0.8rem/21px var(--font-text);
   white-space: nowrap;
   transform: translateX(-50%);
@@ -746,7 +746,7 @@ a {
 }
 
 .event.is-selected .event__marker {
-  box-shadow: 0 0 0 3px rgb(10 7 5), 0 0 0 5px var(--accent-ink);
+  box-shadow: 0 0 0 3px rgb(6 10 15), 0 0 0 5px var(--accent-ink);
 }
 
 .timeline__footer {
@@ -869,7 +869,7 @@ a {
   }
 
   .app::before {
-    background: linear-gradient(to top, rgb(10 7 5 / 0.92) 0%, rgb(10 7 5 / 0.72) 50%, transparent 85%);
+    background: linear-gradient(to top, rgb(6 10 15 / 0.92) 0%, rgb(6 10 15 / 0.72) 50%, transparent 85%);
   }
 
   .main {
@@ -896,7 +896,7 @@ a {
     width: 100%;
     border-left: 0;
     border-top: 2px solid var(--accent);
-    background: rgb(16 11 8);
+    background: rgb(11 16 23);
   }
 
   .event {
@@ -911,7 +911,7 @@ a {
     inset: auto 0 0;
     max-height: 48dvh;
     padding: 1rem 1rem 1.25rem;
-    background: rgb(16 11 8 / 0.94);
+    background: rgb(11 16 23 / 0.94);
   }
 
 
