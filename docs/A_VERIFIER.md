@@ -123,3 +123,7 @@ Détail et sources dans `docs/scenes/thermopyles.md`, section « Points à véri
 - **Référence** : titre exact de l'ouvrage d'Aravantinos, Godart et Sacconi (2001) à vérifier.
 - **Catégories** : Argonautes, Héraclès et Ulysse classés en culture, Deucalion en nature ; choix discutable.
 
+## Figurines
+
+- **Manteau rouge des Spartiates.** Le manteau pourpre (phoinikis) est attesté comme tenue militaire spartiate (Xénophon, Constitution des Lacédémoniens, 11, 3 ; Aristophane, Lysistrata, 1140) ; qu'il ait été porté dans la ligne de bataille repose surtout sur Plutarque (Moralia, 238 F), source tardive. Hypothèse : la figurine spartiate porte le manteau et les cheveux longs (Hérodote, VII, 208), sans lambda sur le bouclier, attesté seulement plus tard.
+
