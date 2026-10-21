@@ -7,6 +7,7 @@ export const TRACK_IDS = [
   'monde-grec',
   'myceniens',
   'minoens',
+  'mythes',
   'athenes',
   'sparte',
   'perse',

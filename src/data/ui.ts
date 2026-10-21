@@ -78,6 +78,10 @@ export const UI = {
   soundOff: 'Son : coupé',
   soundLabel: "Son d'ambiance",
   sources: 'Sources',
+  sequelName: 'Roma',
+  sequelHint: "la suite : l'Empire romain",
+  sequelTitle: "Continuer avec Roma, de Romulus à Constantin XI : l'histoire romaine à partir d'Auguste",
+  sequelUrl: 'https://maximator13.github.io/roma/#/evenement/auguste-princeps',
 } as const
 
 export const PAGE_LINKS: { id: PageId; label: string }[] = [

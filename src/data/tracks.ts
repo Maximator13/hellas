@@ -23,6 +23,13 @@ export const tracks: Track[] = [
     note: "Civilisation crétoise des palais (Cnossos, Phaistos, Malia), qui écrit en hiéroglyphique crétois puis en linéaire A, deux écritures non déchiffrées. La piste va de la construction des premiers palais, vers 1950, aux destructions de 1450 environ, après lesquelles Cnossos est administrée en grec. Le nom « minoen » a été donné par l'archéologue Arthur Evans, d'après le roi légendaire Minos.",
   },
   {
+    id: 'mythes',
+    name: 'Mythes et héros',
+    color: '#b08ad8',
+    spans: [{ start: -1999, end: -1099 }],
+    note: "Les récits que les Grecs plaçaient dans leur passé lointain, l'âge des héros, avant et autour de la guerre de Troie. Ils ne sont pas de l'histoire : leurs dates sont celles que leur donnaient les chronographes antiques (Marbre de Paros, Ératosthène), affichées comme légendaires, et chaque fiche dit ce que l'archéologie montre des lieux.",
+  },
+  {
     id: 'athenes',
     name: 'Athènes',
     color: '#3d8bd9',

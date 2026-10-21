@@ -134,6 +134,7 @@ export interface Plan {
   from: number
   to: number
   rows: Row[]
+  drawn?: boolean
 }
 
 interface Span {
@@ -231,7 +232,7 @@ export function planHandDrawn(track: TrackId, rows: Row[]): Plan[] {
   return cuts.slice(0, -1).flatMap((from, index) => {
     const to = (cuts[index + 1] ?? from + 1) - 1
     const active = rows.filter((row) => row.from <= from && row.to >= to)
-    return active.length === 0 ? [] : [{ track, polity: active.map((row) => row.polity).join(' et '), from, to, rows: active }]
+    return active.length === 0 ? [] : [{ track, polity: active.map((row) => row.polity).join(' et '), from, to, rows: active, drawn: true }]
   })
 }
 
@@ -360,7 +361,7 @@ async function simplified(plan: Plan): Promise<Geometry[]> {
     features: plan.rows.map((row) => ({ type: 'Feature', properties: { track: plan.track }, geometry: row.geometry })),
   })
   const output = await mapshaperOutput(
-    `-i plan.json -clip bbox=${west},${south},${east},${north} -dissolve track -filter-islands min-area=${MIN_ISLAND} -explode -simplify visvalingam variable interval='this.area < ${SMALL_RING_AREA} ? ${SMALL_RING_METERS} : ${SIMPLIFY_METERS}' keep-shapes`,
+    `-i plan.json -clip bbox=${west},${south},${east},${north} -dissolve track -filter-islands min-area=${MIN_ISLAND} -explode${plan.drawn ? '' : ` -simplify visvalingam variable interval='this.area < ${SMALL_RING_AREA} ? ${SMALL_RING_METERS} : ${SIMPLIFY_METERS}' keep-shapes`}`,
     { 'plan.json': collection },
   )
   return output === null ? [] : simplifiedSchema.parse(output).features.flatMap((feature) => feature.geometry ?? [])

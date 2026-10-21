@@ -1,5 +1,5 @@
 import { useMemo, useRef, type CSSProperties } from 'react'
-import { formatDate, formatRange, formatYear } from '../core/dates.ts'
+import { formatDate, formatRange, formatYear, LAST_YEAR } from '../core/dates.ts'
 import { eras } from '../data/eras.ts'
 import { events } from '../data/events.ts'
 import type { Era, HistoricalEvent } from '../data/schema.ts'
@@ -14,6 +14,8 @@ import { useTimelineGestures, useTimelineKeys } from './useTimelineInput.ts'
 import { animateView } from './viewAnimation.ts'
 import { viewAround, yearToX, type Viewport } from './viewport.ts'
 
+
+const SEQUEL_MIN_WIDTH = 120
 
 function eventLabel(event: HistoricalEvent): string {
   return `${event.title}, ${formatDate(event)}, ${CERTAINTY[event.certainty].label.toLowerCase()}`
@@ -47,7 +49,7 @@ function EraBand({ view, width }: { view: Viewport; width: number }) {
 function Ticks({ view, width }: { view: Viewport; width: number }) {
   return (
     <div className="ticks" aria-hidden="true">
-      {ticks(view, width).map((year) => (
+      {ticks(view, width).filter((year) => year <= LAST_YEAR).map((year) => (
         <span key={year} className="ticks__tick" style={{ transform: `translateX(${yearToX(year, view, width)}px)` }}>
           {formatYear(year)}
         </span>
@@ -107,6 +109,18 @@ function Lane({ layout, selectedId }: { layout: LaneLayout; selectedId: string |
   )
 }
 
+function SequelLink({ view, width }: { view: Viewport; width: number }) {
+  const end = yearToX(LAST_YEAR, view, width)
+  if (end > width - 24) return null
+  const left = Math.min(end, width - SEQUEL_MIN_WIDTH)
+  return (
+    <a className="sequel" href={UI.sequelUrl} style={{ left, width: Math.max(SEQUEL_MIN_WIDTH, width - end) }} title={UI.sequelTitle}>
+      <span className="sequel__name">{UI.sequelName}</span>
+      <span className="sequel__hint">{UI.sequelHint}</span>
+    </a>
+  )
+}
+
 function Legend() {
   return (
     <ul className="legend" aria-label={UI.legend}>
@@ -142,6 +156,7 @@ export function Timeline() {
       {width > 0 && (
         <>
           <EraBand view={view} width={width} />
+          <SequelLink view={view} width={width} />
           <Ticks view={view} width={width} />
           <div className="lanes">
             {lanes.map((layout) => (
