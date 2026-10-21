@@ -1,4 +1,12 @@
 {
   "version": 1,
-  "assets": []
+  "assets": [
+    {
+      "path": "scenes/thermopyles/thermopyles.glb",
+      "bytes": 4231236,
+      "sha256": "9b500b02526ffd477a802f52057210a343bb9a1d5353bc3f4fb49f95e44ca1a3",
+      "release": "assets-v1",
+      "file": "9b500b02526f-thermopyles.glb"
+    }
+  ]
 }

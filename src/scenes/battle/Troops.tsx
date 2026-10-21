@@ -9,6 +9,7 @@ import { useBattle } from './store.ts'
 import {
   deathTimes,
   figureCount,
+  isShown,
   placeFigure,
   seeded,
   slotsFor,
@@ -49,7 +50,10 @@ const BOB: Record<UnitState['action'], { rate: number; height: number; lunge: nu
   fight: { rate: 1.3, height: 0.02, lunge: 0.35, sway: 0.18 },
   skirmish: { rate: 0.9, height: 0.02, lunge: 0.25, sway: 0.12 },
   flee: { rate: 2.8, height: 0.09, lunge: 0, sway: 0.08 },
+  surrender: { rate: 0.5, height: 0, lunge: 0, sway: 0.04 },
+  camp: { rate: 0, height: 0, lunge: 0, sway: 0 },
 }
+const SURRENDER_BOW = -0.35
 
 export function useTracks(battle: Battle): UnitTrack[] {
   return useMemo(() => battle.units.map((unit) => trackOf(unit)), [battle])
@@ -141,6 +145,7 @@ export function Troops({
       for (const figure of group.figures) {
         const dead = figure.death <= time
         const state = dead ? stateAt(tracks[figure.unit]!, figure.death, scratch.fallen) : scratch.states[figure.unit]!
+        if (!dead && !isShown(state)) continue
         const placed = placeFigure(state, figure.slot, scratch.placement)
         const x = placed.x
         const z = -placed.y
@@ -161,6 +166,7 @@ export function Troops({
           lunge = Math.sin(beat) * motion.lunge
           turn = Math.sin(beat * 0.5) * motion.sway
           if (state.action === 'charge' || state.action === 'flee') pitch = -0.12
+          if (state.action === 'surrender') pitch = SURRENDER_BOW
         }
         scratch.position.set(x - Math.sin(yaw) * lunge * s, ground + lift * s, z - Math.cos(yaw) * lunge * s)
         scratch.euler.set(pitch, yaw + turn, roll)

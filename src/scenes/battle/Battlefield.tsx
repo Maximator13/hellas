@@ -46,24 +46,43 @@ function worldPositions(mesh: Mesh): Float32Array {
   return result
 }
 
+function groundSurface(pieces: Mesh[]): { positions: Float32Array; index: Uint32Array } {
+  const chunks = pieces.map((piece) => ({ positions: worldPositions(piece), index: piece.geometry.index?.array ?? null }))
+  const positions = new Float32Array(chunks.reduce((sum, chunk) => sum + chunk.positions.length, 0))
+  const index = new Uint32Array(chunks.reduce((sum, chunk) => sum + (chunk.index?.length ?? chunk.positions.length / 3), 0))
+  let vertex = 0
+  let corner = 0
+  for (const chunk of chunks) {
+    positions.set(chunk.positions, vertex * 3)
+    const count = chunk.positions.length / 3
+    const source = chunk.index ?? Array.from({ length: count }, (_, k) => k)
+    for (let k = 0; k < source.length; k += 1) index[corner + k] = source[k]! + vertex
+    corner += source.length
+    vertex += count
+  }
+  return { positions, index }
+}
+
 export function readBattlefield(root: Object3D): { templates: Map<string, TroopTemplate>; field: HeightField } {
   const near = new Map<string, Mesh>()
   const far = new Map<string, BufferGeometry>()
-  let ground: Mesh | null = null
   root.updateMatrixWorld(true)
+  const pieces: Mesh[] = []
+  root.getObjectByName(GROUND)?.traverse((child) => {
+    if (child instanceof Mesh) pieces.push(child)
+  })
   root.traverse((child) => {
     if (!(child instanceof Mesh)) return
-    if (child.name === GROUND) ground = child
     if (!child.name.startsWith(TROOP_PREFIX)) return
     child.visible = false
     const kind = child.name.slice(TROOP_PREFIX.length)
     if (kind.endsWith(FAR_SUFFIX)) far.set(kind.slice(0, -FAR_SUFFIX.length), standingGeometry(child))
     else near.set(kind, child)
   })
-  if (!ground) throw new Error('battlefield model without ground mesh')
-  const terrain: Mesh = ground
-  for (const material of Array.isArray(terrain.material) ? terrain.material : [terrain.material]) addGroundDetail(material)
-  const field = rasterize(worldPositions(terrain), terrain.geometry.index?.array ?? null, HEIGHT_CELL)
+  if (pieces.length === 0) throw new Error('battlefield model without ground mesh')
+  for (const piece of pieces) for (const material of Array.isArray(piece.material) ? piece.material : [piece.material]) addGroundDetail(material)
+  const surface = groundSurface(pieces)
+  const field = rasterize(surface.positions, surface.index, HEIGHT_CELL)
   const templates = new Map<string, TroopTemplate>()
   for (const [kind, mesh] of near) {
     templates.set(kind, { near: standingGeometry(mesh), far: far.get(kind) ?? standingGeometry(mesh), material: mesh.material })

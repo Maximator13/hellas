@@ -42,6 +42,12 @@ Les textes des événements, des époques et des pistes sont rédigés pour le p
 | Territoires | Cliopatria v0.2.1, Seshat Global History Databank ; CC BY 4.0 | J. S. Bennett, E. Mutch, A. Tollefson et al., Cliopatria v0.2.1 (Seshat Global History Databank), https://github.com/Seshat-Global-History-Databank/cliopatria, licence CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) ; article : Bennett et al. 2025, Scientific Data 12:247, doi:10.1038/s41597-025-04516-9 | `public/geo/territories.json` : entités grecques, perses, hellénistiques et romaines extraites et rattachées aux pistes de `src/data/tracks.ts`, années converties en années astronomiques, conquêtes d'Alexandre de 331 à 324 av. J.-C. renommées (étiquetées « Ptolemaic Kingdom » dans la source), découpe sur l'emprise de la carte, fusion par piste et période, îles de moins de 100 km² retirées, simplification de Visvalingam (27 km, 8 km pour les petits anneaux), coordonnées arrondies à 0,01° ; script `scripts/geo/territories.ts` |
 | Lieux et villes | Pleiades, A Gazetteer of Past Places (R. Bagnall et al., éd.) ; CC BY 3.0 | Pleiades: A Gazetteer of Past Places, https://pleiades.stoa.org, © les contributeurs, CC BY 3.0, données modifiées | Identifiants et coordonnées vérifiés lieu par lieu pour `src/data/places.ts` et `src/data/cities.ts` |
 
+## Scènes 3D
+
+| Ressource | Source et licence | Attribution | Usage et modifications |
+|---|---|---|---|
+| Relief des Thermopyles | Copernicus DEM GLO-30, tuile N38 E022 ; licence Copernicus DEM (usage libre avec attribution) | produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved ; « The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30 » | Terrain de la scène des Thermopyles, côte de 480 av. J.-C. restituée d'après Kraft et al. 1987 (alluvions abaissées de 18 à 22 m, plaine du Sperchios rendue au golfe) ; script `blender/kit/thermopyles_terrain.py` |
+
 ## Sons d'ambiance
 
 Boucles de 45 s faites pour le projet dans `public/audio/` (mono, recadrées, filtrées, fondu enchaîné à la boucle, volume normalisé à -20 LUFS, Ogg Vorbis et MP3). Coupées par défaut sur le site.

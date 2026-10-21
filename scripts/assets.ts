@@ -11,6 +11,7 @@ const scenesRoot = '.cache/scenes'
 const buildRoot = '.cache/build/scenes'
 const ktxFolder = 'C:\\Program Files\\KTX-Software\\bin'
 const maxTextureSize: [number, number] = [1024, 1024]
+export const largeTextures: { pattern: RegExp; size: [number, number] }[] = [{ pattern: /^terrain_(ring|core|pass)$/, size: [4096, 4096] }]
 const maxSceneBytes = 20_000_000
 
 type SceneReport = { raw: number; optimised: number; triangles: number; meshes: number; materials: number; textures: number }
@@ -23,9 +24,18 @@ function sceneIds(): string[] {
 }
 
 function textureTransforms(ktxAvailable: boolean) {
-  if (!ktxAvailable) return [textureCompress({ encoder: sharp, targetFormat: 'webp', resize: maxTextureSize })]
+  if (!ktxAvailable) {
+    return [
+      ...largeTextures.map(({ pattern, size }) => textureCompress({ encoder: sharp, targetFormat: 'webp', resize: size, pattern })),
+      textureCompress({ encoder: sharp, targetFormat: 'webp', resize: maxTextureSize, formats: /^image\/(png|jpeg)$/ }),
+    ]
+  }
   const shared = { encoder: sharp, resize: maxTextureSize }
-  return [toktx({ ...shared, mode: Mode.UASTC, slots: /normalTexture/i, level: 4, rdo: true, rdoLambda: 4 }), toktx({ ...shared, mode: Mode.ETC1S, quality: 255 })]
+  return [
+    ...largeTextures.map(({ pattern, size }) => toktx({ encoder: sharp, resize: size, mode: Mode.ETC1S, quality: 255, pattern })),
+    toktx({ ...shared, mode: Mode.UASTC, slots: /normalTexture/i, level: 4, rdo: true, rdoLambda: 4 }),
+    toktx({ ...shared, mode: Mode.ETC1S, quality: 255 }),
+  ]
 }
 
 function primitiveTriangles(primitive: Primitive): number {

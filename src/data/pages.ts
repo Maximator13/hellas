@@ -101,6 +101,7 @@ Hellas est le nom que les Grecs donnaient à leur monde, celui des Hellènes. Il
 - Bibliothèques : React, three.js, React Three Fiber, drei, troika-three-text, meshoptimizer, Zustand et marked (licence MIT), postprocessing (licence zlib), N8AO (licence ISC), Basis Universal (licence Apache 2.0), GSAP (licence gratuite propre à Webflow).
 - Relief et fonds marins : NOAA NCEI, ETOPO 2022 (CC0 1.0), [doi:10.25921/fd45-gt74](https://doi.org/10.25921/fd45-gt74).
 - Traits de côte, lacs et cours d'eau : Made with Natural Earth (domaine public).
+- Relief de la scène des Thermopyles : Copernicus DEM GLO-30, produit à partir de Copernicus WorldDEM-30 © DLR e.V. 2010-2014 et © Airbus Defence and Space GmbH 2014-2018, fourni dans le cadre de COPERNICUS par l'Union européenne et l'ESA, qui n'assument aucune responsabilité pour l'usage qui en est fait.
 - Lieux antiques : [Pleiades](https://pleiades.stoa.org), © les contributeurs, CC BY 3.0.
 - Liste et localisation des cités : [Wikidata](https://www.wikidata.org), CC0 1.0.
 - Territoires des royaumes et des ligues année par année : J. S. Bennett, E. Mutch, A. Tollefson et al., [Cliopatria v0.2.1](https://github.com/Seshat-Global-History-Databank/cliopatria) (Seshat Global History Databank), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) ; données modifiées (extraction des entités grecques et de leurs voisins, simplification, étiquettes corrigées).

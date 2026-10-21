@@ -6,7 +6,7 @@ import type { UiInsets } from '../../map/MapStage.tsx'
 import { heightAt, type HeightField } from './heightfield.ts'
 import type { Battle } from './schema.ts'
 import { useBattle } from './store.ts'
-import { stateAt, type UnitState, type UnitTrack } from './timeline.ts'
+import { isShown, stateAt, type UnitState, type UnitTrack } from './timeline.ts'
 
 const LABEL_LIFT = 60
 const LABEL_MARGIN = 12
@@ -31,7 +31,7 @@ export function Labels({ battle, tracks, field, insets }: { battle: Battle; trac
       projected.copy(anchor.position).project(camera)
       const x = ((projected.x + 1) / 2) * size.width
       const y = ((1 - projected.y) / 2) * size.height
-      const hidden = projected.z > 1 || x < insets.left || x > size.width - insets.right || y < insets.top || y > size.height - insets.bottom - controlsHeight - LABEL_MARGIN
+      const hidden = !isShown(state) || projected.z > 1 || x < insets.left || x > size.width - insets.right || y < insets.top || y > size.height - insets.bottom - controlsHeight - LABEL_MARGIN
       element.style.visibility = hidden ? 'hidden' : 'visible'
     })
   })

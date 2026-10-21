@@ -15,12 +15,13 @@ import { useDeferredDispose } from './ground.ts'
 import { heightAt, type HeightField } from './heightfield.ts'
 import { SIDES, type Arrow, type Battle } from './schema.ts'
 import { useBattle } from './store.ts'
-import { phaseIndexAt, placeFigure, stateAt, type Placement, type Slot, type UnitState, type UnitTrack } from './timeline.ts'
+import { isShown, phaseIndexAt, placeFigure, stateAt, type Placement, type Slot, type UnitState, type UnitTrack } from './timeline.ts'
 
 
 const ACROSS = 10
-const DEEP = 2
+const DEEP = 8
 const FOOTPRINT_LIFT = 3
+const HIDDEN_DEPTH = -10000
 const ARROW_LIFT = 9
 const ARROW_WIDTH: Record<Arrow['kind'], number> = { move: 46, attack: 64, flee: 38 }
 const ARROW_OPACITY: Record<Arrow['kind'], number> = { move: 0.78, attack: 0.92, flee: 0.6 }
@@ -30,7 +31,7 @@ const FADE_TIME_CONSTANT = 0.35
 function footprintSlots(): Slot[] {
   const slots: Slot[] = []
   for (let row = 0; row <= DEEP; row += 1) {
-    for (let column = 0; column <= ACROSS; column += 1) slots.push({ u: column / ACROSS, v: row / DEEP, jitterX: 0, jitterY: 0, phase: 0 })
+    for (let column = 0; column <= ACROSS; column += 1) slots.push({ u: column / ACROSS, v: row / DEEP, rank: row / DEEP, jitterX: 0, jitterY: 0, phase: 0 })
   }
   return slots
 }
@@ -89,6 +90,10 @@ function updateFootprints(
     const positions = side.mesh.geometry.getAttribute('position') as BufferAttribute
     side.units.forEach((unit, order) => {
       const state = stateAt(tracks[unit]!, time, scratch.state)
+      if (!isShown(state)) {
+        slots.forEach((_, index) => positions.setXYZ(order * slots.length + index, state.x, HIDDEN_DEPTH, -state.y))
+        return
+      }
       const survivors = 1 - state.losses * 0.6
       const thinned = { ...state, depth: Math.max(8, state.depth * survivors) }
       slots.forEach((slot, index) => {
@@ -148,7 +153,7 @@ function arrowGeometry(arrow: Arrow, field: HeightField): BufferGeometry {
     'centripetal',
   )
   const length = curve.getLength()
-  const width = ARROW_WIDTH[arrow.kind]
+  const width = arrow.width ?? ARROW_WIDTH[arrow.kind]
   const headLength = Math.min(length * 0.4, width * 2.6)
   const steps = Math.max(8, Math.round(length / 40))
   const shaftEnd = 1 - headLength / length

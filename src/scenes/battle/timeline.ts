@@ -9,6 +9,14 @@ export interface UnitState {
   bulge: number
   action: Action
   losses: number
+  column: number
+  trail: Trail | null
+  head: number
+}
+
+export interface Trail {
+  points: Point[]
+  distances: number[]
 }
 
 interface Segment {
@@ -17,6 +25,7 @@ interface Segment {
   start: UnitState
   end: UnitState
   path: Point[] | null
+  headFrom: number
 }
 
 export interface UnitTrack {
@@ -27,6 +36,7 @@ export interface UnitTrack {
 export interface Slot {
   u: number
   v: number
+  rank: number
   jitterX: number
   jitterY: number
   phase: number
@@ -73,7 +83,43 @@ function initialState(unit: Unit): UnitState {
     bulge: start.bulge ?? 0,
     action: start.action ?? 'stand',
     losses: start.losses ?? 0,
+    column: 0,
+    trail: null,
+    head: 0,
   }
+}
+
+export function trailOf(points: Point[], base: Trail | null = null): Trail {
+  const all = base ? [...base.points, ...points.slice(1)] : points
+  const distances = base ? [...base.distances] : [0]
+  for (let index = distances.length; index < all.length; index += 1) {
+    const a = all[index - 1]!
+    const b = all[index]!
+    distances.push(distances[index - 1]! + Math.hypot(b[0] - a[0], b[1] - a[1]))
+  }
+  return { points: all, distances }
+}
+
+function trailLength(trail: Trail): number {
+  return trail.distances[trail.distances.length - 1]!
+}
+
+const trailScratch = { x: 0, y: 0, heading: 0 }
+
+export function pointOnTrail(trail: Trail, distance: number): { x: number; y: number; heading: number } {
+  const { points, distances } = trail
+  const last = points.length - 1
+  const clamped = Math.min(trailLength(trail), Math.max(0, distance))
+  let index = 1
+  while (index < last && distances[index]! < clamped) index += 1
+  const a = points[index - 1]!
+  const b = points[index]!
+  const span = distances[index]! - distances[index - 1]!
+  const local = span > 0 ? (clamped - distances[index - 1]!) / span : 1
+  trailScratch.x = a[0] + (b[0] - a[0]) * local
+  trailScratch.y = a[1] + (b[1] - a[1]) * local
+  trailScratch.heading = headingOf(b[0] - a[0], b[1] - a[1])
+  return trailScratch
 }
 
 export function trackOf(unit: Unit): UnitTrack {
@@ -82,6 +128,7 @@ export function trackOf(unit: Unit): UnitTrack {
   let current = initial
   let time = 0
   for (const frame of unit.moves) {
+    const column = frame.column ?? current.column === 1
     const end: UnitState = {
       x: frame.at?.[0] ?? current.x,
       y: frame.at?.[1] ?? current.y,
@@ -91,9 +138,19 @@ export function trackOf(unit: Unit): UnitTrack {
       bulge: frame.bulge ?? current.bulge,
       action: frame.action ?? holdAction(current.action),
       losses: frame.losses ?? current.losses,
+      column: column ? 1 : 0,
+      trail: current.trail,
+      head: current.head,
     }
     const path: Point[] | null = frame.via ? [[current.x, current.y], ...frame.via, [end.x, end.y]] : null
-    segments.push({ from: time, to: frame.phase, start: current, end, path })
+    let headFrom = current.head
+    if (column && (end.x !== current.x || end.y !== current.y)) {
+      const base = current.column === 1 ? current.trail : null
+      end.trail = trailOf(path ?? [[current.x, current.y], [end.x, end.y]], base)
+      headFrom = base ? trailLength(base) : 0
+      end.head = trailLength(end.trail)
+    }
+    segments.push({ from: time, to: frame.phase, start: current, end, path, headFrom })
     current = end
     time = frame.phase
   }
@@ -127,7 +184,14 @@ function copyInto(out: UnitState, source: UnitState): UnitState {
   out.bulge = source.bulge
   out.action = source.action
   out.losses = source.losses
+  out.column = source.column
+  out.trail = source.trail
+  out.head = source.head
   return out
+}
+
+export function isShown(state: UnitState): boolean {
+  return state.action !== 'camp'
 }
 
 function holdAction(action: Action): Action {
@@ -157,6 +221,9 @@ export function stateAt(track: UnitTrack, time: number, out: UnitState): UnitSta
       out.depth = start.depth + (end.depth - start.depth) * t
       out.bulge = start.bulge + (end.bulge - start.bulge) * t
       out.losses = start.losses + (end.losses - start.losses) * linear
+      out.column = start.column + (end.column - start.column) * t
+      out.trail = end.trail
+      out.head = end.trail === start.trail ? end.head : segment.headFrom + (end.head - segment.headFrom) * t
       out.action = linear >= 1 ? holdAction(end.action) : end.action
       return out
     }
@@ -181,6 +248,7 @@ export function slotsFor(count: number, width: number, depth: number, seed: numb
     return {
       u: (column + 0.5 + (seeded(key) - 0.5) * SLOT_JITTER) / columns,
       v: (row + 0.5 + (seeded(key + 1) - 0.5) * SLOT_JITTER) / rows,
+      rank: (index + 0.5) / count,
       jitterX: (seeded(key + 2) - 0.5) * POSITION_JITTER,
       jitterY: (seeded(key + 3) - 0.5) * POSITION_JITTER,
       phase: seeded(key + 4) * Math.PI * 2,
@@ -198,6 +266,15 @@ export function placeFigure(state: UnitState, slot: Slot, out: Placement): Place
   out.x = state.x + forwardY * along + forwardX * ahead + slot.jitterX
   out.y = state.y - forwardX * along + forwardY * ahead + slot.jitterY
   out.heading = state.facing
+  if (state.column <= 0 || !state.trail) return out
+  const spot = pointOnTrail(state.trail, state.head - slot.rank * state.depth)
+  const turn = spot.heading * DEGREES
+  const lateral = across * state.width
+  const x = spot.x + Math.cos(turn) * lateral + slot.jitterX
+  const y = spot.y - Math.sin(turn) * lateral + slot.jitterY
+  out.x += (x - out.x) * state.column
+  out.y += (y - out.y) * state.column
+  out.heading = lerpAngle(state.facing, spot.heading, state.column)
   return out
 }
 

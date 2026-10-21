@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
 export const SIDES = ['a', 'b'] as const
-export const ACTIONS = ['stand', 'march', 'charge', 'fight', 'skirmish', 'flee'] as const
+export const ACTIONS = ['stand', 'march', 'charge', 'fight', 'skirmish', 'flee', 'surrender', 'camp'] as const
 export const ARROW_KINDS = ['move', 'attack', 'flee'] as const
 
 const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'expected a lowercase ascii slug')
@@ -36,6 +36,7 @@ export const keyframeSchema = z
     bulge: stateFields.bulge.optional(),
     action: stateFields.action.optional(),
     losses: stateFields.losses.optional(),
+    column: z.boolean().optional(),
   })
   .refine((frame) => frame.via === undefined || frame.at !== undefined, 'via needs a destination')
 
@@ -59,6 +60,7 @@ export const arrowSchema = z.strictObject({
   side: z.enum(SIDES),
   kind: z.enum(ARROW_KINDS),
   path: z.array(point).min(2),
+  width: z.number().positive().optional(),
 })
 
 export const counterSchema = z.strictObject({

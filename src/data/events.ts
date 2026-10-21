@@ -1564,7 +1564,8 @@ export const events: HistoricalEvent[] = [
         "author": "J. F. Lazenby",
         "work": "The Defence of Greece, 490-479 BC, Warminster, Aris and Phillips, 1993"
       }
-    ]
+    ],
+    "scene": "thermopyles"
   },
   {
     "id": "bataille-de-salamine",
@@ -1677,7 +1678,8 @@ export const events: HistoricalEvent[] = [
         "author": "Jenifer Neils (dir.)",
         "work": "The Parthenon: From Antiquity to the Present, Cambridge, Cambridge University Press, 2005"
       }
-    ]
+    ],
+    "scene": "acropole"
   },
   {
     "id": "guerre-du-peloponnese",
