@@ -14,7 +14,7 @@ import { eraIndexAt } from './timeline/keys.ts'
 import { isVisibleAt } from './timeline/layout.ts'
 import { Timeline } from './timeline/Timeline.tsx'
 import { animateView, viewForEvent } from './timeline/viewAnimation.ts'
-import { clampViewport, fullView, viewAround, type Viewport } from './timeline/viewport.ts'
+import { clampViewport, isHomeView, viewAround, type Viewport } from './timeline/viewport.ts'
 import { ConsentBanner } from './ui/ConsentBanner.tsx'
 import { findScene, isPlayable } from './scenes/registry.ts'
 import { EraCaption, EventPanel, NotFoundPanel, PagePanel, ScenePanel, SceneShortcuts } from './ui/panels.tsx'
@@ -180,8 +180,7 @@ export function App() {
   useSceneKeys()
   useAmbience()
   const inScene = route.name === 'scene' && isPlayable(findScene(route.id))
-  const fullTimeline = useApp((state) => state.view.span >= fullView().span * 0.99)
-  const welcome = route.name === 'home' && fullTimeline
+  const welcome = useApp((state) => state.route.name === 'home' && isHomeView(state.view))
   return (
     <>
       <Suspense fallback={null}>

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { FIRST_YEAR, LAST_YEAR } from '../core/dates.ts'
-import { MAX_SPAN, MIN_SPAN, clampViewport, fullView, panBy, viewAround, xToYear, yearToX, zoomAt } from './viewport.ts'
+import { MAX_SPAN, MIN_SPAN, clampViewport, fullView, panBy, viewAround, xToYear, yearToX, zoomAt, homeView, isHomeView } from './viewport.ts'
 
 const width = 1000
 
@@ -40,5 +40,15 @@ describe('viewport', () => {
     const view = viewAround(-263, -240)
     expect(view.center).toBe(-251.5)
     expect(view.span).toBeGreaterThan(23)
+  })
+})
+
+describe('home view', () => {
+  it('opens in the classical era and is recognised until the view moves', () => {
+    const home = homeView()
+    expect(home.center).toBeGreaterThan(-479)
+    expect(home.center).toBeLessThan(-322)
+    expect(isHomeView(home)).toBe(true)
+    expect(isHomeView({ ...home, center: home.center + 1 })).toBe(false)
   })
 })

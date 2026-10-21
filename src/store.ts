@@ -2,7 +2,7 @@ import { create } from 'zustand'
 import { routeFromLocation, routeToHash, type Route } from './core/route.ts'
 import { SITE } from './site.ts'
 import { initialQuality, type QualityTier } from './stage/quality.ts'
-import { fullView, type Viewport } from './timeline/viewport.ts'
+import { homeView, type Viewport } from './timeline/viewport.ts'
 
 interface AppState {
   route: Route
@@ -47,7 +47,7 @@ export function currentRoute(): Route {
 
 export const useApp = create<AppState>()((set) => ({
   route: currentRoute(),
-  view: fullView(),
+  view: homeView(),
   quality: initialQuality(),
   scenePoint: 0,
   failedScene: null,

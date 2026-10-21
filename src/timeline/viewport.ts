@@ -44,3 +44,14 @@ export function viewAround(start: Year, end: Year, padding = 0.15): Viewport {
   const length = Math.max(end - start, 0)
   return clampViewport({ center: (start + end) / 2, span: Math.max(MIN_SPAN * 4, length * (1 + 2 * padding)) })
 }
+
+export const HOME_START: Year = -799
+
+export function homeView(): Viewport {
+  return viewAround(HOME_START, LAST_YEAR, 0.06)
+}
+
+export function isHomeView(view: Viewport): boolean {
+  const home = homeView()
+  return view.center === home.center && view.span === home.span
+}
