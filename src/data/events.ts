@@ -129,6 +129,610 @@ export const events: HistoricalEvent[] = [
     ]
   },
   {
+    "id": "dispute-d-athena-et-de-poseidon",
+    "title": "Athéna et Poséidon se disputent l'Attique",
+    "start": -1581,
+    "precision": "century",
+    "certainty": "legendary",
+    "certaintyNote": "Récit légendaire, placé sous le règne de Cécrops, que le Marbre de Paros (entrée A 1) fait commencer en 1582/1 ; le Marbre date aussi de 1532/1 (entrée A 3) le premier procès de l'Aréopage, entre Arès et Poséidon.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "religion",
+    "importance": 2,
+    "placeId": "athenes",
+    "people": [
+      "cecrops"
+    ],
+    "summary": "Sous Cécrops, premier roi d'Athènes, Athéna et Poséidon se disputent l'Attique. Poséidon frappe le rocher de l'Acropole et fait jaillir une source d'eau salée ; Athéna fait pousser le premier olivier. L'olivier est jugé le plus beau présent : la déesse devient la protectrice de la cité, qui porte son nom.",
+    "body": "**Le mythe.** Selon Apollodore, Poséidon arrive le premier sur l'Acropole et, d'un coup de trident, fait jaillir une « mer » d'eau salée ; Athéna plante un olivier, en prenant Cécrops à témoin. Les douze dieux, ou selon d'autres Cécrops lui-même, attribuent le pays à Athéna. Furieux, Poséidon inonde la plaine de Thria.\n\n**Un mythe civique.** À l'époque classique, les Athéniens montraient encore dans l'Érechthéion l'olivier sacré et l'eau de mer laissée par le dieu, que mentionne Hérodote : brûlé par les Perses en 480, l'olivier aurait aussitôt repoussé. Le fronton ouest du Parthénon, sculpté entre 438 et 432, représentait la dispute face à ceux qui montaient à l'Acropole ; ses figures, très mutilées, sont connues par des fragments et par des dessins faits en 1674, avant l'explosion de 1687.\n\n**Ce que montre l'archéologie.** L'Acropole était bien habitée et fortifiée à l'âge du bronze : un rempart cyclopéen y est élevé au XIIIe siècle, et un palais mycénien y a sans doute existé, mais ses traces sont maigres. Le mythe explique des noms et des cultes de la cité (Athéna Poliade, Poséidon Érechthée), il ne garde le souvenir d'aucun événement ; la date de Cécrops est un calcul des chronographes, qui comptaient les générations de rois légendaires.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Hérodote",
+        "work": "Histoires",
+        "locus": "VIII, 55",
+        "url": `${HERODOTE}:book=8:chapter=55`
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "III, 14, 1"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pausanias",
+        "work": "Description de la Grèce",
+        "locus": "I, 24, 5 (le fronton ouest du Parthénon)",
+        "url": `${PAUSANIAS}:book=1:chapter=24`
+      },
+      {
+        "kind": "ancient",
+        "author": "Marbre de Paros",
+        "work": "Chronique de Paros (FGrHist 239)",
+        "locus": "A, 1 et 3"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      },
+      {
+        "kind": "modern",
+        "author": "Jeffrey M. Hurwit",
+        "work": "The Athenian Acropolis: History, Mythology, and Archaeology from the Neolithic Era to the Present, Cambridge, Cambridge University Press, 1999"
+      }
+    ]
+  },
+  {
+    "id": "deluge-de-deucalion",
+    "title": "Le déluge de Deucalion",
+    "start": -1528,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Date du Marbre de Paros, entrée A 4 (1529/8), selon laquelle Deucalion fuit les pluies de Lycoréia pour se réfugier à Athènes ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "nature",
+    "importance": 2,
+    "placeId": "parnasse",
+    "people": [
+      "deucalion"
+    ],
+    "summary": "Zeus veut anéantir les hommes de l'âge de bronze et noie la Grèce sous un déluge. Prévenu par son père Prométhée, Deucalion se sauve avec sa femme Pyrrha dans un coffre qui flotte neuf jours avant d'aborder au Parnasse. Le couple repeuple la terre en jetant des pierres par-dessus son épaule : elles deviennent des hommes et des femmes.",
+    "body": "**Le mythe.** Selon Apollodore, Deucalion, fils de Prométhée et roi de Phthie, construit un coffre (larnax) sur le conseil de son père. Après neuf jours et neuf nuits, il aborde au Parnasse et sacrifie à Zeus, puis, sur l'ordre des dieux, jette avec Pyrrha des pierres derrière lui : celles de Deucalion deviennent des hommes, celles de Pyrrha des femmes. Leur fils Hellen donne son nom aux Hellènes.\n\n**Un ancêtre commun.** Le récit ouvre les généalogies grecques : par Hellen et ses fils Doros, Éolos et Xouthos, père d'Ion, tous les peuples grecs descendent de Deucalion. Les Athéniens montraient dans l'enceinte de Zeus Olympien une fissure où les eaux se seraient écoulées, et le Marbre de Paros attribue à Deucalion, réfugié à Athènes, la fondation de ce sanctuaire. Lycoréia, sur le Parnasse, se disait fondée par des rescapés guidés par des hurlements de loups.\n\n**Ce qu'on peut en dire.** Le motif rappelle les récits mésopotamiens du déluge (Atrahasis, l'épopée de Gilgamesh), bien plus anciens, dont il dérive sans doute en partie ; il ne renvoie à aucune catastrophe identifiable, et les rapprochements avec l'éruption de Théra restent des hypothèses sans preuve. Le Marbre de Paros, gravé en 264/3, en fait pourtant un événement daté, pour mettre en ordre le passé grec.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "I, 7, 2"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pindare",
+        "work": "Olympiques",
+        "locus": "IX, 41 à 53"
+      },
+      {
+        "kind": "ancient",
+        "author": "Ovide",
+        "work": "Métamorphoses",
+        "locus": "I, 253 à 415"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pausanias",
+        "work": "Description de la Grèce",
+        "locus": "I, 18, 7 et X, 6, 2",
+        "url": `${PAUSANIAS}:book=1:chapter=18`
+      },
+      {
+        "kind": "ancient",
+        "author": "Marbre de Paros",
+        "work": "Chronique de Paros (FGrHist 239)",
+        "locus": "A, 2 et 4"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      },
+      {
+        "kind": "modern",
+        "author": "Martin L. West",
+        "work": "The East Face of Helicon: West Asiatic Elements in Greek Poetry and Myth, Oxford, Clarendon Press, 1997"
+      }
+    ]
+  },
+  {
+    "id": "cadmos-fonde-thebes",
+    "title": "Cadmos fonde Thèbes",
+    "start": -1518,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Date du Marbre de Paros, entrée A 7 (1519/8) ; la Chronique d'Eusèbe, dans la version de Jérôme, place Cadmos un siècle plus tard, entre 1430 et 1400 environ ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "politics",
+    "importance": 2,
+    "placeId": "thebes",
+    "people": [
+      "cadmos"
+    ],
+    "summary": "Parti de Phénicie à la recherche de sa sœur Europe, enlevée par Zeus, Cadmos suit une vache jusqu'en Béotie et fonde là où elle se couche la citadelle de Thèbes, la Cadmée. Il tue le dragon d'Arès, dont les dents semées font naître les Spartes, ancêtres des Thébains. Hérodote lui attribue l'introduction en Grèce des lettres phéniciennes.",
+    "body": "**Le mythe.** Fils d'Agénor, roi de Tyr ou de Sidon, Cadmos cherche Europe en vain ; l'oracle de Delphes lui ordonne de suivre une vache et de fonder une ville à l'endroit où elle se couchera. Il y tue le dragon qui garde une source et sème ses dents sur le conseil d'Athéna : des guerriers armés en sortent et s'entretuent, et les cinq survivants, les Spartes (« hommes semés »), sont les ancêtres des grandes familles thébaines. Cadmos épouse Harmonie, fille d'Arès et d'Aphrodite.\n\n**Les usages.** Les Thébains se disaient « Cadméens » et montraient la maison de Cadmos sur leur acropole. Hérodote affirme que les Phéniciens venus avec lui apprirent l'alphabet aux Grecs, et dit avoir vu à Thèbes des inscriptions en « lettres cadméennes ». La tragédie athénienne (Euripide, *Les Bacchantes* et *Les Phéniciennes*) fait de sa descendance une suite de malheurs, de Penthée à Œdipe.\n\n**Ce que montre l'archéologie.** La Cadmée porte bien un palais mycénien : on y a trouvé des tablettes en linéaire B et, en 1963 et 1964, un lot de sceaux-cylindres orientaux en lapis-lazuli, venus de Mésopotamie et du Levant. Ils prouvent des contacts avec l'Orient, pas une colonie phénicienne. L'alphabet grec n'est adopté qu'au VIIIe siècle, bien après la date des chronographes : la tradition a prêté à un fondateur unique un emprunt beaucoup plus tardif.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Hérodote",
+        "work": "Histoires",
+        "locus": "V, 57 à 61",
+        "url": `${HERODOTE}:book=5:chapter=58`
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "III, 4, 1 et 2"
+      },
+      {
+        "kind": "ancient",
+        "author": "Euripide",
+        "work": "Les Phéniciennes",
+        "locus": "638 à 675"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pausanias",
+        "work": "Description de la Grèce",
+        "locus": "IX, 5, 1 à 3",
+        "url": `${PAUSANIAS}:book=9:chapter=5`
+      },
+      {
+        "kind": "ancient",
+        "author": "Marbre de Paros",
+        "work": "Chronique de Paros (FGrHist 239)",
+        "locus": "A, 7"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      },
+      {
+        "kind": "modern",
+        "author": "Vassilis L. Aravantinos, Louis Godart et Anna Sacconi",
+        "work": "Thèbes. Fouilles de la Cadmée I. Les tablettes en linéaire B de la odos Pelopidou, Pise et Rome, 2001"
+      }
+    ]
+  },
+  {
+    "id": "danaos-arrive-a-argos",
+    "title": "Danaos et les Danaïdes arrivent à Argos",
+    "start": -1510,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Date du Marbre de Paros, entrée A 9 (1511/0), qui mentionne le premier navire à cinquante rames venu d'Égypte ; Eusèbe et Jérôme placent le règne de Danaos à Argos vers 1475 ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "politics",
+    "importance": 3,
+    "placeId": "argos",
+    "people": [
+      "danaos"
+    ],
+    "summary": "Fuyant son frère Égyptos, Danaos quitte l'Égypte avec ses cinquante filles sur le premier navire à cinquante rames et devient roi d'Argos. Forcées d'épouser les cinquante fils d'Égyptos, les Danaïdes les tuent la nuit des noces, sauf Hypermnestre, qui épargne Lyncée. Chez Homère, les Grecs sont souvent appelés « Danaens ».",
+    "body": "**Le mythe.** Danaos et Égyptos sont deux frères, descendants d'Io. Menacé, Danaos s'enfuit avec ses filles, fait escale à Lindos, à Rhodes, où les Danaïdes fondent un temple d'Athéna, puis aborde en Argolide ; les Argiens lui donnent le trône. Les fils d'Égyptos le poursuivent et exigent le mariage : quarante-neuf épouses tuent leur mari. Lyncée, épargné, succède à Danaos, et de lui descendent Acrisios, Danaé et Persée.\n\n**Les usages.** Eschyle consacre aux Danaïdes une trilogie, dont seules *Les Suppliantes* sont conservées. Les Argiens attribuaient à Danaos le temple d'Apollon Lycien de leur ville et rattachaient à ses filles leurs sources : Amymone, l'une d'elles, aurait obtenu de Poséidon les eaux de Lerne. Une tradition plus tardive montre les Danaïdes, aux Enfers, condamnées à remplir un tonneau percé.\n\n**Ce que montre l'archéologie.** Argos est habitée à l'époque mycénienne (colline de l'Aspis, Larissa, tombes de la Deiras), mais les grands centres de l'Argolide sont alors Mycènes et Tirynthe. Une liste égyptienne du temps d'Amenhotep III (vers 1370) mentionne un pays « Tanaja », que certains rapprochent des Danaens ; l'hypothèse est discutée. Le mythe dit surtout comment les Grecs pensaient leurs liens anciens avec l'Égypte.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Eschyle",
+        "work": "Les Suppliantes"
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "II, 1, 4 et 5"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pausanias",
+        "work": "Description de la Grèce",
+        "locus": "II, 19, 3 à 6",
+        "url": `${PAUSANIAS}:book=2:chapter=19`
+      },
+      {
+        "kind": "ancient",
+        "author": "Hérodote",
+        "work": "Histoires",
+        "locus": "II, 182 (le temple de Lindos)",
+        "url": `${HERODOTE}:book=2:chapter=182`
+      },
+      {
+        "kind": "ancient",
+        "author": "Marbre de Paros",
+        "work": "Chronique de Paros (FGrHist 239)",
+        "locus": "A, 9"
+      },
+      {
+        "kind": "ancient",
+        "author": "Eusèbe de Césarée et Jérôme",
+        "work": "Chronique, version latine de Jérôme (éd. R. Helm)",
+        "locus": "p. 66 à 69"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      }
+    ]
+  },
+  {
+    "id": "thesee-et-le-minotaure",
+    "title": "Thésée et le Minotaure",
+    "start": -1294,
+    "end": -1258,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Dates du Marbre de Paros : entrée A 19 (1295/4), où Athènes, frappée par la famine, doit accepter le châtiment exigé par Minos, et entrée A 20 (1259/8), avènement de Thésée ; Eusèbe et Jérôme placent le Minotaure vers 1232 ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "politics",
+    "importance": 1,
+    "placeId": "cnossos",
+    "people": [
+      "minos",
+      "thesee",
+      "ariane"
+    ],
+    "summary": "Pour venger son fils Androgée, tué en Attique, Minos, roi de Cnossos, impose à Athènes un tribut de sept jeunes gens et sept jeunes filles, livrés au Minotaure, monstre à tête de taureau enfermé dans le Labyrinthe construit par Dédale. Thésée part avec eux, tue le monstre et ressort grâce au fil d'Ariane ; à son retour, il devient roi d'Athènes.",
+    "body": "**Le mythe.** Pasiphaé, épouse de Minos, s'est unie au taureau envoyé par Poséidon et a donné naissance au Minotaure. Quand Athènes doit livrer son tribut, Thésée, fils du roi Égée, se joint aux victimes. Ariane, fille de Minos, lui donne une pelote de fil pour retrouver la sortie, puis s'enfuit avec lui ; il l'abandonne à Naxos. Au retour, il oublie de hisser la voile blanche convenue : Égée, se croyant privé de son fils, se jette dans la mer, et Thésée devient roi.\n\n**Un héros pour Athènes.** À partir de la fin du VIe siècle, Thésée devient le héros national d'Athènes, rival d'Héraclès : on lui attribue la réunion des villages de l'Attique en une seule cité. En 476/5, Cimon rapporte de Skyros des ossements présentés comme les siens, et les Athéniens conservèrent jusqu'à l'époque hellénistique un navire dit de Thésée, sans cesse réparé.\n\n**Ce que montre l'archéologie.** Le palais de Cnossos, fouillé par Arthur Evans à partir de 1900, frappe par son plan complexe, ses fresques de sauts par-dessus le taureau et ses cornes de consécration. Une tablette en linéaire B de Cnossos (KN Gg 702) note une offrande de miel à la « Maîtresse du labyrinthe » : le mot existait donc à l'âge du bronze. Le lien avec la labrys, la double hache, est une hypothèse ancienne et discutée, et rien n'atteste un tribut athénien ; Thucydide voyait dans Minos le souvenir d'une puissance maritime crétoise.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Homère",
+        "work": "Odyssée",
+        "locus": "XI, 321 à 325 (Ariane)"
+      },
+      {
+        "kind": "ancient",
+        "author": "Bacchylide",
+        "work": "Dithyrambes",
+        "locus": "17"
+      },
+      {
+        "kind": "ancient",
+        "author": "Plutarque",
+        "work": "Vie de Thésée",
+        "locus": "15 à 23 et 36",
+        "url": `${PLUTARQUE}/Theseus*.html`
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "III, 15, 7 et 8 ; Épitomé, I, 7 à 11"
+      },
+      {
+        "kind": "ancient",
+        "author": "Thucydide",
+        "work": "Histoire de la guerre du Péloponnèse",
+        "locus": "I, 4 et II, 15",
+        "url": `${THUCYDIDE}:book=2:chapter=15`
+      },
+      {
+        "kind": "ancient",
+        "author": "Marbre de Paros",
+        "work": "Chronique de Paros (FGrHist 239)",
+        "locus": "A, 19 et 20"
+      },
+      {
+        "kind": "ancient",
+        "author": "Eusèbe de Césarée et Jérôme",
+        "work": "Chronique, version latine de Jérôme (éd. R. Helm)",
+        "locus": "p. 92"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      },
+      {
+        "kind": "modern",
+        "author": "Henry J. Walker",
+        "work": "Theseus and Athens, Oxford, Oxford University Press, 1995"
+      }
+    ]
+  },
+  {
+    "id": "persee-fonde-mycenes",
+    "title": "Persée tue la Gorgone et fonde Mycènes",
+    "start": -1306,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Date de la Chronique d'Eusèbe dans la version latine de Jérôme, qui place vers 1307 le règne de Persée après la mort accidentelle d'Acrisios, et ses exploits vers 1347 à 1330 ; les parties conservées du Marbre de Paros ne le mentionnent pas ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "politics",
+    "importance": 2,
+    "placeId": "mycenes",
+    "people": [
+      "persee"
+    ],
+    "summary": "Fils de Zeus et de Danaé, Persée tranche la tête de la Gorgone Méduse, dont le regard change les hommes en pierre, puis sauve Andromède d'un monstre marin. Il tue ensuite par accident son grand-père Acrisios, roi d'Argos ; honteux d'hériter de sa victime, il échange Argos contre Tirynthe et, selon Pausanias, fonde Mycènes.",
+    "body": "**Le mythe.** Un oracle a prédit à Acrisios que son petit-fils le tuerait : il enferme sa fille Danaé, que Zeus rejoint sous forme d'une pluie d'or, puis jette la mère et l'enfant à la mer dans un coffre. Devenu adulte à Sériphos, Persée part chercher la tête de Méduse, avec l'aide d'Athéna et d'Hermès ; du cou tranché naissent Pégase et Chrysaor. Lors de jeux à Larissa, son disque tue Acrisios, accomplissant l'oracle.\n\n**Les usages.** Persée est l'ancêtre des rois de Mycènes et de Tirynthe, et le bisaïeul d'Héraclès. Pausanias rapporte deux explications du nom de Mycènes : le bout du fourreau (mykès) de Persée y serait tombé, ou il y aurait cueilli un champignon pour boire l'eau d'une source, la Perseia. Hérodote dit que les rois perses se réclamaient de Persée, dont le fils Persès aurait donné son nom à leur peuple ; Méduse est un sujet favori des peintres de vases et des frontons archaïques.\n\n**Ce que montre l'archéologie.** Mycènes est occupée bien avant la date de Jérôme : ses tombes à fosse remontent au XVIe siècle. Le rempart cyclopéen et la porte des Lions datent du milieu du XIIIe siècle, et une citerne souterraine creusée à la fin du même siècle était alimentée par une source extérieure, peut-être la Perseia de Pausanias. Aucun document de l'époque ne nomme un fondateur.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Hésiode",
+        "work": "Théogonie",
+        "locus": "270 à 283"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pindare",
+        "work": "Pythiques",
+        "locus": "XII, 6 à 26"
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "II, 4, 1 à 5"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pausanias",
+        "work": "Description de la Grèce",
+        "locus": "II, 16, 3 à 6",
+        "url": `${PAUSANIAS}:book=2:chapter=16`
+      },
+      {
+        "kind": "ancient",
+        "author": "Hérodote",
+        "work": "Histoires",
+        "locus": "VII, 61 et 150",
+        "url": `${HERODOTE}:book=7:chapter=150`
+      },
+      {
+        "kind": "ancient",
+        "author": "Eusèbe de Césarée et Jérôme",
+        "work": "Chronique, version latine de Jérôme (éd. R. Helm)",
+        "locus": "p. 80 à 85"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      }
+    ]
+  },
+  {
+    "id": "expedition-des-argonautes",
+    "title": "L'expédition des Argonautes",
+    "start": -1266,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Date de la Chronique d'Eusèbe dans la version latine de Jérôme, qui place le voyage des Argonautes vers 1267 ; les parties conservées du Marbre de Paros ne le datent pas ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "culture",
+    "importance": 1,
+    "placeId": "iolcos",
+    "people": [
+      "jason",
+      "medee",
+      "heracles"
+    ],
+    "summary": "Pour reprendre le trône d'Iolcos, Jason doit rapporter la Toison d'or de Colchide, au bout de la mer Noire. Avec les héros de sa génération, dont Héraclès, Orphée et les Dioscures, il embarque sur l'Argo, franchit les Roches qui s'entrechoquent et, grâce à la magicienne Médée, fille du roi Aiétès, s'empare de la Toison.",
+    "body": "**Le mythe.** Pélias, qui a usurpé le trône d'Iolcos, envoie son neveu Jason chercher la toison du bélier d'or. Le navire passe par Lemnos, Cyzique et le Bosphore, où le devin Phinée, délivré des Harpies, indique la route entre les Roches Cyanées. En Colchide, Jason doit atteler des taureaux qui crachent le feu et semer des dents de dragon ; Médée, éprise de lui, l'aide par ses drogues, endort le serpent gardien et s'enfuit avec lui. De retour, elle fait périr Pélias par ses propres filles.\n\n**Les usages.** L'*Odyssée* parle déjà de l'Argo « que tous chantent ». Pindare raconte le voyage en 462 pour un roi de Cyrène, cité dont la fondation est rattachée à un Argonaute ; Euripide fait de Médée, abandonnée à Corinthe, la meurtrière de ses enfants (431). Au IIIe siècle, à Alexandrie, Apollonios de Rhodes en tire une épopée savante, les *Argonautiques*. Les Grecs installés au bord de la mer Noire à partir du VIIe siècle retrouvaient dans ce récit la route de leurs colonies.\n\n**Ce que montre l'archéologie.** Autour de Volos, en Thessalie, la colline du Kastro et le site voisin de Dimini, avec ses grands bâtiments mycéniens, sont des candidats pour Iolcos ; l'identification reste débattue. La Colchide correspond à l'ouest de la Géorgie, riche en or : Strabon explique la toison par des peaux de mouton qui servaient à recueillir les paillettes des torrents, une rationalisation antique plutôt qu'une preuve.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Homère",
+        "work": "Odyssée",
+        "locus": "XII, 69 à 72"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pindare",
+        "work": "Pythiques",
+        "locus": "IV"
+      },
+      {
+        "kind": "ancient",
+        "author": "Euripide",
+        "work": "Médée"
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollonios de Rhodes",
+        "work": "Argonautiques",
+        "locus": "I à IV"
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "I, 9, 16 à 28"
+      },
+      {
+        "kind": "ancient",
+        "author": "Strabon",
+        "work": "Géographie",
+        "locus": "XI, 2, 19",
+        "url": `${STRABON}:book=11:chapter=2:section=19`
+      },
+      {
+        "kind": "ancient",
+        "author": "Eusèbe de Césarée et Jérôme",
+        "work": "Chronique, version latine de Jérôme (éd. R. Helm)",
+        "locus": "p. 88"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      }
+    ]
+  },
+  {
+    "id": "travaux-d-heracles",
+    "title": "Les travaux d'Héraclès",
+    "start": -1244,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Date de la Chronique d'Eusèbe dans la version latine de Jérôme, qui place vers 1245 la fin des travaux d'Héraclès et sa mort vers 1196 ; la liste canonique des douze travaux n'est fixée qu'au Ve siècle ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "culture",
+    "importance": 1,
+    "placeId": "tirynthe",
+    "people": [
+      "heracles",
+      "eurysthee"
+    ],
+    "summary": "Fils de Zeus et d'Alcmène, Héraclès est poursuivi par la haine d'Héra. Frappé de folie, il tue ses enfants et doit, pour expier, servir son cousin Eurysthée, roi de Mycènes et de Tirynthe, qui lui impose une série d'épreuves : le lion de Némée, l'hydre de Lerne, les écuries d'Augias, les oiseaux du lac Stymphale, jusqu'à la capture de Cerbère aux Enfers.",
+    "body": "**Le mythe.** Dans l'*Iliade*, Héra retarde la naissance d'Héraclès pour qu'Eurysthée, né avant lui, obtienne la royauté promise par Zeus. Selon Apollodore, la Pythie ordonne au héros de servir Eurysthée à Tirynthe pendant douze ans : aux dix travaux prévus s'en ajoutent deux, le roi refusant d'en compter deux. Les douze sont le lion de Némée, l'hydre, la biche de Cérynie, le sanglier d'Érymanthe, Augias, les oiseaux du Stymphale, le taureau de Crète, les juments de Diomède, la ceinture de l'Amazone, les bœufs de Géryon, les pommes des Hespérides et Cerbère. Mort sur un bûcher au mont Œta, Héraclès est accueilli parmi les dieux.\n\n**Le héros de tous les Grecs.** C'est le héros le plus représenté de l'art grec ; les métopes du temple de Zeus à Olympie, vers 460, montrent la plus ancienne série complète des douze travaux. On lui attribuait la fondation des jeux Olympiques, et les rois de Sparte comme ceux de Macédoine, jusqu'à Alexandre, se disaient ses descendants. Il recevait à la fois un culte de héros et un culte de dieu, ce qui intriguait déjà Hérodote.\n\n**Ce que montre l'archéologie.** Les murailles de Tirynthe, faites de blocs énormes que Pausanias attribuait aux Cyclopes, et son palais datent pour l'essentiel du XIIIe siècle. Plusieurs travaux s'attachent à des paysages réels du Péloponnèse (Némée, le marais de Lerne, le lac Stymphale). Rien, en revanche, ne permet de remonter à un personnage réel derrière ce héros composite.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Homère",
+        "work": "Iliade",
+        "locus": "XIX, 95 à 133"
+      },
+      {
+        "kind": "ancient",
+        "author": "Hésiode",
+        "work": "Théogonie",
+        "locus": "313 à 332"
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "II, 4, 8 à II, 7, 7"
+      },
+      {
+        "kind": "ancient",
+        "author": "Sophocle",
+        "work": "Les Trachiniennes"
+      },
+      {
+        "kind": "ancient",
+        "author": "Euripide",
+        "work": "Héraclès"
+      },
+      {
+        "kind": "ancient",
+        "author": "Hérodote",
+        "work": "Histoires",
+        "locus": "II, 44",
+        "url": `${HERODOTE}:book=2:chapter=44`
+      },
+      {
+        "kind": "ancient",
+        "author": "Pausanias",
+        "work": "Description de la Grèce",
+        "locus": "II, 25, 8 et V, 10, 9",
+        "url": `${PAUSANIAS}:book=5:chapter=10`
+      },
+      {
+        "kind": "ancient",
+        "author": "Eusèbe de Césarée et Jérôme",
+        "work": "Chronique, version latine de Jérôme (éd. R. Helm)",
+        "locus": "p. 90 et 96"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      }
+    ]
+  },
+  {
+    "id": "oedipe-et-les-sept-contre-thebes",
+    "title": "Œdipe et les Sept contre Thèbes",
+    "start": -1260,
+    "end": -1250,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Dates antiques : Eusèbe et Jérôme placent le Sphinx et Œdipe vers 1261 ; le Marbre de Paros (entrée A 22) date de 1251/0 l'expédition d'Adraste contre Thèbes et la fondation des jeux Néméens, que Jérôme met vers 1234 ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "war",
+    "importance": 1,
+    "placeId": "thebes",
+    "people": [
+      "oedipe",
+      "polynice",
+      "adraste"
+    ],
+    "summary": "Abandonné à sa naissance parce qu'un oracle annonçait qu'il tuerait son père, Œdipe tue sans le savoir le roi Laïos, délivre Thèbes du Sphinx et épouse la reine Jocaste, sa mère. La vérité découverte, il se crève les yeux. Ses fils se disputent le trône : Polynice revient avec six chefs menés par Adraste, roi d'Argos, et les deux frères s'entretuent devant les portes de Thèbes.",
+    "body": "**Le mythe.** Exposé sur le Cithéron, Œdipe est élevé à Corinthe. Sur la route de Delphes, il tue un inconnu, Laïos ; à Thèbes, il résout l'énigme du Sphinx et reçoit la main de la reine. Après sa chute, Étéocle refuse de céder le pouvoir à son frère. Les Sept (Adraste, Polynice, Tydée, Capanée, Amphiaraos, Hippomédon, Parthénopée) attaquent chacun une des sept portes et périssent tous, sauf Adraste ; Antigone ensevelit Polynice malgré l'interdiction de Créon. Dix ans plus tard, leurs fils, les Épigones, prennent la ville.\n\n**Une matière pour la tragédie.** Homère connaît déjà la mère et épouse d'Œdipe, qu'il nomme Épicaste, et l'expédition de Tydée. Des épopées perdues, l'*Œdipodie* et la *Thébaïde*, ont nourri les tragiques : Eschyle (*Les Sept contre Thèbes*, 467), Sophocle (*Antigone*, *Œdipe roi*, *Œdipe à Colone*), Euripide (*Les Phéniciennes*). Aristote prend *Œdipe roi* pour modèle de la tragédie. Les Athéniens se flattaient que Thésée eût obtenu la sépulture des Sept, dont ils montraient les tombes à Éleusis.\n\n**Ce que montre l'archéologie.** Le palais mycénien de la Cadmée, riche en tablettes en linéaire B, est détruit par un incendie au XIIIe siècle, à une date discutée. Certains y ont vu le souvenir de la guerre des Sept ou des Épigones ; rien ne permet de le confirmer. Les sept portes que décrit Pausanias sont celles de la ville classique, et leur nombre semble autant poétique que topographique.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Homère",
+        "work": "Odyssée",
+        "locus": "XI, 271 à 280"
+      },
+      {
+        "kind": "ancient",
+        "author": "Homère",
+        "work": "Iliade",
+        "locus": "IV, 376 à 398"
+      },
+      {
+        "kind": "ancient",
+        "author": "Eschyle",
+        "work": "Les Sept contre Thèbes"
+      },
+      {
+        "kind": "ancient",
+        "author": "Sophocle",
+        "work": "Œdipe roi ; Antigone"
+      },
+      {
+        "kind": "ancient",
+        "author": "Euripide",
+        "work": "Les Phéniciennes"
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "III, 5, 7 à III, 7, 2"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pausanias",
+        "work": "Description de la Grèce",
+        "locus": "IX, 5, 10 à 12 et IX, 8, 4 à 7",
+        "url": `${PAUSANIAS}:book=9:chapter=8`
+      },
+      {
+        "kind": "ancient",
+        "author": "Marbre de Paros",
+        "work": "Chronique de Paros (FGrHist 239)",
+        "locus": "A, 22"
+      },
+      {
+        "kind": "ancient",
+        "author": "Eusèbe de Césarée et Jérôme",
+        "work": "Chronique, version latine de Jérôme (éd. R. Helm)",
+        "locus": "p. 88 et 90"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      }
+    ]
+  },
+  {
     "id": "destruction-des-palais-myceniens",
     "title": "Destruction des palais mycéniens",
     "start": -1199,
@@ -169,6 +773,74 @@ export const events: HistoricalEvent[] = [
     ]
   },
   {
+    "id": "jugement-de-paris-et-enlevement-d-helene",
+    "title": "Le jugement de Pâris et l'enlèvement d'Hélène",
+    "start": -1194,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Date déduite : peu avant les dix ans de guerre comptés à partir de la prise de Troie selon Ératosthène (1184/3), date suivie par ce site. Eusèbe et Jérôme placent l'enlèvement vers 1191, le Marbre de Paros (entrée A 23) le départ des Grecs en 1218/7 ; dans l'Iliade, Hélène dit être partie depuis vingt ans ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "war",
+    "importance": 2,
+    "placeId": "sparte",
+    "people": [
+      "paris",
+      "helene",
+      "menelas"
+    ],
+    "summary": "Aux noces de Pélée et de Thétis, Éris, la Discorde, lance une pomme d'or destinée à la plus belle. Choisi pour juger entre Héra, Athéna et Aphrodite, le prince troyen Pâris donne la pomme à Aphrodite, qui lui promet la plus belle des femmes : Hélène, épouse de Ménélas, roi de Sparte. Pâris l'emmène à Troie, et les princes grecs, liés par un serment, partent la reprendre.",
+    "body": "**Le mythe.** Le récit était celui des *Chants cypriens*, une épopée perdue connue par un résumé antique ; l'*Iliade* n'y fait qu'une allusion. Les anciens prétendants d'Hélène avaient juré de défendre son époux. Reçu en hôte à Sparte, Pâris profite d'un voyage de Ménélas en Crète pour partir avec Hélène et des trésors ; Ménélas et son frère Agamemnon rassemblent alors l'armée grecque à Aulis.\n\n**Coupable ou victime ?** Les Grecs ont beaucoup discuté de la responsabilité d'Hélène. Le poète Stésichore, selon la légende, perdit la vue pour l'avoir accusée et la retrouva en se rétractant ; Euripide, dans *Hélène* (412), et Hérodote rapportent une version où la vraie Hélène reste en Égypte pendant que les Grecs se battent pour un fantôme. Le jugement de Pâris est l'un des sujets favoris des peintres de vases. À Sparte, Hélène était honorée comme une déesse.\n\n**Ce que montre l'archéologie.** Au Ménélaion de Thérapné, près de Sparte, un sanctuaire d'Hélène et de Ménélas, actif à partir de 700 environ, a livré des dédicaces à Hélène ; il domine les restes d'une grande demeure mycénienne. Depuis 2009, les fouilles d'Ayios Vasileios, au sud de Sparte, ont mis au jour un palais avec des tablettes en linéaire B, centre de la Laconie mycénienne. Aucun de ces textes ne nomme Ménélas ou Hélène.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Homère",
+        "work": "Iliade",
+        "locus": "XXIV, 25 à 30 et 765 et 766"
+      },
+      {
+        "kind": "ancient",
+        "author": "Proclos",
+        "work": "Chrestomathie (résumé des Chants cypriens)"
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "III, 10, 9 ; Épitomé, III, 1 à 6"
+      },
+      {
+        "kind": "ancient",
+        "author": "Euripide",
+        "work": "Hélène"
+      },
+      {
+        "kind": "ancient",
+        "author": "Hérodote",
+        "work": "Histoires",
+        "locus": "II, 112 à 120 et VI, 61",
+        "url": `${HERODOTE}:book=2:chapter=112`
+      },
+      {
+        "kind": "ancient",
+        "author": "Marbre de Paros",
+        "work": "Chronique de Paros (FGrHist 239)",
+        "locus": "A, 23"
+      },
+      {
+        "kind": "ancient",
+        "author": "Eusèbe de Césarée et Jérôme",
+        "work": "Chronique, version latine de Jérôme (éd. R. Helm)",
+        "locus": "p. 96"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      }
+    ]
+  },
+  {
     "id": "guerre-de-troie",
     "title": "Guerre de Troie",
     "start": -1193,
@@ -177,7 +849,7 @@ export const events: HistoricalEvent[] = [
     "certainty": "legendary",
     "certaintyNote": "Récit légendaire. Les Anciens proposaient des dates allant de 1334 (Douris de Samos) à 1184/1183 (Ératosthène) ; le site suit Ératosthène, avec dix ans de siège.",
     "era": "bronze",
-    "track": "myceniens",
+    "track": "mythes",
     "category": "war",
     "importance": 2,
     "placeId": "troie",
@@ -222,6 +894,196 @@ export const events: HistoricalEvent[] = [
         "kind": "modern",
         "author": "Eric H. Cline",
         "work": "The Trojan War: A Very Short Introduction, Oxford, Oxford University Press, 2013"
+      }
+    ]
+  },
+  {
+    "id": "meurtre-d-agamemnon-et-vengeance-d-oreste",
+    "title": "Le meurtre d'Agamemnon et la vengeance d'Oreste",
+    "start": -1183,
+    "end": -1175,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Dates déduites de la prise de Troie selon Ératosthène (1184/3) et de l'Odyssée, qui fait régner Égisthe sept ans sur Mycènes avant le retour d'Oreste la huitième année ; le Marbre de Paros (entrée A 25) date de 1208/7 l'acquittement d'Oreste devant l'Aréopage, un an après sa propre date de la prise de Troie ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "politics",
+    "importance": 2,
+    "placeId": "mycenes",
+    "people": [
+      "agamemnon",
+      "clytemnestre",
+      "oreste"
+    ],
+    "summary": "Revenu vainqueur de Troie, Agamemnon, roi de Mycènes, est assassiné par sa femme Clytemnestre et par son amant Égisthe. Sept ans plus tard, son fils Oreste revient le venger en tuant Égisthe et sa propre mère ; poursuivi par les Érinyes, il est jugé et acquitté à Athènes. Ce meurtre clôt la sanglante histoire de la maison d'Atrée.",
+    "body": "**Une maison maudite.** Les crimes se succèdent dans la famille depuis Tantale et Pélops : Atrée sert à son frère Thyeste la chair de ses propres enfants, et Égisthe, fils de Thyeste, venge son père. Agamemnon, fils d'Atrée, a sacrifié sa fille Iphigénie à Aulis pour obtenir des vents favorables, ce que Clytemnestre ne lui pardonne pas.\n\n**Des récits concurrents.** Dans l'*Odyssée*, Égisthe est le principal meurtrier et la vengeance d'Oreste sert de modèle à Télémaque. L'*Orestie* d'Eschyle (458) fait de Clytemnestre la meurtrière, qui frappe son mari dans son bain, et fonde à Athènes le tribunal de l'Aréopage pour juger Oreste, quelques années après la réforme qui avait réduit ses pouvoirs. Sophocle et Euripide ont chacun écrit une *Électre*. Vers 550, les Spartiates rapportèrent de Tégée de prétendus ossements d'Oreste, pour s'approprier le héros.\n\n**Ce que montre l'archéologie.** Le masque d'or trouvé par Schliemann en 1876 dans le cercle A de Mycènes, qu'il croyait celui d'Agamemnon, date du XVIe siècle, trois siècles trop tôt. Le « trésor d'Atrée » et la « tombe de Clytemnestre » sont des tombes à coupole du XIVe ou du XIIIe siècle, nommées par les voyageurs et les archéologues à partir de Pausanias, qui vit à Mycènes des tombes attribuées aux Atrides. La citadelle subit des destructions vers 1200 puis décline.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Homère",
+        "work": "Odyssée",
+        "locus": "I, 29 à 43 ; III, 193 à 200 et 303 à 310 ; XI, 405 à 434"
+      },
+      {
+        "kind": "ancient",
+        "author": "Eschyle",
+        "work": "Orestie (Agamemnon, Les Choéphores, Les Euménides)"
+      },
+      {
+        "kind": "ancient",
+        "author": "Sophocle",
+        "work": "Électre"
+      },
+      {
+        "kind": "ancient",
+        "author": "Hérodote",
+        "work": "Histoires",
+        "locus": "I, 67 et 68",
+        "url": `${HERODOTE}:book=1:chapter=67`
+      },
+      {
+        "kind": "ancient",
+        "author": "Pausanias",
+        "work": "Description de la Grèce",
+        "locus": "II, 16, 6 et 7",
+        "url": `${PAUSANIAS}:book=2:chapter=16`
+      },
+      {
+        "kind": "ancient",
+        "author": "Marbre de Paros",
+        "work": "Chronique de Paros (FGrHist 239)",
+        "locus": "A, 24 et 25"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      }
+    ]
+  },
+  {
+    "id": "errances-d-ulysse",
+    "title": "Les errances d'Ulysse",
+    "start": -1183,
+    "end": -1173,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Dates déduites de la prise de Troie selon Ératosthène (1184/3) et des dix ans de voyage que l'Odyssée prête à Ulysse, rentré à Ithaque la vingtième année après son départ ; récit légendaire.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "culture",
+    "importance": 1,
+    "placeId": "ithaque",
+    "people": [
+      "ulysse",
+      "penelope"
+    ],
+    "summary": "Après la chute de Troie, Ulysse, roi d'Ithaque, met dix ans à rentrer chez lui. Poursuivi par la colère de Poséidon, dont il a aveuglé le fils, le Cyclope Polyphème, il perd tous ses compagnons et reste sept ans chez la nymphe Calypso, avant que les Phéaciens le ramènent à Ithaque. Il y massacre les prétendants qui pressaient sa femme Pénélope de se remarier.",
+    "body": "**Le récit.** L'*Odyssée*, composée vers la fin du VIIIe ou au VIIe siècle, entrelace le voyage de Télémaque, parti chercher des nouvelles de son père à Pylos et à Sparte, et le récit qu'Ulysse fait de ses aventures chez les Phéaciens : les Lotophages, le Cyclope, Éole et l'outre des vents, les Lestrygons, Circé, la descente aux Enfers, les Sirènes, Charybde et Scylla, les vaches du Soleil. De retour sous les traits d'un mendiant, il se fait reconnaître et reprend sa maison.\n\n**Une géographie disputée.** Les Anciens ont cherché les escales d'Ulysse : Thucydide place les Phéaciens à Corcyre, et la tradition met les Cyclopes et Scylla en Sicile ou près du détroit de Messine. Ératosthène s'en moquait déjà, estimant qu'on trouverait la route d'Ulysse le jour où l'on trouverait le cordonnier qui avait cousu l'outre des vents. Ulysse, l'homme rusé, est admiré ou critiqué selon les auteurs, jusqu'à devenir chez Sophocle un politique sans scrupules.\n\n**Ce que montre l'archéologie.** À Ithaque, aucun palais mycénien n'a été identifié avec certitude ; la grotte de la baie de Polis a livré des trépieds du IXe et du VIIIe siècle et un masque d'époque hellénistique portant une dédicace à Ulysse, signe d'un culte du héros. Certains chercheurs placent l'Ithaque d'Homère sur une autre île, hypothèse non démontrée. À Pylos, où Télémaque rend visite à Nestor, le « palais de Nestor », fouillé à partir de 1939, a livré plus d'un millier de tablettes en linéaire B ; il est détruit par le feu vers 1180.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Homère",
+        "work": "Odyssée",
+        "locus": "I, 1 à 21 ; IX à XII ; XXII et XXIII"
+      },
+      {
+        "kind": "ancient",
+        "author": "Thucydide",
+        "work": "Histoire de la guerre du Péloponnèse",
+        "locus": "I, 25, 4",
+        "url": `${THUCYDIDE}:book=1:chapter=25`
+      },
+      {
+        "kind": "ancient",
+        "author": "Strabon",
+        "work": "Géographie",
+        "locus": "I, 2, 15 (le mot d'Ératosthène)",
+        "url": `${STRABON}:book=1:chapter=2:section=15`
+      },
+      {
+        "kind": "ancient",
+        "author": "Sophocle",
+        "work": "Philoctète"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
+      },
+      {
+        "kind": "modern",
+        "author": "Irad Malkin",
+        "work": "The Returns of Odysseus: Colonization and Ethnicity, Berkeley, University of California Press, 1998"
+      }
+    ]
+  },
+  {
+    "id": "retour-des-heraclides",
+    "title": "Le retour des Héraclides",
+    "start": -1103,
+    "precision": "decade",
+    "certainty": "legendary",
+    "certaintyNote": "Date d'Ératosthène, qui compte quatre-vingts ans entre la prise de Troie (1184/3) et le retour des Héraclides (1104/3), comme Thucydide (I, 12) ; récit légendaire, que les Anciens tenaient pour l'histoire de l'arrivée des Doriens.",
+    "era": "bronze",
+    "track": "mythes",
+    "category": "war",
+    "importance": 2,
+    "placeId": "sparte",
+    "people": [
+      "heracles"
+    ],
+    "summary": "Quatre-vingts ans après la prise de Troie, selon Thucydide, les descendants d'Héraclès, chassés du Péloponnèse après sa mort, y reviennent à la tête des Doriens. Ils se partagent le pays par tirage au sort : Téménos reçoit Argos, Cresphontès la Messénie, et les fils jumeaux d'Aristodèmos, Eurysthénès et Proclès, la Laconie, d'où descendent les deux familles royales de Sparte.",
+    "body": "**Le mythe.** Après la mort d'Héraclès, ses fils, persécutés par Eurysthée, se réfugient à Athènes. Plusieurs tentatives de retour échouent, car l'oracle parlait de la « troisième récolte », c'est-à-dire de la troisième génération. Les arrière-petits-fils du héros franchissent enfin le golfe de Corinthe à Naupacte, guidés par l'Étolien Oxylos, qui reçoit l'Élide ; Cresphontès obtient la Messénie par une ruse lors du tirage au sort.\n\n**Une charte politique.** Le récit justifiait la domination des Doriens dans le Péloponnèse : les deux dynasties royales de Sparte, les Agiades et les Eurypontides, remontaient à Héraclès, comme les rois d'Argos, et les rois de Macédoine se disaient issus de Téménos. Le poète spartiate Tyrtée rappelait que Zeus avait donné la cité aux Héraclides, et Euripide, dans *Les Héraclides*, rappelait aux Spartiates ce qu'ils devaient à Athènes.\n\n**Ce que dit l'archéologie.** Au XIXe siècle, on a lu dans ce mythe le souvenir d'une « invasion dorienne » qui aurait détruit les palais mycéniens. La plupart des archéologues en doutent aujourd'hui : aucune culture matérielle propre à des nouveaux venus n'a été identifiée, les destructions de 1200 environ s'étalent sur plusieurs décennies et ont des causes variées, et la date antique tombe un siècle plus tard. La répartition des dialectes doriens reste le principal indice d'un déplacement de populations, dont l'ampleur et la date sont discutées.",
+    "sources": [
+      {
+        "kind": "ancient",
+        "author": "Thucydide",
+        "work": "Histoire de la guerre du Péloponnèse",
+        "locus": "I, 12",
+        "url": `${THUCYDIDE}:book=1:chapter=12`
+      },
+      {
+        "kind": "ancient",
+        "author": "Hérodote",
+        "work": "Histoires",
+        "locus": "VI, 52 et VIII, 137",
+        "url": `${HERODOTE}:book=6:chapter=52`
+      },
+      {
+        "kind": "ancient",
+        "author": "Apollodore",
+        "work": "Bibliothèque",
+        "locus": "II, 8, 2 à 5"
+      },
+      {
+        "kind": "ancient",
+        "author": "Pausanias",
+        "work": "Description de la Grèce",
+        "locus": "II, 18, 7 à 9",
+        "url": `${PAUSANIAS}:book=2:chapter=18`
+      },
+      {
+        "kind": "ancient",
+        "author": "Clément d'Alexandrie",
+        "work": "Stromates",
+        "locus": "I, 21, 138 (dates d'Ératosthène)"
+      },
+      {
+        "kind": "ancient",
+        "author": "Tyrtée",
+        "work": "Fragments",
+        "locus": "fr. 2 West"
+      },
+      {
+        "kind": "modern",
+        "author": "Jonathan M. Hall",
+        "work": "Ethnic Identity in Greek Antiquity, Cambridge, Cambridge University Press, 1997"
+      },
+      {
+        "kind": "modern",
+        "author": "Timothy Gantz",
+        "work": "Early Greek Myth: A Guide to Literary and Artistic Sources, Baltimore, Johns Hopkins University Press, 1993"
       }
     ]
   },
@@ -676,7 +1538,7 @@ export const events: HistoricalEvent[] = [
       "ephialte"
     ],
     "summary": "À la fin de l'été 480, au défilé des Thermopyles, quelques milliers de Grecs commandés par Léonidas, roi de Sparte, arrêtent pendant deux jours l'immense armée de Xerxès. Tournés par un sentier de montagne, ils sont anéantis le troisième jour : Léonidas et ses 300 Spartiates meurent avec les Thespiens restés à leurs côtés.",
-    "body": "**Un défilé à tenir.** Pour arrêter l'invasion de Xerxès, les Grecs coalisés occupent le passage étroit entre la montagne et le golfe Maliaque, tandis que leur flotte tient le cap Artémision. Hérodote compte environ 5 200 hoplites venus du Péloponnèse et de Béotie, dont 300 Spartiates, auxquels s'ajoutent les Locriens et un millier de Phocidiens ; Diodore donne environ 7 400 hommes. Les « 300 » ne sont donc qu'une partie de l'armée grecque.\n\n**Trois jours.** Pendant deux jours, les assauts perses, y compris ceux des Immortels, échouent dans le défilé. Un homme de la région, Éphialte, révèle alors le sentier de l'Anopée, qui contourne la position. Léonidas renvoie la plus grande partie des troupes et reste avec les Spartiates, 700 Thespiens et 400 Thébains ; ils sont encerclés et tués le troisième jour, sauf des Thébains qui se rendent.\n\n**Les chiffres.** Hérodote attribue à Xerxès plus de 5 millions d'hommes en comptant les non-combattants ; les historiens modernes estiment son armée de terre entre 100 000 et 300 000 hommes environ. Il compte 20 000 morts perses aux Thermopyles, chiffre invérifiable. L'épitaphe attribuée à Simonide (« Étranger, va dire aux Lacédémoniens que nous gisons ici, obéissant à leurs ordres ») a fait de cette défaite un symbole.",
+    "body": "**Un défilé à tenir.** Pour arrêter l'invasion de Xerxès, les Grecs coalisés occupent le passage étroit entre la montagne et le golfe Maliaque, tandis que leur flotte tient le cap Artémision. Hérodote (VII, 202 et 203) compte 3 100 hoplites du Péloponnèse, dont 300 Spartiates, puis 700 Thespiens et 400 Thébains, soit 4 200 hommes, auxquels s'ajoutent 1 000 Phocidiens et les Locriens d'Oponte venus en masse, qu'il ne chiffre pas : plus de 5 200 hommes au total. Diodore (XI, 4), qui compte les Locriens, arrive à environ 7 400 hommes, et les historiens modernes retiennent le plus souvent environ 7 000. Les « 300 » ne sont donc qu'une partie de l'armée grecque.\n\n**Trois jours.** Pendant deux jours, les assauts perses, y compris ceux des Immortels, échouent dans le défilé. Un homme de la région, Éphialte, révèle alors le sentier de l'Anopée, qui contourne la position. Léonidas renvoie la plus grande partie des troupes et reste avec les Spartiates, 700 Thespiens et 400 Thébains ; ils sont encerclés et tués le troisième jour, sauf des Thébains qui se rendent.\n\n**Les chiffres.** Hérodote attribue à Xerxès plus de 5 millions d'hommes en comptant les non-combattants ; les historiens modernes estiment son armée de terre entre 100 000 et 300 000 hommes environ. Il compte 20 000 morts perses aux Thermopyles, chiffre invérifiable. L'épitaphe attribuée à Simonide (« Étranger, va dire aux Lacédémoniens que nous gisons ici, obéissant à leurs ordres ») a fait de cette défaite un symbole.",
     "sources": [
       {
         "kind": "ancient",
@@ -1225,7 +2087,7 @@ export const events: HistoricalEvent[] = [
       "agrippa"
     ],
     "summary": "Le 2 septembre 31, devant Actium, la flotte d'Octavien commandée par Agrippa bat celle de Marc Antoine et de Cléopâtre VII. Un an plus tard, Octavien entre dans Alexandrie : Antoine puis Cléopâtre se donnent la mort, en août 30. L'Égypte passe sous l'autorité de Rome, et le dernier royaume issu de l'empire d'Alexandre disparaît.",
-    "body": "**La dernière reine.** Cléopâtre VII, reine depuis 51, est la dernière souveraine de la dynastie fondée par Ptolémée, fils de Lagos ; c'est aussi, selon Plutarque, la première de sa famille à parler égyptien. Alliée puis épouse de Marc Antoine, maître de l'Orient romain, elle reçoit de lui des territoires qui rappellent l'empire lagide d'autrefois (donations d'Alexandrie, 34).\n\n**Actium.** Octavien fait déclarer la guerre à Cléopâtre en 32. Bloquée dans le golfe d'Ambracie, la flotte d'Antoine tente une sortie le 2 septembre 31 ; Cléopâtre prend le large avec soixante navires, Antoine la suit, et le reste de sa flotte se rend. Plutarque donne à Antoine au moins 500 navires de guerre au début de la campagne, et 250 à Octavien ; le nombre réellement engagé reste discuté.\n\n**Alexandrie.** Le 1er août 30, Octavien entre dans Alexandrie et Antoine se tue. Cléopâtre, qui refuse de figurer au triomphe d'Octavien, se donne la mort quelques jours plus tard, le 10 ou le 12 août selon les calculs, par la morsure d'un aspic selon la tradition ; Plutarque reconnaît que personne ne connaît la vérité. Son fils Césarion est exécuté, et l'Égypte est confiée à un préfet d'Octavien.",
+    "body": "**La dernière reine.** Cléopâtre VII, reine depuis 51, est la dernière souveraine de la dynastie fondée par Ptolémée, fils de Lagos ; c'est aussi, selon Plutarque, la première de sa famille à parler égyptien. Alliée puis épouse de Marc Antoine, maître de l'Orient romain, elle reçoit de lui des territoires qui rappellent l'empire lagide d'autrefois (donations d'Alexandrie, 34).\n\n**Actium.** Octavien fait déclarer la guerre à Cléopâtre en 32. Bloquée dans le golfe d'Ambracie, la flotte d'Antoine tente une sortie le 2 septembre 31 ; Cléopâtre prend le large avec soixante navires, Antoine la suit, et le reste de sa flotte se rend. Plutarque donne à Antoine au moins 500 navires de guerre au début de la campagne, et 250 à Octavien ; le nombre réellement engagé reste discuté.\n\n**Alexandrie.** Le 1er août 30, Octavien entre dans Alexandrie et Antoine se tue. Cléopâtre, qui refuse de figurer au triomphe d'Octavien, se donne la mort quelques jours plus tard, le 10 ou le 12 août selon les calculs, par la morsure d'un aspic selon la tradition ; Plutarque reconnaît que personne ne connaît la vérité. Son fils Césarion est exécuté, et l'Égypte est confiée à un préfet d'Octavien.\n\nLa suite de l'histoire, avec Rome devenue empire, se lit sur [Roma, de Romulus à Constantin XI](https://maximator13.github.io/roma/#/evenement/auguste-princeps).",
     "sources": [
       {
         "kind": "ancient",

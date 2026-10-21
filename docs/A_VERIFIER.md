@@ -109,3 +109,14 @@ Détail et sources dans `docs/scenes/thermopyles.md`, section « Points à véri
 - **Siège de Xerxès.** Éperon à l'ouest d'Anthéla selon Kraft et al. (1987) ; aucune source antique ne le situe.
 - **Thébains.** Otages et transfuges selon Hérodote (VII, 222 et 233) ; défendus par Plutarque (De la malignité d'Hérodote, 31, cité par Evans, GRBS 5, 1964) ; « de l'autre parti » chez Diodore (XI, 4, 7).
 - **Équipement spartiate.** Lambda sur les boucliers attesté seulement par Eupolis (fragment 394 Kassel-Austin, transmis par Photios, sens discuté) ; manteau rouge décrit au IVe siècle (Xénophon, Constitution des Lacédémoniens, 11, 3). Hypothèse : emblèmes individuels en 480, manteau au camp seulement.
+
+## Mythes et héros
+
+- **Numérotation du Marbre de Paros.** Numérotation de Jacoby suivie (Cécrops = A 1, Troie = A 24), en accord avec la fiche de la guerre de Troie ; à contrôler sur FGrHist 239 ou l'édition de Rotstein.
+- **Dates de la Chronique d'Eusèbe et Jérôme** (vers 1307, 1267, 1261, 1245, 1234, 1232, 1191) : repères approximatifs à un ou deux ans près, à vérifier sur l'édition de Helm.
+- **Marbre de Paros A 19** : lu comme le châtiment exigé par Minos après la famine d'Athènes ; le mot « tribut » n'y figure peut-être pas.
+- **Dates calculées** : Pâris, Agamemnon et Ulysse sont datés à partir d'Ératosthène (chute de Troie en 1184/3) et des durées données par Homère ; Persée seulement d'après Jérôme.
+- **Archéologie à confirmer** : tablette KN Gg 702 (« Maîtresse du labyrinthe ») ; sceaux-cylindres de la Cadmée (1963 et 1964) ; toponyme « Tanaja » de la liste d'Amenhotep III (hypothèse) ; Iolcos identifiée à Dimini et au Kastro de Volos ; palais d'Ayios Vasileios ; dessins de 1674 du fronton ouest du Parthénon.
+- **Référence** : titre exact de l'ouvrage d'Aravantinos, Godart et Sacconi (2001) à vérifier.
+- **Catégories** : Argonautes, Héraclès et Ulysse classés en culture, Deucalion en nature ; choix discutable.
+

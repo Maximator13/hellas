@@ -181,5 +181,61 @@ export const places: Place[] = [
     "lat": 38.9236,
     "lon": 20.7498,
     "pleiadesId": 530772
+  },
+  {
+    "id": "parnasse",
+    "name": "Mont Parnasse (Phocide)",
+    "ancientName": "Parnassos",
+    "lat": 38.5352,
+    "lon": 22.6221,
+    "pleiadesId": 541012
+  },
+  {
+    "id": "thebes",
+    "name": "Thèbes et sa citadelle, la Cadmée (Béotie)",
+    "ancientName": "Thēbai, Kadmeia",
+    "lat": 38.3199,
+    "lon": 23.3177,
+    "pleiadesId": 541138
+  },
+  {
+    "id": "argos",
+    "name": "Argos (Argolide)",
+    "ancientName": "Argos",
+    "lat": 37.6309,
+    "lon": 22.7204,
+    "pleiadesId": 570106
+  },
+  {
+    "id": "tirynthe",
+    "name": "Tirynthe (Argolide)",
+    "ancientName": "Tiryns",
+    "lat": 37.5993,
+    "lon": 22.8,
+    "pleiadesId": 570740
+  },
+  {
+    "id": "iolcos",
+    "name": "Iolcos (Volos, Thessalie)",
+    "ancientName": "Iōlkos",
+    "lat": 39.3663,
+    "lon": 22.9689,
+    "pleiadesId": 540837
+  },
+  {
+    "id": "sparte",
+    "name": "Sparte (Laconie)",
+    "ancientName": "Sparta, Lakedaimōn",
+    "lat": 37.0818,
+    "lon": 22.4247,
+    "pleiadesId": 570685
+  },
+  {
+    "id": "ithaque",
+    "name": "Ithaque (île ionienne)",
+    "ancientName": "Ithakē",
+    "lat": 38.4003,
+    "lon": 20.6928,
+    "pleiadesId": 530906
   }
 ]

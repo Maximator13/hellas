@@ -2,6 +2,12 @@ import type { Person } from './schema.ts'
 
 export const people: Person[] = [
   {
+    "id": "adraste",
+    "name": "Adraste",
+    "role": "Roi légendaire d'Argos, chef de l'expédition des Sept contre Thèbes et seul survivant des Sept",
+    "certainty": "legendary"
+  },
+  {
     "id": "agamemnon",
     "name": "Agamemnon",
     "role": "Roi légendaire de Mycènes, chef des Grecs devant Troie selon l'Iliade",
@@ -50,6 +56,12 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "ariane",
+    "name": "Ariane",
+    "role": "Fille légendaire de Minos, qui aide Thésée à sortir du Labyrinthe",
+    "certainty": "legendary"
+  },
+  {
     "id": "aristagoras",
     "name": "Aristagoras de Milet",
     "role": "Tyran de Milet, instigateur de la révolte de l'Ionie en 499 av. J.-C.",
@@ -82,6 +94,12 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "cecrops",
+    "name": "Cécrops",
+    "role": "Premier roi légendaire d'Athènes, mi-homme mi-serpent, témoin de la dispute d'Athéna et de Poséidon",
+    "certainty": "legendary"
+  },
+  {
     "id": "cleombrote-ier",
     "name": "Cléombrote Ier",
     "role": "Roi de Sparte de la famille des Agiades, tué à Leuctres",
@@ -103,10 +121,22 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "clytemnestre",
+    "name": "Clytemnestre",
+    "role": "Reine légendaire de Mycènes, épouse et meurtrière d'Agamemnon",
+    "certainty": "legendary"
+  },
+  {
     "id": "corebe",
     "name": "Corèbe d'Élis",
     "role": "Premier vainqueur inscrit sur la liste olympique, à la course du stade (776 av. J.-C. selon la tradition)",
     "certainty": "traditional"
+  },
+  {
+    "id": "danaos",
+    "name": "Danaos",
+    "role": "Roi légendaire d'Argos venu d'Égypte, père des cinquante Danaïdes",
+    "certainty": "legendary"
   },
   {
     "id": "darius-ier",
@@ -144,16 +174,16 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "deucalion",
+    "name": "Deucalion",
+    "role": "Fils légendaire de Prométhée, rescapé du déluge avec sa femme Pyrrha, ancêtre des Hellènes",
+    "certainty": "legendary"
+  },
+  {
     "id": "diaios",
     "name": "Diaios de Mégalopolis",
     "role": "Stratège de la ligue achéenne lors de la guerre contre Rome, en 146 av. J.-C.",
     "died": -145,
-    "certainty": "attested"
-  },
-  {
-    "id": "ephialte",
-    "name": "Éphialte, fils d'Eurydémos",
-    "role": "Malien qui guide les Perses par le sentier de l'Anopée aux Thermopyles",
     "certainty": "attested"
   },
   {
@@ -164,10 +194,34 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "ephialte",
+    "name": "Éphialte, fils d'Eurydémos",
+    "role": "Malien qui guide les Perses par le sentier de l'Anopée aux Thermopyles",
+    "certainty": "attested"
+  },
+  {
     "id": "eurybiade",
     "name": "Eurybiade",
     "role": "Navarque spartiate, commandant en chef de la flotte grecque en 480 av. J.-C.",
     "certainty": "attested"
+  },
+  {
+    "id": "eurysthee",
+    "name": "Eurysthée",
+    "role": "Roi légendaire de Mycènes et de Tirynthe, qui impose ses travaux à Héraclès",
+    "certainty": "legendary"
+  },
+  {
+    "id": "helene",
+    "name": "Hélène",
+    "role": "Reine légendaire de Sparte, épouse de Ménélas, dont l'enlèvement par Pâris cause la guerre de Troie",
+    "certainty": "legendary"
+  },
+  {
+    "id": "heracles",
+    "name": "Héraclès",
+    "role": "Héros légendaire, fils de Zeus et d'Alcmène, auteur des douze travaux, ancêtre revendiqué des rois de Sparte et de Macédoine",
+    "certainty": "legendary"
   },
   {
     "id": "histiee",
@@ -193,6 +247,12 @@ export const people: Person[] = [
     "name": "Isagoras",
     "role": "Archonte d'Athènes en 508/507 av. J.-C., rival de Clisthène soutenu par Sparte",
     "certainty": "attested"
+  },
+  {
+    "id": "jason",
+    "name": "Jason",
+    "role": "Héros légendaire d'Iolcos, chef des Argonautes partis chercher la Toison d'or",
+    "certainty": "legendary"
   },
   {
     "id": "leonidas",
@@ -224,11 +284,29 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "medee",
+    "name": "Médée",
+    "role": "Magicienne légendaire, fille du roi de Colchide Aiétès, qui aide Jason puis, selon Euripide, tue ses propres enfants",
+    "certainty": "legendary"
+  },
+  {
+    "id": "menelas",
+    "name": "Ménélas",
+    "role": "Roi légendaire de Sparte, frère d'Agamemnon et époux d'Hélène",
+    "certainty": "legendary"
+  },
+  {
     "id": "miltiade",
     "name": "Miltiade le Jeune",
     "role": "Stratège athénien, artisan de la victoire de Marathon",
     "died": -488,
     "certainty": "attested"
+  },
+  {
+    "id": "minos",
+    "name": "Minos",
+    "role": "Roi légendaire de Cnossos, fils de Zeus et d'Europe, maître des mers selon Thucydide",
+    "certainty": "legendary"
   },
   {
     "id": "mummius",
@@ -251,6 +329,24 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "oedipe",
+    "name": "Œdipe",
+    "role": "Roi légendaire de Thèbes, meurtrier de son père et époux de sa mère sans le savoir",
+    "certainty": "legendary"
+  },
+  {
+    "id": "oreste",
+    "name": "Oreste",
+    "role": "Fils légendaire d'Agamemnon, qui venge son père en tuant sa mère Clytemnestre",
+    "certainty": "legendary"
+  },
+  {
+    "id": "paris",
+    "name": "Pâris (Alexandre)",
+    "role": "Prince légendaire de Troie, fils de Priam, ravisseur d'Hélène",
+    "certainty": "legendary"
+  },
+  {
     "id": "parmenion",
     "name": "Parménion",
     "role": "Général macédonien, second de Philippe II puis d'Alexandre, exécuté sur ordre d'Alexandre",
@@ -263,6 +359,12 @@ export const people: Person[] = [
     "role": "Général thébain, chef du Bataillon sacré, tué à Cynoscéphales en Thessalie",
     "died": -363,
     "certainty": "attested"
+  },
+  {
+    "id": "penelope",
+    "name": "Pénélope",
+    "role": "Reine légendaire d'Ithaque, épouse fidèle d'Ulysse",
+    "certainty": "legendary"
   },
   {
     "id": "perdiccas",
@@ -278,6 +380,12 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "persee",
+    "name": "Persée",
+    "role": "Héros légendaire, fils de Zeus et de Danaé, vainqueur de la Gorgone, fondateur de Mycènes selon Pausanias",
+    "certainty": "legendary"
+  },
+  {
     "id": "phidias",
     "name": "Phidias",
     "role": "Sculpteur athénien, auteur de l'Athéna Parthénos et du Zeus d'Olympie, maître du décor du Parthénon",
@@ -290,6 +398,12 @@ export const people: Person[] = [
     "born": -381,
     "died": -335,
     "certainty": "attested"
+  },
+  {
+    "id": "polynice",
+    "name": "Polynice",
+    "role": "Fils légendaire d'Œdipe, qui mène les Sept contre Thèbes pour reprendre le trône à son frère Étéocle",
+    "certainty": "legendary"
   },
   {
     "id": "protis",
@@ -311,10 +425,22 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "thesee",
+    "name": "Thésée",
+    "role": "Roi légendaire d'Athènes, vainqueur du Minotaure, à qui les Athéniens attribuaient l'unification de l'Attique",
+    "certainty": "legendary"
+  },
+  {
     "id": "thucydide",
     "name": "Thucydide",
     "role": "Historien athénien de la guerre du Péloponnèse, stratège exilé en 424 av. J.-C.",
     "certainty": "attested"
+  },
+  {
+    "id": "ulysse",
+    "name": "Ulysse (Odysseus)",
+    "role": "Roi légendaire d'Ithaque, héros de l'Odyssée",
+    "certainty": "legendary"
   },
   {
     "id": "xerxes",
