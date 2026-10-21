@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.vitest/
+reports/
+*.local
+.cache/
+public/assets/
+__pycache__/
