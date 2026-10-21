@@ -157,13 +157,15 @@ Vingt événements, sur toutes les époques et plusieurs pistes ; cinq ne sont p
 
 Hors phase 1 : colonies en points (phase 2), cités tracées à la main (phase 2), camps grecs et perses du moteur de bataille, ordre dorique du kit Blender (phases 2 et 4).
 
-## 8. Décisions à prendre
+## 8. Décisions prises (21 octobre 2026)
 
-1. Bornes : de 2000 (prologue) à 30. Recommandé.
-2. Ajouter une catégorie `nature` (Théra, séisme de Sparte en 464, engloutissement d'Hélikè en 373, chute du Colosse vers 227). Recommandé.
-3. Relief : option A, puis B en phase 2 si besoin. Recommandé.
-4. `robots.txt` : il n'est lu qu'à la racine du domaine (`maximator13.github.io/robots.txt`, aujourd'hui en 404). Roma s'en passe. Option recommandée : un petit dépôt public `maximator13.github.io` avec un `robots.txt` qui déclare les sitemaps de Roma et de Hellas (sert aussi à Roma).
-5. Police des titres : Didact Gothic en provisoire, choix définitif en phase 2. Recommandé.
-6. Mesure d'audience : GoatCounter sans cookie, comme Roma, désactivé tant que le code n'est pas créé. Recommandé.
-7. ToposText : recoupement seulement, aucune donnée reprise. Recommandé.
-8. AWMC (ODbL) : accepter les côtes antiques retouchées, dans des fichiers isolés sous ODbL. Recommandé.
+1. Bornes : de 2000 (prologue minoen) à 30 av. J.-C.
+2. Catégorie `nature` ajoutée.
+3. Relief : option C, deux moitiés de 4 081 × 2 593 pixels (96 px par degré) ; la moitié est se charge après le premier affichage pour tenir le budget du premier écran.
+4. `robots.txt` : dépôt racine `maximator13.github.io`, qui déclare les sitemaps de Roma et de Hellas.
+5. Police des titres : Didact Gothic, en provisoire jusqu'au plan de design de la phase 2.
+6. Mesure d'audience : GoatCounter sans cookie, désactivé tant que le code n'est pas créé.
+7. ToposText : recoupement seulement.
+8. AWMC (ODbL) : accepté pour les côtes antiques, dans des fichiers isolés.
+
+Écart avec la section 3 : le champ `overview` n'a pas été créé. La frise donne ses quatre rangées secondaires aux pistes qui ont le plus d'événements visibles à l'écran, dans l'ordre des pistes à égalité ; les événements d'une piste sans rangée vont sur la rangée principale « Monde grec », avec la couleur de leur piste.
