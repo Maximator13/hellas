@@ -93,7 +93,7 @@ export function EventPanel({ event }: { event: HistoricalEvent }) {
         {era?.name} · {CATEGORY[event.category]}
       </p>
       <h2 id="panel-title" className="panel__title" tabIndex={-1}>
-        {event.title}
+        {frenchSpacing(event.title)}
       </h2>
       <p className="panel__date">{formatDate(event)}</p>
       <p className={`certainty event--${event.certainty}`}>
@@ -220,7 +220,7 @@ export function ScenePanel({ scene }: { scene: Scene }) {
         {scene.year !== undefined && ` · vers ${formatYear(scene.year)}`}
       </p>
       <h2 id="panel-title" className="panel__title" tabIndex={-1}>
-        {scene.title}
+        {frenchSpacing(scene.title)}
       </h2>
       {!playable && <p className="panel__summary">{frenchSpacing(failed ? UI.sceneFailed : UI.scenePlanned)}</p>}
       {failed && <SceneFailure />}

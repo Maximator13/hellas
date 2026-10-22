@@ -3,6 +3,7 @@ import { frenchSpacing } from './typography.ts'
 
 const nbsp = String.fromCharCode(0x00a0)
 const nnbsp = String.fromCharCode(0x202f)
+const era = `J.-${String.fromCharCode(0x2060)}C.`
 
 describe('frenchSpacing', () => {
   it('keeps digit groups together', () => {
@@ -13,7 +14,7 @@ describe('frenchSpacing', () => {
 
   it('keeps era mentions with their year', () => {
     expect(frenchSpacing('en 216 av. J.-C. et en 14 apr. J.-C.')).toBe(
-      `en 216${nbsp}av.${nbsp}J.-C. et en 14${nbsp}apr.${nbsp}J.-C.`,
+      `en 216${nbsp}av.${nbsp}${era} et en 14${nbsp}apr.${nbsp}${era}`,
     )
   })
 
