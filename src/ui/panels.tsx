@@ -191,6 +191,22 @@ function SoundToggle() {
   )
 }
 
+function SceneFailure() {
+  const failure = useApp((state) => state.failure)
+  return (
+    <div className="scene__failure">
+      {failure && (
+        <p className="scene__failure-detail">
+          {UI.sceneFailureDetail} {failure}
+        </p>
+      )}
+      <button type="button" className="button button--primary" onClick={() => useApp.getState().setFailedScene(null)}>
+        {UI.sceneRetry}
+      </button>
+    </div>
+  )
+}
+
 export function ScenePanel({ scene }: { scene: Scene }) {
   const point = useApp((state) => state.scenePoint)
   const failed = useApp((state) => state.failedScene === scene.id)
@@ -207,6 +223,7 @@ export function ScenePanel({ scene }: { scene: Scene }) {
         {scene.title}
       </h2>
       {!playable && <p className="panel__summary">{frenchSpacing(failed ? UI.sceneFailed : UI.scenePlanned)}</p>}
+      {failed && <SceneFailure />}
       {playable && (
         <>
           <div className="scene__status">

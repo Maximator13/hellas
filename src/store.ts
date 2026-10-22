@@ -20,11 +20,12 @@ interface AppState {
   quality: QualityTier
   scenePoint: number
   failedScene: string | null
+  failure: string | null
   soundOn: boolean
   setSoundOn: (soundOn: boolean) => void
   setRoute: (route: Route) => void
   setScenePoint: (point: number) => void
-  setFailedScene: (id: string | null) => void
+  setFailedScene: (id: string | null, failure?: string) => void
   setView: (view: Viewport) => void
   setQuality: (quality: QualityTier) => void
 }
@@ -61,6 +62,7 @@ export const useApp = create<AppState>()((set) => ({
   quality: initialQuality(),
   scenePoint: 0,
   failedScene: null,
+  failure: null,
   mapPick: null,
   mapMarks: [],
   setMapPick: (mapPick) => set({ mapPick }),
@@ -77,7 +79,7 @@ export const useApp = create<AppState>()((set) => ({
       return isSameRoute(state.route, route) ? { route, ...marks } : { route, scenePoint: 0, ...marks }
     }),
   setScenePoint: (scenePoint) => set({ scenePoint }),
-  setFailedScene: (failedScene) => set({ failedScene }),
+  setFailedScene: (failedScene, failure) => set({ failedScene, failure: failure ?? null }),
   setView: (view) => set({ view }),
   setQuality: (quality) => set({ quality }),
 }))

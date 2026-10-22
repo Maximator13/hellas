@@ -63,8 +63,10 @@ class SceneBoundary extends Component<{ id: string; children: ReactNode }, { fai
     return { failed: true }
   }
 
-  componentDidCatch() {
-    useApp.getState().setFailedScene(this.props.id)
+  componentDidCatch(error: unknown) {
+    const message = error instanceof Error ? error.message : String(error)
+    console.error(`scene ${this.props.id}: ${message}`)
+    useApp.getState().setFailedScene(this.props.id, message)
   }
 
   render() {

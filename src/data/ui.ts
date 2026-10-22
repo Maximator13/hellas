@@ -70,6 +70,8 @@ export const UI = {
   sceneStep: (index: number, total: number) => `Étape ${index} sur ${total}`,
   scenePlanned: 'Cette scène est en préparation : la carte vous montre en attendant le lieu.',
   sceneFailed: "Le modèle 3D de cette scène n'a pas pu être chargé. La carte reste disponible.",
+  sceneFailureDetail: 'Détail technique :',
+  sceneRetry: 'Réessayer',
   sceneHelp: 'Flèches gauche et droite : changer de point. Glisser : regarder autour. Échap : retour à la carte.',
   sceneEnter: (name: string) => `Visiter ${name} en 3D`,
   sceneDate: 'Date de la scène',
