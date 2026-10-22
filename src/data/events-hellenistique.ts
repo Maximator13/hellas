@@ -302,7 +302,7 @@ export const events: HistoricalEvent[] = [
       "chares-de-lindos"
     ],
     "summary": "Avec le produit de la vente des machines laissées par Démétrios, les Rhodiens font élever par Charès de Lindos une statue de bronze du dieu Hélios haute de 70 coudées, soit environ 32 m. Achevé vers 282 après douze ans de travaux, le Colosse est renversé par un séisme vers 227 ou 226 et reste à terre pendant des siècles.",
-    "body": "**Un remerciement au dieu.** Après le siège de 305 et 304, les Rhodiens dédient à Hélios, leur dieu protecteur, une statue colossale. Selon Pline l'Ancien, Charès de Lindos, élève de Lysippe, y travaille douze ans pour 300 talents ; elle mesure 70 coudées, soit 31 à 33 m selon la coudée retenue.\n\n**Où se dressait-il ?** L'image d'un géant enjambant l'entrée du port est une invention de la fin du Moyen Âge et de la Renaissance : aucun texte antique ne la décrit, et une telle pose était techniquement impossible. Le Colosse se trouvait sans doute près du port ou dans un sanctuaire de la ville ; son emplacement exact reste inconnu.\n\n**La chute.** Un tremblement de terre le brise aux genoux, selon Strabon, qui ajoute qu'un oracle interdit de le relever. Polybe raconte comment les rois rivalisèrent alors de dons pour aider Rhodes. Selon Pline, même couché, il émerveillait : peu d'hommes pouvaient embrasser son pouce. Ses débris auraient été vendus après la prise de l'île par les Arabes, en 653 apr. J.-C.",
+    "body": "**Un remerciement au dieu.** Après le siège de 305 et 304, les Rhodiens dédient à Hélios, leur dieu protecteur, une statue colossale. Selon Pline l'Ancien, Charès de Lindos, élève de Lysippe, y travaille douze ans pour 300 talents ; elle mesure 70 coudées, soit 31 à 33 m selon la coudée retenue.\n\n**Où se dressait-il ?** L'image d'un géant enjambant l'entrée du port est une invention de la fin du Moyen Âge et de la Renaissance : aucun texte antique ne la décrit, et une telle pose était techniquement impossible. Son emplacement exact reste inconnu : à la pointe du môle de Mandraki (W. Hoepfner), sur l'acropole (U. Vedder) ou dans le sanctuaire d'Hélios, sur la colline du palais des Grands Maîtres (N. Badoud).\n\n**La chute.** Un tremblement de terre le brise aux genoux, selon Strabon, qui ajoute qu'un oracle interdit de le relever. Polybe raconte comment les rois rivalisèrent alors de dons pour aider Rhodes. Selon Pline, même couché, il émerveillait : peu d'hommes pouvaient embrasser son pouce. Selon Théophane, chroniqueur byzantin du IXe siècle, les Arabes qui prirent l'île vers 653 apr. J.-C. en vendirent les débris à un marchand d'Édesse (d'Émèse selon Bar Hebraeus, au XIIIe siècle), qui les emporta sur 900 chameaux : ce récit, issu d'une seule tradition, passe aujourd'hui pour une légende.",
     "sources": [
       {
         "kind": "ancient",
@@ -326,8 +326,19 @@ export const events: HistoricalEvent[] = [
         "kind": "modern",
         "author": "Reynold Higgins",
         "work": "The Colossus of Rhodes, dans Peter A. Clayton et Martin J. Price (dir.), The Seven Wonders of the Ancient World, London, Routledge, 1988"
+      },
+      {
+        "kind": "modern",
+        "author": "Nathan Badoud",
+        "work": "The Colossus of Rhodes: Archaeology of a Lost Wonder, Oxford, Oxford University Press, 2024"
+      },
+      {
+        "kind": "modern",
+        "author": "Lawrence I. Conrad",
+        "work": "The Arabs and the Colossus, Journal of the Royal Asiatic Society, 3e série, 6, 1996, p. 165 à 187"
       }
-    ]
+    ],
+    "scene": "colosse"
   },
   {
     "id": "musee-et-bibliotheque-d-alexandrie",
@@ -396,7 +407,7 @@ export const events: HistoricalEvent[] = [
       "ptolemee-ii"
     ],
     "summary": "Vers 280, sous Ptolémée II, une tour monumentale est achevée à la pointe orientale de l'île de Pharos, à l'entrée du port d'Alexandrie. Haute peut-être de plus de 100 m, elle guide les navires vers une côte basse et sans repères, et son nom a donné le mot « phare ».",
-    "body": "**Une tour pour une côte plate.** Le delta du Nil n'offre aucun relief visible du large, et ses abords sont semés de hauts-fonds. La tour, en trois étages (carré, octogonal puis cylindrique selon les descriptions arabes du Moyen Âge), portait au sommet une statue, peut-être de Zeus Sauveur. Pline indique un coût de 800 talents.\n\n**Sostrate.** Strabon rapporte qu'une inscription nommait Sostrate de Cnide, « ami des rois », qui l'avait dédiée pour le salut des navigateurs. Lucien raconte qu'il aurait caché son nom sous un enduit portant celui du roi, une anecdote sans doute inventée. On ignore si Sostrate fut l'architecte ou seulement le dédicant.\n\n**Sa hauteur.** Aucun texte antique ne la donne ; les estimations modernes, tirées des descriptions arabes, vont de 100 à 140 m environ. Ébranlé par plusieurs séismes, le Phare est en ruine au XIVe siècle. Des blocs et des statues en sont repêchés depuis 1994 par l'équipe de Jean-Yves Empereur, au pied du fort de Qaitbay bâti sur ses fondations.",
+    "body": "**Une tour pour une côte plate.** Le delta du Nil n'offre aucun relief visible du large, et ses abords sont semés de hauts-fonds. La tour, en trois étages (carré, octogonal puis cylindrique selon les descriptions arabes du Moyen Âge), portait au sommet une statue, peut-être de Zeus Sauveur. Pline indique un coût de 800 talents.\n\n**Sostrate.** Strabon rapporte qu'une inscription nommait Sostrate de Cnide, « ami des rois », qui l'avait dédiée pour le salut des navigateurs. Lucien raconte qu'il aurait caché son nom sous un enduit portant celui du roi, une anecdote sans doute inventée. On ignore si Sostrate fut l'architecte ou seulement le dédicant.\n\n**Sa hauteur.** Aucun texte antique ne la donne ; les estimations modernes, tirées des descriptions arabes, lui donnent plus de 100 m, de 103 à 118 m selon Judith McKenzie. Ébranlé par plusieurs séismes, le Phare est en ruine au XIVe siècle. Des blocs et des statues en sont repêchés depuis 1994 par l'équipe de Jean-Yves Empereur, au pied du fort de Qaitbay bâti sur ses fondations.",
     "sources": [
       {
         "kind": "ancient",
@@ -425,8 +436,14 @@ export const events: HistoricalEvent[] = [
         "kind": "modern",
         "author": "P. M. Fraser",
         "work": FRASER
+      },
+      {
+        "kind": "modern",
+        "author": "Judith McKenzie",
+        "work": "The Architecture of Alexandria and Egypt, c. 300 BC to AD 700, New Haven, Yale University Press, 2007, p. 42"
       }
-    ]
+    ],
+    "scene": "phare"
   },
   {
     "id": "philetairos-fait-defection",

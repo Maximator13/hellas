@@ -346,3 +346,50 @@ Remplace ou complète les points de la section « Scène de l'Artémision d'Éph
 - **Références précisées.** Jenkins, Gratziu et Middleton 1997, p. 35 à 41 ; Aytepe et Baran, Arkhaia Anatolika 4 (2021), p. 215 à 236 ; Hoepfner 2013, Darmstadt, Philipp von Zabern (BMCR 2014.04.06, C. Piok-Zanon) ; Blid, « Architectural Polychromy at Hekatomnid Labraunda », dans M. Mulliez (dir.), Restituer les couleurs (date et pages non vérifiées) ; Jeppesen 1994, sans doute dans J. Isager (dir.), Hekatomnid Caria and the Ionian Renaissance, Odense, 1994.
 - **Soleil.** Équinoxe recalculé le 27 ou le 28 septembre julien proleptique ; à 9 h solaires, hauteur 34,4° et azimut 121° confirmés.
 - **Contrôlés sur le texte lors de la relecture.** Diodore, XVI, 36, 2 (Thoudémos), 42, 7 et 45, 7 (Théellos), 69, 2 (Lykiskos, 344/343), 74, 2 (Nikomachos, 341/340) ; Vitruve, II, 8, 10 à 15 et VII, préface, 12 et 13 ; Strabon, XIII, 1, 59 et XIV, 2, 16 et 17 ; Arrien, I, 20 et 23 (traduction) ; Aulu-Gelle, X, 18, 3 à 7 ; fiches Pleiades 461581651, 102024695 (« dédié à Arès », sans doute erroné) et 599518.
+
+## Scène du Colosse, choix de modélisation
+
+Hypothèses prises en construisant la scène (`blender/colosse.py`, `blender/kit/colosse_*.py`), en plus de celles de `docs/scenes/colosse.md`.
+
+- **Repères modernes.** Les coordonnées de l'entrée de Mandraki et du fort Saint-Nicolas données dans la proposition (environ 36,4497 N, 28,2325 E) ne tombent pas sur le môle du relief Copernicus : la pointe du môle de Mandraki y est vers 36,4516 N, 28,2278 E (environ 340 m à l'est et 640 m au nord de la statue). La scène suit le relief ; coordonnées à confirmer sur une carte.
+- **Littoral.** Tracé moderne du relief conservé, sauf deux ouvrages jugés modernes et retirés : le grand brise-lames d'Akandia et une jetée du Grand Port. Les môles de Mandraki, du Grand Port et d'Akandia sont posés sur les môles actuels, avec un mur et une tour ronde à chaque pointe (forme et tours non attestées). Aucune étude du littoral antique consultée.
+- **Altitude de la terrasse.** Sol nu de la colline de la statue estimé à environ 28 m après retrait des bâtiments (filtre du relief), terrasse aplanie sur 62 m de rayon : valeur à confirmer.
+- **Socle.** Socle rond de marbre de 8 m sur trois degrés de calcaire (hypothèse ; la proposition ne fixe pas la forme, Hoepfner restitue une base ronde pour l'hypothèse du môle).
+- **Statue.** Proportions élancées (tête d'environ un huitième de la hauteur), poids sur la jambe droite, jambe gauche fléchie, draperie de l'avant-bras gauche jusqu'au socle (Maryon 1956), main droite en visière, couronne de 19 rayons dorés, yeux incrustés : tout est restitution. Regard vers l'azimut 30°.
+- **Sanctuaire d'Hélios.** Enclos carré de 88 m, porte monumentale, autel à 25 m devant la statue, portique au fond et quatre statues de bronze votives : disposition imaginée.
+- **Ville.** Îlots de 30 m de côté orientés nord-sud, agora au sud du Grand Port, Ptolémaion (enclos de 180 m à portiques) au sud-ouest du centre, temple d'Athéna et de Zeus au nord de l'acropole : emplacements et dimensions non attestés, à reprendre sur Kondis 1954, Bradford 1956 et Hoepfner et Schwandner 1994.
+- **Enceinte.** Tracé de la muraille dessiné à main levée autour de la pointe nord, avec un front sud de la côte ouest à Akandia et des tours tous les 64 m environ ; les segments connus n'ont pas été relevés.
+- **Loges de Mandraki.** Une rangée au sud et une à l'ouest du bassin, loges de 6,4 m de large et 40 m de long : nombre et dimensions à relever sur Blackman et Rankov 2013.
+
+## Scène du Phare, choix de modélisation
+
+Hypothèses prises en construisant la scène (`blender/phare.py`, `blender/kit/phare_*.py`), en plus de celles de `docs/scenes/phare.md`.
+
+- **Sol.** Aucun relief mesuré : plaine à environ 2 m, colline de Rhakotis de 13 m, légère crête côtière et bosse du Lochias, toutes valeurs de travail. Le relief Copernicus n'est pas employé (il mesure la ville moderne). Côte, île de Pharos, Antirhodos, écueils, Heptastade, Kibôtos et canal repris du plan de la scène d'Alexandrie de Roma, décalés sur le repère du Phare.
+- **Étendue de la ville en 280.** Le plan de Roma (état augustéen) allait jusqu'à t = 2700 m vers l'est ; la scène arrête l'enceinte à t = 1650 m pour laisser la nécropole de Chatby hors les murs. Le point Pleiades de Chatby (941771942) tombe en mer dans la côte restituée : les tombes sont posées sur la terre la plus proche, à l'est du mur. Tracé du mur oriental du IIIe siècle à vérifier.
+- **Orientation de la tour et rampe.** Faces tournées de 20° (porte vers l'azimut 200°) pour que la rampe sur arcades de 270 m atteigne la pointe de l'île ; orientation inconnue. Rampe d'après al-Balawî (environ 300 m), décrite seulement au Moyen Âge.
+- **Proportions du sommet.** Pour tenir 103 m du sol au sommet de la statue : socle 4 m, étage carré jusqu'à 56 m (30 m de côté à la base), octogone de 58 à 84 m, cylindre jusqu'à 92 m, foyer entre huit piliers bas jusqu'à 96 m, statue de 5,9 m (au lieu des 7 m de la proposition). Foyer couvert d'une dalle portant la statue : hypothèse.
+- **Dédicace.** Texte grec de Strabon (XVII, 1, 6), en capitales, ordre des mots de Lucien (Sostrate, fils de Dexiphanès, de Cnide), posé au-dessus de la porte : emplacement, disposition et graphie non attestés.
+- **Quartier royal.** Quatre péristyles et des ailes simples entre le Lochias et le port, jardins de palmiers : nombre, plans et emplacements imaginés.
+- **Ponts de l'Heptastade.** Tabliers de bois de 16 m à 1,6 m au-dessus de l'eau ; forme inconnue.
+
+## Scène d'Olympie, choix de modélisation
+
+Hypothèses prises en construisant la scène (`blender/olympie.py`, `blender/kit/olympie_*.py`), en plus de celles de `docs/scenes/olympie.md`.
+
+- **Jour et heure.** Option recommandée par la proposition : 16 août 420 (deuxième pleine lune après le solstice), vers 7 h 30 solaires, soleil à l'azimut 90° et à 27° de hauteur. Le 17 juillet et le 14 septembre restent possibles.
+- **Orientation du temple de Zeus.** Axe posé exactement est-ouest (azimut 90°), faute d'azimut relevé ; le faisceau qui entre par la porte en dépend.
+- **Sol antique.** Altis calée sur le relief Copernicus après filtrage des arbres (environ 33 m) ; dépôts postérieurs abaissés de 4 m au plus là où le relief dépasse ce niveau, jusqu'à environ 1,8 km du sanctuaire ; plaine de l'est laissée à son niveau actuel (environ 27 à 28 m, plus bas que l'Altis). Aucune cote de fouille consultée.
+- **Kronion.** Le sommet du relief filtré est vers E +110, N +320 (environ 89 m après filtrage), et non vers E +20, N +390 comme estimé dans la proposition : la scène suit le relief.
+- **Rivières.** Lit de l'Alphée de 150 m de large vers N -500, chenal d'été de 26 m ; Kladéos vers E -200, chenal de 4 m. Tracés dessinés à main levée sur le relief, hypothèse.
+- **Temple de Zeus.** Stylobate de 27,68 sur 64,12 m, colonnes de 10,43 m et 2,21 m, entraxe de 5,22 m (4,8 m aux angles), cella de 16,39 m de large avec porches de 8 m et naos de 28,74 m, deux colonnes entre antes représentées par quatre colonnes de porche, frise continue unie autour de la cella au lieu des métopes sculptées au-dessus des porches (limite du kit), métopes extérieures lisses, socle surélevé de 1,4 m avec rampe à l'est de 14 m : valeurs de travail à relever sur Curtius et Adler ou Mallwitz.
+- **Cella.** Deux rangées de sept colonnes doriques sur deux étages, galeries de bois ; plafond bleu à poutres rouges ; Iphitos couronné par la Trêve figuré par deux statues de bronze sur une base, à droite en entrant ; hydrie de bronze à droite du bassin ; portes de bronze ouvertes vers l'intérieur.
+- **Statue de Zeus.** Socle de calcaire noir de 6,65 sur 9,93 m et 1 m de haut, avant du socle à 17 m de la porte ; statue à l'échelle 7,6 d'une figure assise : tête à environ 12,1 m du sol de la cella, dossier du trône à environ 12,4 m, Charites et Heures à environ 13,2 m, plafond à 13,5 m. Victoire d'environ 2 m, sceptre de 11,8 m, chevelure et barbe d'or, couronne d'olivier d'or : proportions et couleurs restituées. Reliefs du socle, du trône et peintures de Panainos seulement suggérés.
+- **Bassin d'huile.** Dallage noir de 6,4 sur 7 m bordé de marbre, accolé à l'avant du socle : dimensions supposées.
+- **Lumière de la cella.** L'or et l'ivoire de la statue reçoivent une légère émission (environ 15 % de leur couleur) pour simuler le rebond de la lumière de la porte sur le dallage huilé ; sans ombres (qualité basse), le soleil est atténué à l'intérieur.
+- **Héraion.** Stylobate de 18,75 sur 50,01 m, colonnes de 5,22 m toutes identiques (les profils variés ne sont pas modélisés), murs de calcaire au lieu de la brique crue sur orthostates, disques d'acrotère de 2,3 m aux deux frontons.
+- **Autres édifices.** Pélopion en enclos pentagonal de 16 m de rayon avec tertre et entrée à l'ouest ; grand autel de 12,8 m de diamètre et 5,6 m de haut ; onze trésors de 6,4 à 13 m de large sur une terrasse soutenue à environ 3 m au-dessus de l'Altis ; Prytanée de 20 m de côté ; Bouleutérion en deux salles absidales de 30 m ; atelier de Phidias de 17 sur 34 m et 14,5 m de haut avec cour et four ; Niké de Paionios sur pilier triangulaire de 8,8 m tournée vers l'est-sud-est : plans et dimensions de travail.
+- **Stade.** Axe à l'azimut 80°, d'après le point Pleiades et l'extrémité ouest estimée ; piste de 212,5 m sur 30 m, talus de 6,5 m ; tribune des juges sur le talus sud à 130 m de l'extrémité ouest, autel de Déméter Chamynè en face.
+- **Hippodrome.** Deux talus bas de 720 m centrés vers E +430, N -110 : emplacement indicatif seulement.
+- **Mur de l'Altis.** Mur bas de 1 m sur un tracé dessiné à main levée, élargi à l'est jusqu'à E +100 ; tracé classique inconnu.
+- **Foule et campements.** Environ 1 500 figurants fixes, 1 900 tentes et abris dans six campements de la plaine et un campement argien et mantinéen à l'est du stade ; nombres et emplacements imaginés.

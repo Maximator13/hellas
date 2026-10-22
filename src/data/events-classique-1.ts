@@ -911,7 +911,7 @@ export const events: HistoricalEvent[] = [
       "phidias"
     ],
     "summary": "Vers 435 à 430, Phidias réalise pour le temple d'Olympie une statue colossale de Zeus assis, en or et en ivoire, haute d'environ 12 mètres. Rangée parmi les sept merveilles du monde, elle est connue par la description de Pausanias, des monnaies d'Élis et la fouille de l'atelier où elle fut fabriquée.",
-    "body": "**La statue.** Pausanias (V, 11) la décrit en détail : Zeus trône, une Victoire dans la main droite, un sceptre surmonté d'un aigle dans la gauche, sur un trône d'ébène, d'ivoire, d'or et de pierres précieuses orné de mythes. Le corps est en ivoire sur une armature de bois, le manteau en or. Strabon (VIII, 3, 30) remarque que si le dieu se levait, il crèverait le toit.\n\n**L'atelier.** Les archéologues allemands ont fouillé à Olympie, dans les années 1950, l'atelier de Phidias, bâti aux dimensions de la salle du temple. On y a trouvé des moules de terre cuite pour les draperies, des éclats d'ivoire, des outils et une petite cruche inscrite « je suis à Phidias ». La céramique de l'atelier date surtout des années 430.\n\n**Ce qui est incertain.** La date de l'œuvre dépend de la fin de Phidias, dont les récits se contredisent : Plutarque (Périclès, 31) le fait mourir en prison à Athènes après un procès pour détournement, Philochore le fait partir à Élis après 438. La statue fut plus tard emportée à Constantinople, où elle périt dans un incendie, sans doute au Ve siècle de notre ère.",
+    "body": "**La statue.** Pausanias (V, 11) la décrit en détail : Zeus trône, une Victoire dans la main droite, un sceptre surmonté d'un aigle dans la gauche, sur un trône d'ébène, d'ivoire, d'or et de pierres précieuses orné de mythes. Le corps est en ivoire sur une armature de bois, le manteau en or. Strabon (VIII, 3, 30) remarque que si le dieu se levait, il crèverait le toit.\n\n**L'atelier.** Les archéologues allemands ont fouillé à Olympie, dans les années 1950, l'atelier de Phidias, bâti aux dimensions de la salle du temple. On y a trouvé des moules de terre cuite pour les draperies, des éclats d'ivoire, des outils et le fond d'un petit vase inscrit « je suis à Phidias ». La céramique de l'atelier date surtout des années 430.\n\n**Ce qui est incertain.** La date de l'œuvre dépend de la fin de Phidias, dont les récits se contredisent : Plutarque (Périclès, 31) le fait mourir en prison à Athènes après un procès pour détournement, Philochore le fait partir à Élis après 438, où les Éléens l'auraient mis à mort. La statue fut plus tard emportée à Constantinople, où elle périt dans un incendie, sans doute au Ve siècle de notre ère.",
     "sources": [
       {
         "kind": "ancient",
@@ -949,7 +949,8 @@ export const events: HistoricalEvent[] = [
         "author": "Judith M. Barringer",
         "work": "Olympia: A Cultural History, Princeton, Princeton University Press, 2021"
       }
-    ]
+    ],
+    "scene": "olympie"
   },
   {
     "id": "bataille-des-sybota",

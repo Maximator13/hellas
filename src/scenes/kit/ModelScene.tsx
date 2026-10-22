@@ -4,7 +4,7 @@ import { Vector3, type Object3D } from 'three'
 import { SCENE_LOOK } from '../../stage/grading.ts'
 import { QUALITY } from '../../stage/quality.ts'
 import type { SceneProps } from '../registry.ts'
-import { Atmosphere, type HazeSettings, type InteriorSettings, type SkySettings, type SunSettings } from './Atmosphere.tsx'
+import { Atmosphere, type HazeSettings, type InteriorSettings, type SkySettings, type SkySun, type SunSettings } from './Atmosphere.tsx'
 import { GuidedRail } from './GuidedRail.tsx'
 import { Life } from './Life.tsx'
 import { LightShaft } from './LightShaft.tsx'
@@ -21,6 +21,7 @@ export interface ModelSceneConfig {
   interior?: InteriorSettings
   lightShaftRadius?: number
   sky?: SkySettings
+  skySun?: SkySun
   exposure?: number
   views?: Record<string, { position: [number, number, number]; target: [number, number, number] }>
 }
@@ -65,7 +66,7 @@ export function ModelScene({ config, scene, point, insets, quality }: SceneProps
   }, [model, scene, config])
   return (
     <>
-      <Atmosphere sun={config.sun} haze={config.haze} shadows={shadows} shadowMapSize={QUALITY[quality].shadowMapSize} interior={config.interior} sky={config.sky} />
+      <Atmosphere sun={config.sun} haze={config.haze} shadows={shadows} shadowMapSize={QUALITY[quality].shadowMapSize} interior={config.interior} sky={config.sky} skySun={config.skySun} />
       <primitive object={model.root} />
       <Life model={model} quality={quality} shadows={shadows} />
       {model.anchors.has('oculus') && model.anchors.has('sunbeam_target') && (

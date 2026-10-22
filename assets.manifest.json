@@ -9,6 +9,27 @@
       "file": "5151a8bed64f-acropole.glb"
     },
     {
+      "path": "scenes/colosse/colosse.glb",
+      "bytes": 7604088,
+      "sha256": "125fde0bc8419ade7280035833e312e65a83f32b9473e727e9938120e132dbe8",
+      "release": "assets-v3",
+      "file": "125fde0bc841-colosse.glb"
+    },
+    {
+      "path": "scenes/olympie/olympie.glb",
+      "bytes": 4994640,
+      "sha256": "a32d9dcee0b5db92601b1ae7695eae9a533b112c195e994020a96efb6f71fd40",
+      "release": "assets-v3",
+      "file": "a32d9dcee0b5-olympie.glb"
+    },
+    {
+      "path": "scenes/phare/phare.glb",
+      "bytes": 2219620,
+      "sha256": "0d0e62a47e5ac6508942eb9d9737eaf9ca1e3a606d17be0681a423c3a2a71799",
+      "release": "assets-v3",
+      "file": "0d0e62a47e5a-phare.glb"
+    },
+    {
       "path": "scenes/thermopyles/thermopyles.glb",
       "bytes": 4231236,
       "sha256": "9b500b02526ffd477a802f52057210a343bb9a1d5353bc3f4fb49f95e44ca1a3",

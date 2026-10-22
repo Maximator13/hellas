@@ -35,7 +35,7 @@ export const places: Place[] = [
   },
   {
     "id": "ile-de-pharos",
-    "name": "Île de Pharos (Alexandrie)",
+    "name": "Phare d'Alexandrie (île de Pharos)",
     "ancientName": "Pharos",
     "lat": 31.214,
     "lon": 29.8854,

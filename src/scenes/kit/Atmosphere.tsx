@@ -3,12 +3,18 @@ import { useFrame } from '@react-three/fiber'
 import { useMemo, useRef } from 'react'
 import { Color, Vector3, type DirectionalLight, type HemisphereLight } from 'three'
 import { approach } from '../../map/camera.ts'
+import { TwilightSky } from './TwilightSky.tsx'
 
 export interface SunSettings {
   azimuth: number
   elevation: number
   color: string
   intensity: number
+}
+
+export interface SkySun {
+  azimuth: number
+  elevation: number
 }
 
 export interface HazeSettings {
@@ -21,7 +27,7 @@ const MAX_SHADOW_EXTENT = 1400
 const SUN_DISTANCE = 3000
 const SKY_DISTANCE = 50000
 
-export function sunDirection(sun: SunSettings): Vector3 {
+export function sunDirection(sun: SkySun): Vector3 {
   const azimuth = (sun.azimuth * Math.PI) / 180
   const elevation = (sun.elevation * Math.PI) / 180
   return new Vector3(Math.sin(azimuth) * Math.cos(elevation), Math.sin(elevation), -Math.cos(azimuth) * Math.cos(elevation))
@@ -32,6 +38,7 @@ export interface InteriorSettings {
   radius: number
   height: number
   ambientScale: number
+  sunScale?: number
 }
 
 const AMBIENT = 0.55
@@ -58,6 +65,7 @@ export function Atmosphere({
   shadowMapSize = 2048,
   interior,
   sky = CLEAR_SKY,
+  skySun,
 }: {
   sun: SunSettings
   haze: HazeSettings
@@ -65,12 +73,15 @@ export function Atmosphere({
   shadowMapSize?: number
   interior?: InteriorSettings
   sky?: SkySettings
+  skySun?: SkySun
 }) {
   const ambient = useRef<HemisphereLight>(null)
   const inside = useRef(0)
   const light = useRef<DirectionalLight>(null)
   const direction = useMemo(() => sunDirection(sun), [sun])
-  const skyPosition = useMemo(() => direction.clone().multiplyScalar(SUN_DISTANCE).toArray(), [direction])
+  const skyDirection = useMemo(() => (skySun ? sunDirection(skySun) : direction), [skySun, direction])
+  const skyPosition = useMemo(() => skyDirection.clone().multiplyScalar(SUN_DISTANCE).toArray(), [skyDirection])
+  const twilight = skySun !== undefined && skySun.elevation < 0
   const hazeColor = useMemo(() => new Color(haze.color), [haze.color])
   const focusRef = useRef(new Vector3())
 
@@ -82,6 +93,7 @@ export function Atmosphere({
     if (ambient.current) ambient.current.intensity = AMBIENT * scale
     const current = light.current
     if (!current) return
+    current.intensity = sun.intensity * (1 - inside.current * (1 - (shadows ? 1 : (interior?.sunScale ?? 1))))
     const focus = focusRef.current
     camera.getWorldDirection(focus)
     const reach = Math.min(600, Math.max(40, camera.position.y * 1.5))
@@ -103,9 +115,17 @@ export function Atmosphere({
 
   return (
     <>
-      <Sky distance={SKY_DISTANCE} sunPosition={skyPosition} turbidity={sky.turbidity} rayleigh={sky.rayleigh} mieCoefficient={0.006} mieDirectionalG={0.86} />
+      {twilight ? (
+        <TwilightSky radius={SKY_DISTANCE * 0.9} sun={skyDirection} moon={direction} />
+      ) : (
+        <Sky distance={SKY_DISTANCE} sunPosition={skyPosition} turbidity={sky.turbidity} rayleigh={sky.rayleigh} mieCoefficient={0.006} mieDirectionalG={0.86} />
+      )}
       <Environment frames={1} resolution={256} environmentIntensity={ENVIRONMENT}>
-        <Sky sunPosition={skyPosition} turbidity={sky.turbidity} rayleigh={sky.rayleigh} mieCoefficient={0.006} mieDirectionalG={0.86} />
+        {twilight ? (
+          <TwilightSky radius={500} sun={skyDirection} moon={direction} />
+        ) : (
+          <Sky sunPosition={skyPosition} turbidity={sky.turbidity} rayleigh={sky.rayleigh} mieCoefficient={0.006} mieDirectionalG={0.86} />
+        )}
       </Environment>
       <fogExp2 attach="fog" args={[hazeColor, haze.density]} />
       <hemisphereLight ref={ambient} args={['#cfdcef', '#8a6a48', AMBIENT]} />
