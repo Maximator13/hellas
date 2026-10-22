@@ -95,3 +95,26 @@ Site : https://maximator13.github.io/hellas/ ; scènes : `#/scene/acropole` et `
 
 **Suite** : phase 4 (scènes de la section 10 du brief : Salamine, Cnossos, Mycènes, Olympie, Delphes, Gaugamèles, Alexandrie, Rhodes, Pergame, Syracuse), après validation.
 
+
+## Phase 4, première partie : les cinq merveilles grecques et la collection (22 et 23 octobre 2026, faite sans validation, en autonomie)
+
+**Fait**
+- Propositions des cinq scènes des merveilles (`docs/scenes/phare.md`, `colosse.md`, `olympie.md`, `artemision.md`, `mausolee.md`), chacune passée en relecture contradictoire ; doutes dans `docs/A_VERIFIER.md`.
+- Scènes 3D en ligne, reliées à leur événement de la frise :
+  - Phare d'Alexandrie vers 280 av. J.-C., au crépuscule, feu allumé et lune levante (2,2 Mo) ; champ facultatif `skySun` et ciel de crépuscule `TwilightSky`.
+  - Colosse de Rhodes vers 250 av. J.-C., sur l'hypothèse de la colline (7,6 Mo).
+  - Olympie aux Jeux de 420 av. J.-C., avec le Zeus de Phidias (5 Mo) ; champ facultatif `interior.sunScale`.
+  - Artémision d'Éphèse vers 200 av. J.-C. (6,2 Mo).
+  - Mausolée d'Halicarnasse vers 345 av. J.-C. (7,3 Mo).
+- Fichiers lourds publiés dans les versions `assets-v3` et `assets-v4`.
+- Collection de cartes (`#/collection`) reprise de Roma : paquet du jour, garanties, doublons changés en drachmes, fabrication, récompenses d'exploration, séries ; 120 cartes et 20 divinités (`docs/COLLECTION.md`), 137 illustrées (œuvres libres et rendus du projet), crédits dans `CREDITS.md` et sur la page Sources.
+- Titres des panneaux : « J.-C. » n'est plus coupé en fin de ligne.
+
+**Problèmes connus**
+- Shader d'eau commun : rayures près de la caméra (Rhodes, Halicarnasse).
+- Halo clair du ciel et vignette sur les vues horizontales ; brume blanche sur plusieurs vues du Mausolée ; vues de Salmakis et de la porte de Myndos faibles.
+- Statue du Colosse encore un peu « mannequin » de près ; figurants d'Olympie très schématiques ; Héraion trop jaune.
+- Trois cartes sans illustration : Lefkandi, peltastes, cataphractes (pas d'œuvre libre utilisable ni de figurine dans le kit).
+- Chargement des scènes en échec chez l'utilisateur sur son appareil : détail technique attendu.
+
+**Suite** : scènes restantes de la section 10 du brief (Salamine, Cnossos, Mycènes, Delphes, Gaugamèles, Pergame, Syracuse), reprise des défauts ci-dessus.
