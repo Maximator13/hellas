@@ -666,6 +666,18 @@ def antefix(builder, x, y, z, side, size, detail, material):
     builder.merge(piece, Matrix.Translation((x - side * 0.03, y, z)) @ UVW_TO_YZX)
 
 
+def rafters(builder, half_span, half_length, ridge, slope, spacing=1.6, size=0.24):
+    builder.box((-size / 2, -half_length, ridge - size), (size / 2, half_length, ridge), WOOD)
+    length = half_span / math.cos(slope)
+    count = max(int(2 * half_length / spacing), 1)
+    for k in range(count + 1):
+        y = -half_length + 2 * half_length * k / count
+        for side in (-1, 1):
+            frame = Matrix.Translation((0.0, y, ridge)) @ Matrix.Rotation(side * slope, 4, "Y")
+            span = (0.0, length) if side > 0 else (-length, 0.0)
+            builder.box((span[0], -size / 2, -size), (span[1], size / 2, 0.0), WOOD, matrix=frame)
+
+
 def gable(builder, frame, half_span, length, dims, polychromy, detail, roof=MARBLE, tile_pitch=0.66, figures=False,
           acroteria=True, antefixes=True, seed=0):
     g = MeshBuilder()
@@ -679,13 +691,16 @@ def gable(builder, frame, half_span, length, dims, polychromy, detail, roof=MARB
     half_roof = length / 2 + face_y - 0.5
     lift = 0.03
     first = len(g.polygons)
-    for side in (-1, 1):
-        tile_roof(g, (0.0, -half_roof, rise + lift), (0.0, half_roof, rise + lift), (side * half_span, 0.0, -rise),
-                  roof, tile_pitch, imbrex=detail != "low")
-    ridge_cap(g, (0.0, -half_roof, rise + lift + 0.05), (0.0, half_roof, rise + lift + 0.05), 0.14, roof)
+    if roof is None:
+        rafters(g, half_span, half_roof, rise + lift, dims["slope"])
+    else:
+        for side in (-1, 1):
+            tile_roof(g, (0.0, -half_roof, rise + lift), (0.0, half_roof, rise + lift),
+                      (side * half_span, 0.0, -rise), roof, tile_pitch, imbrex=detail != "low")
+        ridge_cap(g, (0.0, -half_roof, rise + lift + 0.05), (0.0, half_roof, rise + lift + 0.05), 0.14, roof)
     if roof == MARBLE:
         g.tint(first, ROOF_TINT)
-    if antefixes:
+    if antefixes and roof is not None:
         channels = max(int(round(2 * half_roof / tile_pitch)), 1)
         actual = 2 * half_roof / channels
         for side in (-1, 1):
@@ -747,11 +762,15 @@ def door_frame(builder, left, right, y0, y1, z0, height, width, material=MARBLE)
 
 def wall_with_doors(builder, x0, x1, y0, y1, z0, z1, doors, material=MARBLE, frame=0.3):
     edge = x0
-    for centre, width, height in sorted(doors):
+    for door in sorted(doors):
+        centre, width, height = door[:3]
+        sill = door[3] if len(door) > 3 else 0.0
         left, right = centre - width / 2, centre + width / 2
         builder.box((edge, y0, z0), (left, y1, z1), material, bottom=False, top=False)
-        builder.box((left, y0, z0 + height), (right, y1, z1), material, top=False)
-        door_frame(builder, left, right, y0, y1, z0, height, frame, material)
+        builder.box((left, y0, z0 + sill + height), (right, y1, z1), material, top=False)
+        if sill > 0:
+            builder.box((left, y0, z0), (right, y1, z0 + sill), material, bottom=False)
+        door_frame(builder, left, right, y0, y1, z0 + sill, height, frame, material)
         edge = right
     builder.box((edge, y0, z0), (x1, y1, z1), material, bottom=False, top=False)
 
@@ -828,7 +847,7 @@ def sekos(building, spec, z_floor, z_ceiling, polychromy, detail):
               (max(side * half, side * (half - w)), plan["front_axis"] - anta, z_beam), MARBLE, bottom=False, top=False)
     inner = half - w
     wall_with_doors(b, -inner, inner, plan["front_wall"], plan["front_wall"] + w, z_floor, z_ceiling,
-                    [(0.0, *s["door"])])
+                    [(0.0, *s["door"])] + list(s.get("windows", ())))
     wall_with_doors(b, -inner, inner, plan["back_wall"], plan["back_wall"] + w, z_floor, z_ceiling,
                     [(0.0, *s["back_door"])])
     if plan["room"]:
@@ -919,7 +938,7 @@ def temple(spec=PARTHENON, polychromy=True, detail="high", name="temple"):
 
 def stoa(length=46.0, depth=11.0, column_height=5.4, diameter=0.82, spacing=None, metopes_per_bay=2, steps=2,
          step_rise=0.3, step_tread=0.45, wall=0.75, inner_columns=True, slope_degrees=14.0, roof=TERRACOTTA,
-         polychromy=True, detail="high", name="stoa"):
+         polychromy=True, detail="high", name="stoa", acroteria=True):
     building = Building(name)
     b = building.body
     spacing = spacing or 3.3 * diameter
@@ -955,7 +974,7 @@ def stoa(length=46.0, depth=11.0, column_height=5.4, diameter=0.82, spacing=None
     half_span = depth_axis / 2 + f + dims["projection"] + 0.03 * diameter
     z_eave = z_top + levels["top"]
     frame = Matrix.Translation((0.0, y_back / 2, z_eave)) @ Matrix.Rotation(math.pi / 2, 4, "Z")
-    rise = gable(b, frame, half_span, x1 - x0, dims, polychromy, detail, roof, 0.5, seed=23)
+    rise = gable(b, frame, half_span, x1 - x0, dims, polychromy, detail, roof, 0.5, acroteria=acroteria, seed=23)
     building.info = {"columns": count, "spacing": spacing, "metopes_per_side": frieze["metopes"],
                      "stylobate_top": z_stylobate, "eave": z_eave, "ridge": z_eave + rise}
     return building
@@ -966,7 +985,7 @@ PROPYLAEA_DOORS = ((1.4, 3.6), (2.94, 5.5), (4.18, 7.38), (2.94, 5.5), (1.4, 3.6
 
 def propylon(columns=6, spacing=3.63, central_spacing=5.43, column_height=8.81, diameter=1.56, depth=24.0,
              cross_wall=0.3, doors=PROPYLAEA_DOORS, inner_ionic=True, steps=4, step_rise=0.36, step_tread=0.5,
-             wall=1.0, slope_degrees=14.0, polychromy=True, detail="high", name="propylon"):
+             wall=1.0, slope_degrees=14.0, polychromy=True, detail="high", name="propylon", acroteria=True):
     building = Building(name)
     b = building.body
     dims = doric_dimensions(diameter, spacing, slope_degrees)
@@ -1008,7 +1027,7 @@ def propylon(columns=6, spacing=3.63, central_spacing=5.43, column_height=8.81, 
     half_span = x1 + f + dims["projection"] + 0.03 * diameter
     z_eave = z_top + levels["top"]
     rise = gable(b, Matrix.Translation((0.0, 0.0, z_eave)), half_span, 2 * half_y, dims, polychromy, detail,
-                 MARBLE, 0.6, seed=43)
+                 MARBLE, 0.6, acroteria=acroteria, seed=43)
     building.info = {"axes": [round(x, 3) for x in xs], "doors": door_list, "metopes_per_side": frieze["metopes"],
                      "stylobate_top": z_stylobate, "eave": z_eave, "ridge": z_eave + rise}
     return building

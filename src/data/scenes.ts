@@ -4,7 +4,7 @@ export const scenes: Scene[] = [
   {
     "id": "acropole",
     "title": "Athènes et l'Acropole",
-    "status": "planned",
+    "status": "ready",
     "year": -431,
     "lat": 37.9715,
     "lon": 23.7267,

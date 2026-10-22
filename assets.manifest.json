@@ -2,6 +2,13 @@
   "version": 1,
   "assets": [
     {
+      "path": "scenes/acropole/acropole.glb",
+      "bytes": 14198344,
+      "sha256": "5151a8bed64fdc886aefe6c53ece99ebd298458b72e93ac99f99e34d7d38e4e7",
+      "release": "assets-v2",
+      "file": "5151a8bed64f-acropole.glb"
+    },
+    {
       "path": "scenes/thermopyles/thermopyles.glb",
       "bytes": 4231236,
       "sha256": "9b500b02526ffd477a802f52057210a343bb9a1d5353bc3f4fb49f95e44ca1a3",

@@ -46,6 +46,7 @@ Les textes des événements, des époques et des pistes sont rédigés pour le p
 
 | Ressource | Source et licence | Attribution | Usage et modifications |
 |---|---|---|---|
+| Relief d'Athènes et de l'Attique | Copernicus DEM GLO-30, tuiles N37 E023 et N38 E023 ; licence Copernicus DEM (usage libre avec attribution) | produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved ; « The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30 » | Terrain de la scène de l'Acropole : bâtiments modernes lissés, rocher de l'Acropole et pentes restitués, remblais de Phalère et du Pirée retirés ; script `blender/kit/acropole_terrain.py` |
 | Relief des Thermopyles | Copernicus DEM GLO-30, tuile N38 E022 ; licence Copernicus DEM (usage libre avec attribution) | produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved ; « The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30 » | Terrain de la scène des Thermopyles, côte de 480 av. J.-C. restituée d'après Kraft et al. 1987 (alluvions abaissées de 18 à 22 m, plaine du Sperchios rendue au golfe) ; script `blender/kit/thermopyles_terrain.py` |
 
 ## Sons d'ambiance
