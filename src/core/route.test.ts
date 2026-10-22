@@ -28,6 +28,9 @@ describe('parseHash', () => {
     expect(parseHash('#/recherche')).toEqual({ name: 'search' })
     expect(routeToHash({ name: 'learn', game: 'ou' })).toBe('#/apprendre/ou')
     expect(routeToHash({ name: 'search' })).toBe('#/recherche')
+    expect(parseHash('#/collection')).toEqual({ name: 'collection' })
+    expect(parseHash('#/collection/x')).toEqual({ name: 'not-found', path: 'collection/x' })
+    expect(routeToHash({ name: 'collection' })).toBe('#/collection')
   })
 
   it('reports anything else as not found', () => {

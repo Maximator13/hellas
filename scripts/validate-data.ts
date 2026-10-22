@@ -19,6 +19,12 @@ export function sceneFileErrors(scenes: { id: string; status: string }[], folder
   return [...missingFiles, ...orphans]
 }
 
+export function cardArtErrors(artCards: string[], exists: (path: string) => boolean): string[] {
+  return artCards.flatMap((id) =>
+    [`public/cards/${id}.webp`, `public/cards/${id}-s.webp`].filter((path) => !exists(path)).map((path) => `card ${id}: missing ${path}`),
+  )
+}
+
 function sceneFolders(): string[] {
   return readdirSync('src/scenes', { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
@@ -26,11 +32,20 @@ function sceneFolders(): string[] {
 }
 
 if (import.meta.main) {
-  const problems = [...validateDataset(dataset), ...sceneFileErrors(dataset.scenes, sceneFolders(), existsSync)]
+  const problems = [
+    ...validateDataset(dataset),
+    ...sceneFileErrors(dataset.scenes, sceneFolders(), existsSync),
+    ...cardArtErrors(
+      dataset.cardArt.map((art) => art.card),
+      existsSync,
+    ),
+  ]
   if (problems.length > 0) {
     console.error(problems.join('\n'))
     process.exit(1)
   }
   const counts = Object.entries(dataset).map(([name, items]) => `${items.length} ${name}`)
-  console.log(`Data valid: ${counts.join(', ')}.`)
+  const withArt = new Set(dataset.cardArt.map((art) => art.card))
+  const withoutArt = dataset.cards.filter((card) => !withArt.has(card.id)).length
+  console.log(`Data valid: ${counts.join(', ')}.${withoutArt > 0 ? ` ${withoutArt} cards still without illustration.` : ''}`)
 }

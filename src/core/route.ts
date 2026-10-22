@@ -13,6 +13,7 @@ export type Route =
   | { name: 'page'; id: PageId }
   | { name: 'learn'; game?: GameId }
   | { name: 'search' }
+  | { name: 'collection' }
   | { name: 'not-found'; path: string }
 
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
@@ -35,6 +36,7 @@ export function parseHash(hash: string): Route {
   if (section === 'apprendre' && id === undefined) return { name: 'learn' }
   if (section === 'apprendre' && id && isGameId(id) && rest.length === 0) return { name: 'learn', game: id }
   if (section === 'recherche' && id === undefined) return { name: 'search' }
+  if (section === 'collection' && id === undefined) return { name: 'collection' }
   return { name: 'not-found', path }
 }
 
@@ -52,6 +54,8 @@ export function routeToHash(route: Route): string {
       return route.game ? `#/apprendre/${route.game}` : '#/apprendre'
     case 'search':
       return '#/recherche'
+    case 'collection':
+      return '#/collection'
     case 'not-found':
       return `#/${route.path}`
   }
