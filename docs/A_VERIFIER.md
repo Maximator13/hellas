@@ -419,3 +419,35 @@ Hypothèses prises en construisant la scène (`blender/olympie.py`, `blender/kit
 - **Aspasie.** Les textes viennent en partie de la comédie, hostile ; le reconnaître sur la carte.
 - **Arsinoé II.** Mort en 270 ou en 268 selon la lecture de la stèle de Mendès. Hypothèse : 270.
 - **Mercenaires d'Abou Simbel.** Graffiti datés de la campagne de Psammétique II en Nubie, 593 ou 591. Hypothèse : 591.
+
+## Scène du Mausolée, choix de modélisation
+
+- **Hauteur.** Option recommandée retenue : 45,05 m au sommet du quadrige (socle de 18,9 m en trois blocs à deux gradins de statues, colonnes de 10 m, entablement de 2,35 m, pyramide de 24 marches de 0,30 m, base du quadrige de 3 m, quadrige de 3,6 m). La variante à 25 m de socle (environ 51 m) n'est pas modélisée.
+- **Orientation du Quadrangle.** Grand axe posé exactement est-ouest faute d'avoir relevé le plan danois ; terrasse de 242 sur 105 m avec le Mausolée dans l'angle nord-est, posée de façon schématique.
+- **Quadrige.** Tourné vers l'est (vers le propylon), char vide : ni l'orientation ni l'occupant ne sont connus. Couleurs de la restitution d'Aytepe et Baran (2021), hypothèse.
+- **Lions.** 32 lions tournés vers l'extérieur sur le premier degré élargi de la pyramide ; nombre et orientation inconnus.
+- **Statues.** 72 statues en trois tailles (gradin bas, gradin haut, entrecolonnements) tirées de 8 modèles génériques ; répartition et sujets imaginés.
+- **Rivage et port.** Terre-pleins de la marina et jetée ouest du château retirés par hypothèse, deux môles schématiques ajoutés à l'entrée du port ; tracé antique des quais inconnu.
+- **Presqu'île de Zéphyrion.** Plateau rocheux posé à 21 m (entre le relief actuel et les 25 m de Pedersen) ; palais, annexes, loge du port secret et belvédère restitués librement.
+- **Salmakis.** Petit naiskos, bassin et grotte au bord de l'eau, sur la rive est de Kaplan Kalesi : disposition imaginée.
+- **Göktepe et temple d'Arès.** Sommet repéré sur le relief vers E -400, N +600 (environ 136 m) ; petit temple ionique prostyle, emplacement supposé.
+- **Théâtre.** Option « première cavea de pierre » retenue : 16 rangs sur la partie basse, sans bâtiment de scène romain ; date du théâtre débattue.
+- **Murs et porte de Myndos.** Tracé de l'enceinte dessiné à main levée sur les crêtes (environ 7 km), tours tous les 70 m environ, porte de Myndos à deux tours et fossé restitués d'après Arrien ; tracé à relever sur les plans danois.
+- **Ville.** Îlots réguliers de 30 m orientés à 4° du nord, grande rue de 15 m le long de la terrasse vers la porte de Myndos, agora à l'est de la terrasse (vers le propylon) : schéma.
+
+## Scène de l'Artémision, choix de modélisation
+
+Hypothèses prises en construisant la scène (`blender/artemision.py`, `blender/kit/artemision_*.py`), en plus de celles de `docs/scenes/artemision.md`.
+
+- **Plateforme.** Dix marches (première option de la proposition) de 0,27 m et 0,55 m de giron, plateforme de 125,7 sur 65,1 m et 2,7 m de haut ; le stylobate qui en résulte (114,7 sur 54,1 m) tombe sur les dimensions du temple archaïque.
+- **Axe.** Façade posée exactement à l'ouest (azimut 270°), faute d'azimut relevé ; le jour reste la mi-avril, soleil à l'azimut 262° et à 23° de hauteur.
+- **Colonnes.** 108 colonnes, sous le maximum de 109 d'Ohnesorg : deux rangées tout autour (8 à l'ouest, 9 à l'est, 21 sur les flancs, rangée intérieure de 6, 7 et 19), quatre colonnes dans le pronaos et deux in antis à l'opisthodome ; entraxes de façade de 6,1 à 8,6 m (central élargi), 5,45 m sur les flancs ; fût de 17,7 m pour 1,8 m de diamètre. Tous ces chiffres sont des choix de modélisation.
+- **Colonnes sculptées.** Les 36 colonnes à tambour sculpté sont placées aux deux façades et dans les porches ; les quatre du pronaos reposent sur des socles carrés sculptés de 1,8 m. Emplacement inconnu, hypothèse. Figures et couleurs génériques, sans copie du tambour de Londres.
+- **Entablement.** Architrave à trois fasces, denticules, corniche et sima à gargouilles en têtes de lion, sans frise ; fronton à tympan bleu sombre, sans sculpture ni ouverture ; acrotères en palmette (hypothèse) ; toit de tuiles de terre cuite.
+- **Sekos.** Option recommandée par la proposition : salle couverte, sans colonnade intérieure (portée d'environ 21 m, à vérifier) ; pronaos de 16 m, naos de 57 m, opisthodome ; porte de 6 sur 12 m. Le faisceau de soleil qui passe sous le linteau touche le dallage vers E -12, à 37 m de la statue.
+- **Statue de culte.** 2,2 m sur une base de 1,3 m à E +25, gaine dorée et rangs d'ornements devant une tenture pourpre et safran : aspect inspiré des copies romaines, gardé dans la pénombre.
+- **Autel.** Cour de 32 sur 40 m centrée à E -140, ouverte à l'ouest, socle de 1,6 m et colonnade ionique de 4,2 m sur trois côtés, table au fond côté temple : dimensions et position à caler sur Muss, Bammer et Büyükkolancı 2001.
+- **Sol et côte.** Plaine abaissée de 5 m environ autour du sanctuaire (2,5 m au loin), sol du sanctuaire calé à 2,4 m au-dessus de la mer ; rivage tracé à main levée à 180 m de la façade, golfe ouvert à l'ouest, marais et lagunes du delta au nord, bras du Caÿstre au nord-est ; Sélinous et Marnas dessinés à main levée. Hypothèse, à reprendre sur Kraft et al. 2007 (fig. 12).
+- **Ville de Lysimaque.** Enceinte dessinée à main levée sur le Panayırdağ et le Bülbüldağ, tours tous les 85 m environ, quartiers en maisons simples sur les pentes : schéma. Pas de théâtre ; agora laissée vide.
+- **Sanctuaire.** Maisons des prêtres, échoppes et bornes d'asile (ellipse de 210 sur 190 m) placées sans plan connu.
+- **Points de vue.** Vue d'ensemble déplacée (E -1100, N +1100, 380 m) pour garder le temple au centre sur mobile ; vue du Mégabyze prise depuis le nord-ouest de l'angle des marches, pour éviter le contre-jour ; vue de la ville prise au rebord sud-ouest d'Ayasoluk ; vue des colonnes sculptées sur les marches de la façade, devant la colonne au nord de l'axe.

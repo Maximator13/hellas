@@ -51,8 +51,14 @@ const RENDERS = '.cache/cards/renders'
 
 const RENDERED: Record<string, Source> = {
   acropole: render('acropole', `${PREVIEWS}/acropole/vue-d-ensemble.png`, "L'Acropole d'Athènes vers 432 av. J.-C., rendu 3D de la scène du site", 'acropole', 0.5, 0.5),
-  thermopyles: render('thermopyles', `${PREVIEWS}/thermopyles/rasante_assaut.png`, 'Les Thermopyles en 480 av. J.-C., rendu 3D de la scène du site', 'thermopyles', 0.5, 0.5),
-  hoplites: render('hoplites', `${RENDERS}/hoplites.png`, "Phalange d'hoplites, rendu 3D des figurines du site", 'cards', 0.5, 0.55, 1.05),
+  thermopyles: render('thermopyles', `${PREVIEWS}/thermopyles/rasante_assaut.png`, 'Les Thermopyles en 480 av. J.-C., rendu 3D de la scène du site', 'thermopyles', 0.3, 0.5),
+  phare: render('phare', `${PREVIEWS}/phare/le-phare-jour.png`, "Le Phare d'Alexandrie vers 280 av. J.-C., rendu 3D de la scène du site", 'phare', 0.5, 0.5, 1.8),
+  colosse: render('colosse', `${PREVIEWS}/colosse/colosse.png`, "Le Colosse de Rhodes selon l'hypothèse de la colline, rendu 3D de la scène du site", 'colosse', 0.5, 0.45),
+  olympie: render('olympie', `${PREVIEWS}/olympie/temple-de-zeus.png`, "Le temple de Zeus à Olympie en 420 av. J.-C., rendu 3D de la scène du site", 'olympie', 0.3, 0.5),
+  artemision: render('artemision', `${PREVIEWS}/artemision/facade-ouest.png`, "L'Artémision d'Éphèse vers 200 av. J.-C., rendu 3D de la scène du site", 'artemision', 0.5, 0.5),
+  mausolee: render('mausolee', `${PREVIEWS}/mausolee/mausolee.png`, "Le Mausolée d'Halicarnasse vers 340 av. J.-C., rendu 3D de la scène du site", 'mausolee', 0.5, 0.5, 1.3),
+  spartiates: render('spartiates', `${RENDERS}/spartiates.png`, 'Hoplites spartiates, rendu 3D des figurines du site', 'cards', 0.5, 0.55),
+  'bataillon-sacre': render('bataillon-sacre', `${RENDERS}/bataillon-sacre.png`, 'Hoplites thébains du Bataillon sacré, rendu 3D des figurines du site', 'cards', 0.5, 0.55),
 }
 
 function rawFile(id: string, meta: Meta): string {
@@ -75,8 +81,8 @@ function cropBox(width: number, height: number, source: Source) {
   const ratio = LARGE.width / LARGE.height
   let cropWidth = Math.min(width, height * ratio) / source.zoom
   let cropHeight = cropWidth / ratio
-  cropWidth = Math.round(cropWidth)
-  cropHeight = Math.round(cropHeight)
+  cropWidth = Math.floor(cropWidth)
+  cropHeight = Math.floor(cropHeight)
   const left = Math.round(Math.min(Math.max(source.focusX * width - cropWidth / 2, 0), width - cropWidth))
   const top = Math.round(Math.min(Math.max(source.focusY * height - cropHeight / 2, 0), height - cropHeight))
   return { left, top, width: cropWidth, height: cropHeight }
