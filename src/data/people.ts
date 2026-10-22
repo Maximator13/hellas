@@ -1,6 +1,11 @@
 import type { Person } from './schema.ts'
+import { people as bronze } from './people-bronze.ts'
+import { people as archaique } from './people-archaique.ts'
+import { people as classique1 } from './people-classique-1.ts'
+import { people as classique2 } from './people-classique-2.ts'
+import { people as hellenistique } from './people-hellenistique.ts'
 
-export const people: Person[] = [
+const core: Person[] = [
   {
     "id": "adraste",
     "name": "Adraste",
@@ -450,3 +455,5 @@ export const people: Person[] = [
     "certainty": "attested"
   }
 ]
+
+export const people: Person[] = [core, bronze, archaique, classique1, classique2, hellenistique].flat()

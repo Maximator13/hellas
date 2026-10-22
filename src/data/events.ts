@@ -1,4 +1,9 @@
 import type { HistoricalEvent } from './schema.ts'
+import { events as bronze } from './events-bronze.ts'
+import { events as archaique } from './events-archaique.ts'
+import { events as classique1 } from './events-classique-1.ts'
+import { events as classique2 } from './events-classique-2.ts'
+import { events as hellenistique } from './events-hellenistique.ts'
 
 const HERODOTE = 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126'
 const THUCYDIDE = 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0200'
@@ -9,7 +14,7 @@ const STRABON = 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999
 const PLUTARQUE = 'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives'
 const DION = 'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio'
 
-export const events: HistoricalEvent[] = [
+const core: HistoricalEvent[] = [
   {
     "id": "premiers-palais-minoens",
     "title": "Premiers palais de Crète",
@@ -2126,3 +2131,5 @@ export const events: HistoricalEvent[] = [
     ]
   }
 ]
+
+export const events: HistoricalEvent[] = [core, bronze, archaique, classique1, classique2, hellenistique].flat()

@@ -1,6 +1,11 @@
 import type { Place } from './schema.ts'
+import { places as bronze } from './places-bronze.ts'
+import { places as archaique } from './places-archaique.ts'
+import { places as classique1 } from './places-classique-1.ts'
+import { places as classique2 } from './places-classique-2.ts'
+import { places as hellenistique } from './places-hellenistique.ts'
 
-export const places: Place[] = [
+const core: Place[] = [
   {
     "id": "akrotiri",
     "name": "Akrotiri (Santorin)",
@@ -239,3 +244,5 @@ export const places: Place[] = [
     "pleiadesId": 530906
   }
 ]
+
+export const places: Place[] = [core, bronze, archaique, classique1, classique2, hellenistique].flat()
