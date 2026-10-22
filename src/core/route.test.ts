@@ -21,6 +21,15 @@ describe('parseHash', () => {
     expect(parseHash('#/scene/nimes/forum')).toEqual({ name: 'not-found', path: 'scene/nimes/forum' })
   })
 
+  it('reads the learning and search routes and writes them back', () => {
+    expect(parseHash('#/apprendre')).toEqual({ name: 'learn' })
+    expect(parseHash('#/apprendre/ordre')).toEqual({ name: 'learn', game: 'ordre' })
+    expect(parseHash('#/apprendre/inconnu')).toEqual({ name: 'not-found', path: 'apprendre/inconnu' })
+    expect(parseHash('#/recherche')).toEqual({ name: 'search' })
+    expect(routeToHash({ name: 'learn', game: 'ou' })).toBe('#/apprendre/ou')
+    expect(routeToHash({ name: 'search' })).toBe('#/recherche')
+  })
+
   it('reports anything else as not found', () => {
     expect(parseHash('#/evenement/Cannes')).toEqual({ name: 'not-found', path: 'evenement/Cannes' })
     expect(parseHash('#/evenement')).toEqual({ name: 'not-found', path: 'evenement' })

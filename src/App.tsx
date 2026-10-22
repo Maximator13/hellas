@@ -6,7 +6,7 @@ import { internalRoute, routeToHash, type Route } from './core/route.ts'
 import { eras } from './data/eras.ts'
 import { events } from './data/events.ts'
 import { pages } from './data/pages.ts'
-import { PAGE_LINKS, UI } from './data/ui.ts'
+import { PAGE_LINKS, UI, LEARN } from './data/ui.ts'
 import { SITE } from './site.ts'
 import { gradingAt, readableAccent, rgbToCss } from './stage/grading.ts'
 import { currentRoute, navigate, useApp } from './store.ts'
@@ -15,6 +15,8 @@ import { isVisibleAt } from './timeline/layout.ts'
 import { Timeline } from './timeline/Timeline.tsx'
 import { animateView, viewForEvent } from './timeline/viewAnimation.ts'
 import { clampViewport, isHomeView, viewAround, type Viewport } from './timeline/viewport.ts'
+import { LearnPanel } from './learn/LearnPanel.tsx'
+import { SearchPanel } from './learn/SearchPanel.tsx'
 import { ConsentBanner } from './ui/ConsentBanner.tsx'
 import { findScene, isPlayable } from './scenes/registry.ts'
 import { EraCaption, EventPanel, NotFoundPanel, PagePanel, ScenePanel, SceneShortcuts } from './ui/panels.tsx'
@@ -125,6 +127,8 @@ function ActivePanel({ route }: { route: Route }) {
     const scene = findScene(route.id)
     return scene ? <ScenePanel scene={scene} /> : <NotFoundPanel />
   }
+  if (route.name === 'learn') return <LearnPanel game={route.game} />
+  if (route.name === 'search') return <SearchPanel />
   if (route.name === 'not-found') return <NotFoundPanel />
   return null
 }
@@ -195,6 +199,12 @@ export function App() {
             </a>
           </h1>
           <nav className="site-nav" aria-label={UI.footerLabel}>
+            <a href={routeToHash({ name: 'learn' })} className="site-nav__main">
+              {LEARN.navLearn}
+            </a>
+            <a href={routeToHash({ name: 'search' })} className="site-nav__main">
+              {LEARN.navSearch}
+            </a>
             {PAGE_LINKS.map((link) => (
               <a key={link.id} href={routeToHash({ name: 'page', id: link.id })}>
                 {link.label}

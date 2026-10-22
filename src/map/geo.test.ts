@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { MAP_BOUNDS, MAP_SIZE, RELIEF_GRID, RELIEF_TILE_COLUMNS, decodeElevation, encodeElevation, gridCell, project, tileColumn, toTextureUv } from './geo.ts'
+import { MAP_BOUNDS, MAP_SIZE, RELIEF_GRID, RELIEF_TILE_COLUMNS, decodeElevation, encodeElevation, gridCell, project, tileColumn, toTextureUv, unproject } from './geo.ts'
 
 describe('projection', () => {
   it('centres the map on the middle of its bounds', () => {
@@ -21,6 +21,13 @@ describe('projection', () => {
     const northEast = project(MAP_BOUNDS.east, MAP_BOUNDS.north)
     expect(northEast.x - southWest.x).toBeCloseTo(MAP_SIZE.width)
     expect(southWest.z - northEast.z).toBeCloseTo(MAP_SIZE.depth)
+  })
+
+  it('unprojects a projected point back to its coordinates', () => {
+    const point = project(23.73, 37.97)
+    const back = unproject(point.x, point.z)
+    expect(back.lon).toBeCloseTo(23.73)
+    expect(back.lat).toBeCloseTo(37.97)
   })
 
   it('maps the bounds to texture coordinates from 0 to 1', () => {

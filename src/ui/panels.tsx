@@ -10,9 +10,10 @@ import type { HistoricalEvent, Scene, Source } from '../data/schema.ts'
 import { CATEGORY, CERTAINTY, UI } from '../data/ui.ts'
 import { findScene, isPlayable } from '../scenes/registry.ts'
 import { navigate, useApp } from '../store.ts'
+import { markSeen } from '../learn/progress.ts'
 import { Markdown } from './Markdown.tsx'
 
-function Panel({
+export function Panel({
   kind,
   labelId,
   focusKey,
@@ -79,6 +80,9 @@ function SourceList({ title, sources }: { title: string; sources: Source[] }) {
 }
 
 export function EventPanel({ event }: { event: HistoricalEvent }) {
+  useEffect(() => {
+    markSeen(event.id)
+  }, [event.id])
   const era = eras.find((candidate) => candidate.id === event.era)
   const place = places.find((candidate) => candidate.id === event.placeId)
   const persons = people.filter((person) => event.people?.includes(person.id))

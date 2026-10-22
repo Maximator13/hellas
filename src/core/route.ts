@@ -2,17 +2,27 @@ export const PAGE_IDS = ['mentions-legales', 'confidentialite', 'conditions', 's
 
 export type PageId = (typeof PAGE_IDS)[number]
 
+export const GAME_IDS = ['quiz', 'ordre', 'date', 'ou'] as const
+
+export type GameId = (typeof GAME_IDS)[number]
+
 export type Route =
   | { name: 'home' }
   | { name: 'event'; id: string }
   | { name: 'scene'; id: string }
   | { name: 'page'; id: PageId }
+  | { name: 'learn'; game?: GameId }
+  | { name: 'search' }
   | { name: 'not-found'; path: string }
 
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 function isPageId(value: string): value is PageId {
   return (PAGE_IDS as readonly string[]).includes(value)
+}
+
+function isGameId(value: string): value is GameId {
+  return (GAME_IDS as readonly string[]).includes(value)
 }
 
 export function parseHash(hash: string): Route {
@@ -22,6 +32,9 @@ export function parseHash(hash: string): Route {
   if (section === 'evenement' && id && SLUG.test(id) && rest.length === 0) return { name: 'event', id }
   if (section === 'scene' && id && SLUG.test(id) && rest.length === 0) return { name: 'scene', id }
   if (section && isPageId(section) && id === undefined) return { name: 'page', id: section }
+  if (section === 'apprendre' && id === undefined) return { name: 'learn' }
+  if (section === 'apprendre' && id && isGameId(id) && rest.length === 0) return { name: 'learn', game: id }
+  if (section === 'recherche' && id === undefined) return { name: 'search' }
   return { name: 'not-found', path }
 }
 
@@ -35,6 +48,10 @@ export function routeToHash(route: Route): string {
       return `#/scene/${route.id}`
     case 'page':
       return `#/${route.id}`
+    case 'learn':
+      return route.game ? `#/apprendre/${route.game}` : '#/apprendre'
+    case 'search':
+      return '#/recherche'
     case 'not-found':
       return `#/${route.path}`
   }
