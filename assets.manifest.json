@@ -9,11 +9,25 @@
       "file": "5151a8bed64f-acropole.glb"
     },
     {
+      "path": "scenes/artemision/artemision.glb",
+      "bytes": 6230368,
+      "sha256": "361f1cd959ea98c75ee9530550e81e71c5effea0d35e9c5f64b5db046b971b37",
+      "release": "assets-v4",
+      "file": "361f1cd959ea-artemision.glb"
+    },
+    {
       "path": "scenes/colosse/colosse.glb",
       "bytes": 7604088,
       "sha256": "125fde0bc8419ade7280035833e312e65a83f32b9473e727e9938120e132dbe8",
       "release": "assets-v3",
       "file": "125fde0bc841-colosse.glb"
+    },
+    {
+      "path": "scenes/mausolee/mausolee.glb",
+      "bytes": 7327260,
+      "sha256": "e7196b3c1c79a371e06ab326b6922fc677dbdc70bdb9e1a279a3b41c0e4c903c",
+      "release": "assets-v4",
+      "file": "e7196b3c1c79-mausolee.glb"
     },
     {
       "path": "scenes/olympie/olympie.glb",

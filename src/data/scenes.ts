@@ -765,5 +765,342 @@ export const scenes: Scene[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "artemision",
+    "title": "L'Artémision d'Éphèse",
+    "status": "ready",
+    "year": -199,
+    "lat": 37.94975,
+    "lon": 27.36372,
+    "summary": "Vers 200 av. J.-C., un après-midi de printemps : le temple d'Artémis, rebâti après l'incendie de 356, se dresse au bord d'un golfe aujourd'hui comblé, à 2 km de la ville nouvelle de Lysimaque. Relief réel (Copernicus GLO-30) débarrassé des alluvions accumulées depuis ; tracé de la côte, nombre et place des colonnes, toiture de la salle, aspect de la statue de culte, de l'autel et des couleurs restitués en hypothèse.",
+    "points": [
+      {
+        "id": "vue-d-ensemble",
+        "title": "L'Artémision dans son golfe",
+        "text": "Vers 200 av. J.-C., le temple d'Artémis d'Éphèse se dresse au bord d'un golfe aujourd'hui comblé : le Caÿstre a depuis poussé son delta de plusieurs kilomètres vers la mer. Rebâti après l'incendie de 356 sur le plan du temple archaïque, c'est l'un des plus grands temples grecs, compté parmi les Sept Merveilles du monde. La ville, elle, n'est plus là : vers 294 à 289, le roi Lysimaque l'a transportée à 2 km au sud-ouest, entre deux collines qu'il a entourées de murs. Le sanctuaire reste le cœur religieux et financier de l'Ionie.",
+        "sources": [
+          "Strabon, XIV, 1, 21 à 24",
+          "Anthologie grecque, IX, 58 (Antipater de Sidon)",
+          "J. C. Kraft, H. Brückner, I. Kayan et H. Engelmann, Geoarchaeology 22 (2007), p. 121 à 149",
+          "Pleiades 873985034 et 599612"
+        ]
+      },
+      {
+        "id": "port-sacre",
+        "title": "Le port sacré",
+        "text": "Les carottages des géologues l'ont montré : du VIIIe siècle av. J.-C. au milieu de l'époque hellénistique, la mer venait à une centaine de mètres environ du sanctuaire, et les pèlerins pouvaient sans doute arriver par bateau. Au IVe siècle, le petit fleuve Sélinous, qui passe près du temple, était assez saumâtre pour qu'un poète gastronome y vante la daurade. Mais les limons du Caÿstre avancent : vers 100 av. J.-C., le delta aura dépassé le sanctuaire, et le port de la ville elle-même lutte déjà contre l'envasement. Le tracé exact de cette côte est une restitution.",
+        "sources": [
+          "Kraft et al., Geoarchaeology 22 (2007)",
+          "F. Stock et al., Zeitschrift für Geomorphologie 58, suppl. 2 (2014), p. 33 à 66",
+          "Xénophon, Anabase, V, 3, 8",
+          "Strabon, XIV, 1, 24"
+        ]
+      },
+      {
+        "id": "autel",
+        "title": "Le grand autel",
+        "text": "Devant la façade, à l'ouest, une cour fermée de murs et de colonnes abrite l'autel où l'on sacrifie à la déesse, tourné vers son image. Les archéologues autrichiens en ont retrouvé les fondations en 1965 ; il appartient à la reconstruction qui suit l'incendie de 356, et remplace un autel plus ancien. Le géographe Strabon le dit presque entièrement couvert d'œuvres de Praxitèle. On le rapproche souvent des grands autels à cour, plus tardifs, de Magnésie du Méandre et de Pergame. Ses dimensions et sa distance au temple sont restituées d'après le plan des fouilles.",
+        "sources": [
+          "Strabon, XIV, 1, 23",
+          "U. Muss, A. Bammer et M. Büyükkolancı, Der Altar des Artemisions von Ephesos, Vienne, 2001",
+          "M. Weissl, ÖJh 71 (2002), p. 313 à 346"
+        ]
+      },
+      {
+        "id": "facade-ouest",
+        "title": "Le temple refait sur le plan de Crésus",
+        "text": "Le premier grand temple de marbre, commencé vers 560 à 550 avec l'aide du roi de Lydie Crésus, brûle en 356 : la tradition place l'incendie la nuit même de la naissance d'Alexandre, et nomme l'incendiaire Érostrate, qui voulait rendre son nom immortel. Les Éphésiens le rebâtissent sur le même plan, sur une plateforme haute d'environ 2,7 m, en vendant les colonnes de l'ancien temple et en donnant leurs bijoux. En 334, ils refusent l'offre d'Alexandre de tout payer : « il ne convient pas à un dieu de faire des offrandes à des dieux ». Pline compte 127 colonnes de 60 pieds, environ 18 m, sur un édifice de 425 pieds sur 225 ; les archéologues en restituent plutôt une centaine.",
+        "sources": [
+          "Hérodote, I, 92, 1",
+          "Plutarque, Alexandre, 3, 5 à 7",
+          "Strabon, XIV, 1, 22 et 23",
+          "Valère Maxime, VIII, 14, ext. 5",
+          "Pline, XXXVI, 95",
+          "A. Bammer et U. Muss, Das Artemision von Ephesos, Mayence, 1996"
+        ]
+      },
+      {
+        "id": "colonnes-sculptees",
+        "title": "Les colonnes sculptées",
+        "text": "Trente-six colonnes du temple, dit Pline, ont le bas du fût sculpté de figures presque grandeur nature, et l'une serait de Scopas, l'un des sculpteurs du Mausolée d'Halicarnasse (la lecture de ce passage est discutée). Certaines reposent sur de hauts socles carrés eux aussi sculptés. Le tambour conservé au British Museum, daté de 340 à 320, montre une femme entre Hermès, qui conduit les âmes, et un jeune homme ailé, la Mort : peut-être Alceste. Le temple archaïque avait déjà de telles colonnes, offertes en partie par Crésus. Les couleurs sont restituées par comparaison avec d'autres sculptures de l'époque.",
+        "sources": [
+          "Pline, XXXVI, 95",
+          "British Museum, notice 1872,0803.9",
+          "A. Ohnesorg, Der Kroisos-Tempel, Vienne, 2007",
+          "V. Brinkmann et R. Wünsche (dir.), Gods in Color, Munich, 2007"
+        ]
+      },
+      {
+        "id": "megabyze-et-asile",
+        "title": "Le Mégabyze, les vierges et l'asile",
+        "text": "Le temple a pour prêtres des eunuques qu'on appelle Mégabyzes, d'un nom perse, choisis souvent hors de la cité, et des jeunes filles vierges les assistent : c'est du moins ce que rapporte Strabon, deux siècles plus tard. Le sanctuaire est aussi une banque : particuliers, cités et rois y déposent leur argent, comme l'avait fait Xénophon. Surtout, c'est un asile : quiconque s'y réfugie est sous la protection de la déesse. Alexandre a fixé la limite de l'asile à un stade, environ 180 m autour du temple ; Mithridate puis Antoine l'élargiront, avant qu'Auguste ne revienne en arrière. L'aspect de ces prêtres est restitué.",
+        "sources": [
+          "Strabon, XIV, 1, 23",
+          "Xénophon, Anabase, V, 3, 6",
+          "Pausanias, VIII, 13, 1",
+          "Dion Chrysostome, Discours 31, 54 et 55",
+          "Pline, XXXV, 93"
+        ]
+      },
+      {
+        "id": "statue-de-culte",
+        "title": "L'Artémis d'Éphèse",
+        "text": "Au fond de la salle se tient l'image de culte, une très vieille statue de bois que les Éphésiens disent n'avoir jamais remplacée, malgré les reconstructions du temple : d'ébène selon certains, de bois de vigne selon un Romain qui l'a vue, nourrie de nard par de petits trous. Au IVe siècle, Xénophon la dit d'or. Son aspect n'est connu que par des copies romaines : une déesse raide, haute coiffe, poitrine couverte de rangs d'ornements dont le sens est discuté. Quelque part dans le temple est accroché le portrait d'Alexandre tenant la foudre, peint par Apelle pour vingt talents d'or.",
+        "sources": [
+          "Pline, XVI, 213 et 214 et XXXV, 92",
+          "Xénophon, Anabase, V, 3, 12",
+          "Callimaque, Hymne à Artémis",
+          "R. Fleischer, Artemis von Ephesos, Leyde, 1973"
+        ]
+      },
+      {
+        "id": "ville-de-lysimaque",
+        "title": "La ville de Lysimaque",
+        "text": "Jusqu'à Alexandre, les Éphésiens vivaient autour du temple. Lysimaque, l'un des successeurs d'Alexandre, construit vers 294 à 289 une nouvelle enceinte entre le mont Pion et le mont Préon, autour d'un port en eau profonde. Les habitants refusant de déménager, il attend une forte pluie et bouche les égouts pour inonder l'ancienne ville. Il rebaptise la cité Arsinoé, du nom de sa femme, mais l'ancien nom l'emporte après sa mort en 281. D'ici, on voit les murs courir sur la crête ; le grand théâtre n'existe pas encore : son bâtiment de scène ne sera commencé que dans le deuxième quart du IIe siècle.",
+        "sources": [
+          "Strabon, XIV, 1, 21",
+          "Pausanias, I, 9, 7",
+          "Kraft et al., Geoarchaeology 22 (2007)",
+          "P. Ruggendorfer, Das Theater von Ephesos, Vienne, 2017",
+          "Pleiades 599612 et 818256726"
+        ]
+      }
+    ],
+    "ambience": [
+      {
+        "layer": "wind",
+        "volume": 0.3,
+        "points": [
+          "vue-d-ensemble",
+          "ville-de-lysimaque"
+        ]
+      },
+      {
+        "layer": "birds-day",
+        "volume": 0.35,
+        "points": [
+          "vue-d-ensemble",
+          "facade-ouest",
+          "colonnes-sculptees",
+          "megabyze-et-asile",
+          "ville-de-lysimaque"
+        ]
+      },
+      {
+        "layer": "harbour",
+        "volume": 0.4,
+        "points": [
+          "port-sacre"
+        ]
+      },
+      {
+        "layer": "river",
+        "volume": 0.2,
+        "points": [
+          "port-sacre"
+        ]
+      },
+      {
+        "layer": "animals",
+        "volume": 0.3,
+        "points": [
+          "autel"
+        ]
+      },
+      {
+        "layer": "market",
+        "volume": 0.2,
+        "points": [
+          "autel",
+          "facade-ouest",
+          "megabyze-et-asile"
+        ]
+      },
+      {
+        "layer": "interior",
+        "volume": 0.5,
+        "points": [
+          "statue-de-culte"
+        ]
+      },
+      {
+        "layer": "evening-city",
+        "volume": 0.2,
+        "points": [
+          "ville-de-lysimaque"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mausolee",
+    "title": "Halicarnasse et le Mausolée",
+    "status": "ready",
+    "year": -344,
+    "lat": 37.0378,
+    "lon": 27.4242,
+    "summary": "Un matin de fin septembre, vers 345 av. J.-C. : la capitale des princes de Carie, bâtie en théâtre autour de son port, et le tombeau de Mausole tout juste achevé, une des Sept Merveilles du monde. Relief réel (Copernicus GLO-30) débarrassé de Bodrum ; monument restitué d'après les fouilles danoises, couleurs d'après les traces relevées sur les sculptures ; hypothèses signalées dans les cartels.",
+    "points": [
+      {
+        "id": "vue-d-ensemble",
+        "title": "Halicarnasse, une ville en forme de théâtre",
+        "text": "Vers 345 av. J.-C., Halicarnasse, en Carie, est la capitale d'une dynastie de princes cariens qui gouvernent la région au nom du roi de Perse tout en vivant à la grecque. Vers 370, Mausole y a transféré sa résidence et y a regroupé les habitants de six petites villes voisines. L'architecte romain Vitruve compare la ville à un théâtre : en bas, le port et la place du marché ; à mi-pente, une large rue où se dresse le tombeau de Mausole ; au sommet, le temple d'Arès ; aux deux extrémités du croissant, la fontaine de Salmakis et le palais. Une muraille de plus de 7 km court sur les collines. En face, à 20 km, l'île de Cos.",
+        "sources": [
+          "Vitruve, II, 8, 10 à 13",
+          "Strabon, XIII, 1, 59 et XIV, 2, 16 et 17",
+          "Diodore, XVI, 36, 2, 45, 7 et 69, 2",
+          "S. Hornblower, Mausolus, Oxford, 1982",
+          "Pleiades 599636"
+        ]
+      },
+      {
+        "id": "port-et-agora",
+        "title": "Le port et l'agora",
+        "text": "Mausole a choisi Halicarnasse pour son port, abrité entre deux avancées rocheuses, et pour son commerce. Au bord de l'eau s'étend la place publique, l'agora, où l'on vend le vin, l'huile et le poisson. La flotte du dynaste compte des dizaines de trières : vers 351, son successeur Idrieus en envoie 40, avec 8 000 mercenaires, aider le roi de Perse à reprendre Chypre. En 334, onze ans après cette scène, des trières mouilleront ici pour aider les défenseurs pendant qu'Alexandre assiège la ville.",
+        "sources": [
+          "Vitruve, II, 8, 11",
+          "Diodore, XVI, 42, 6 et 7",
+          "Arrien, Anabase, I, 20"
+        ]
+      },
+      {
+        "id": "palais-de-mausole",
+        "title": "Le palais et le port secret",
+        "text": "Sur la presqu'île qui ferme le port à l'est, Mausole a bâti son palais. Vitruve en admire les murs de brique, revêtus de marbre et d'un enduit si poli qu'il brille comme du verre. De là, le roi voyait à droite la place, le port et les murs ; à gauche, un port secret, caché sous la falaise, d'où il pouvait donner ses ordres sans être vu. Selon Vitruve, la reine Artémise y cacha sa flotte quand les Rhodiens attaquèrent la ville, puis les prit au piège. Le palais est aujourd'hui sous le château des chevaliers de Rhodes ; son emplacement exact et celui du port secret restent discutés.",
+        "sources": [
+          "Vitruve, II, 8, 10, 13 à 15",
+          "P. Pedersen, notice « The Palace of Maussollos », université du Danemark du Sud",
+          "Pleiades 116852156"
+        ]
+      },
+      {
+        "id": "salmakis",
+        "title": "La fontaine de Salmakis",
+        "text": "À l'autre extrémité du port jaillit la source de Salmakis, près d'un sanctuaire d'Aphrodite et d'Hermès. On racontait que son eau rendait les hommes efféminés ; Vitruve n'y croit pas : l'eau est claire et bonne, et la légende viendrait de ce que les montagnards cariens, attirés par une boutique tenue près de la source par un colon grec, adoptèrent peu à peu les mœurs grecques. Plus tard, le poète Ovide en fera l'histoire de la nymphe Salmacis et d'Hermaphrodite. Le bâtiment et la longue inscription en vers que l'on voit aujourd'hui sont postérieurs à cette scène.",
+        "sources": [
+          "Vitruve, II, 8, 11 et 12",
+          "Strabon, XIV, 2, 16",
+          "Ovide, Métamorphoses, IV",
+          "S. Isager, ZPE 123 (1998)"
+        ]
+      },
+      {
+        "id": "mausolee",
+        "title": "Le Mausolée, une Merveille du monde",
+        "text": "Mausole meurt en 353 ; sa sœur et épouse Artémise lui succède et achève son tombeau, peut-être commencé de son vivant. Les architectes Pythéos et Satyros ont conçu un monument sans équivalent : un très haut socle de pierre, une colonnade ionique de 36 colonnes, une pyramide de 24 marches et, au sommet, un char de marbre à quatre chevaux. Haut d'environ 41 à 45 m selon Pline, il se dresse dans un angle d'une immense terrasse fermée par un mur de marbre. Sous le monument, la chambre funéraire est scellée par un énorme bloc ; devant son entrée, on a retrouvé les restes d'un grand sacrifice. Son nom est devenu celui de tous les « mausolées ». La scène le montre achevé et haut de 45 m : ce sont deux hypothèses, car certains pensent que le chantier s'arrêta vers 340 sans être terminé.",
+        "sources": [
+          "Pline, Histoire naturelle, XXXVI, 30 et 31",
+          "Vitruve, VII, préface, 12 et 13",
+          "Pausanias, VIII, 16, 4",
+          "K. Jeppesen et al., The Maussolleion at Halikarnassos, Aarhus, 1981 à 2004",
+          "Perseus Art and Architecture Catalog, notice « Halikarnassos, Maussolleion »",
+          "Pleiades 461581651"
+        ]
+      },
+      {
+        "id": "sculpteurs",
+        "title": "Les quatre sculpteurs",
+        "text": "Selon Pline, quatre des plus grands sculpteurs du temps se partagèrent les côtés : Scopas à l'est, Bryaxis au nord, Timothéos au sud, Léocharès à l'ouest ; Vitruve, lui, nomme Léocharès, Bryaxis, Scopas et Praxitèle, et ajoute que certains y comptent aussi Timothéos. Artémise mourut avant la fin, mais ils achevèrent l'ouvrage pour leur propre gloire. En haut du socle court la frise du combat des Grecs contre les Amazones ; des dizaines de statues, chasseurs, guerriers, membres de la dynastie, se tiennent sur les gradins. Les sculptures étaient peintes : on a retrouvé du bleu sur le fond des frises et du rouge sur des figures. Les plus belles pièces sont au British Museum, à Londres.",
+        "sources": [
+          "Pline, XXXVI, 30 et 31",
+          "Vitruve, VII, préface, 13",
+          "G. B. Waywell, The Free-Standing Sculptures of the Mausoleum, Londres, 1978",
+          "I. Jenkins, C. Gratziu et A. P. Middleton, dans Sculptors and Sculpture of Caria and the Dodecanese, Londres, 1997",
+          "G. Aytepe et A. Baran, Arkhaia Anatolika 4 (2021)"
+        ]
+      },
+      {
+        "id": "quadrige",
+        "title": "Le quadrige au sommet",
+        "text": "Au sommet de la pyramide de 24 marches, hautes chacune d'environ 30 cm, se dresse un char de marbre tiré par quatre chevaux, œuvre d'un certain Pythis selon Pline. Une roue mesurait plus de 2 m de diamètre : le groupe, long d'environ 6,5 m, était colossal. Des traces de rouge sur le poitrail et la langue d'un cheval montrent qu'il était peint. On ignore qui se tenait sur le char. Le long du bord du toit veillaient des lions de marbre en marche. Deux grandes statues, que l'on appelle depuis le XIXe siècle « Mausole » et « Artémise » sans certitude, ont été retrouvées tout près.",
+        "sources": [
+          "Pline, XXXVI, 31",
+          "C. T. Newton, A History of Discoveries at Halicarnassus, Cnidus and Branchidae, Londres, 1862",
+          "Jeppesen 2002 (volume 5)",
+          "Waywell 1978"
+        ]
+      },
+      {
+        "id": "temple-d-ares",
+        "title": "Le temple d'Arès et le haut de la ville",
+        "text": "Au sommet de la ville, Vitruve place un temple d'Arès qui abritait une statue colossale à tête et extrémités de marbre sur un corps d'une autre matière (un acrolithe), œuvre de Léocharès ou de Timothéos, deux des sculpteurs du Mausolée. On ignore où il se trouvait exactement : on l'a cherché au sommet de cette colline, Göktepe, sans preuve. Au-dessous s'ouvre le théâtre, que l'on date en général de l'époque de Mausole. D'ici, on comprend la comparaison de Vitruve : toute la ville descend en gradins vers le port, comme les rangs d'un théâtre vers la scène.",
+        "sources": [
+          "Vitruve, II, 8, 11",
+          "G. E. Bean et J. M. Cook, BSA 50 (1955)",
+          "Pleiades 102024695 (théâtre)"
+        ]
+      },
+      {
+        "id": "porte-de-myndos",
+        "title": "La porte de Myndos et les murs",
+        "text": "Vers 370, Mausole entoure sa capitale d'une muraille de plus de 7 km, renforcée de tours et précédée d'un fossé, qui englobe toutes les collines. La porte de l'ouest, vers Myndos, en est la plus imposante. En 334, Alexandre assiège la ville : il fait combler un fossé large d'environ 30 coudées, environ 13 m, et abattre des tours. Les défenseurs, menés par Memnon de Rhodes, mettent le feu à leurs ouvrages et aux maisons proches du rempart, puis se réfugient dans les citadelles de Salmakis et de l'île d'Arkonnesos ; Alexandre rase la ville et confie la Carie à la reine Ada, qui l'adopte comme fils. Le Mausolée, lui, survit au siège.",
+        "sources": [
+          "Arrien, Anabase, I, 20 à 23",
+          "Diodore, XVII, 23 à 27",
+          "Strabon, XIV, 2, 17",
+          "université du Danemark du Sud, notice « The fortifications of Halikarnassos »"
+        ]
+      }
+    ],
+    "ambience": [
+      {
+        "layer": "wind",
+        "volume": 0.4,
+        "points": [
+          "vue-d-ensemble",
+          "quadrige",
+          "temple-d-ares"
+        ]
+      },
+      {
+        "layer": "birds-day",
+        "volume": 0.3,
+        "points": [
+          "vue-d-ensemble",
+          "palais-de-mausole",
+          "temple-d-ares",
+          "quadrige"
+        ]
+      },
+      {
+        "layer": "harbour",
+        "volume": 0.5,
+        "points": [
+          "port-et-agora",
+          "palais-de-mausole",
+          "salmakis"
+        ]
+      },
+      {
+        "layer": "market",
+        "volume": 0.25,
+        "points": [
+          "port-et-agora"
+        ]
+      },
+      {
+        "layer": "masonry",
+        "volume": 0.35,
+        "points": [
+          "mausolee"
+        ]
+      },
+      {
+        "layer": "fountain",
+        "volume": 0.4,
+        "points": [
+          "salmakis"
+        ]
+      },
+      {
+        "layer": "animals",
+        "volume": 0.3,
+        "points": [
+          "temple-d-ares",
+          "porte-de-myndos"
+        ]
+      }
+    ]
   }
 ]

@@ -1117,7 +1117,7 @@ export const events: HistoricalEvent[] = [
       "cresus"
     ],
     "summary": "Vers 560, les Éphésiens entreprennent un temple d'Artémis gigantesque, entièrement en marbre, entouré d'une double forêt de colonnes. Le roi de Lydie Crésus en offre la plupart des colonnes. Incendié en 356 et reconstruit sur le même plan, ce temple comptera parmi les Sept Merveilles du monde.",
-    "body": "**Un chantier royal.** Hérodote rapporte que Crésus offrit à Éphèse des génisses d'or et la plupart des colonnes du temple. Des fragments de bases de colonnes, conservés au British Museum, portent une dédicace au nom du roi. Strabon et Pline nomment l'architecte Chersiphron, auquel Vitruve associe son fils Métagénès.\n\n**Des dimensions inédites.** Le temple mesure environ 55 mètres sur 115, avec plus d'une centaine de colonnes ioniques hautes de près de 18 mètres, dont certaines ont un tambour inférieur sculpté. Pline raconte que l'architecte fit glisser les énormes architraves sur des sacs de sable.\n\n**Une longue histoire.** Sous le temple, les fouilleurs ont trouvé des sanctuaires plus anciens et un dépôt d'offrandes contenant les plus anciennes monnaies connues. En 356, un certain Hérostrate incendie le temple pour rendre son nom immortel ; les Éphésiens le rebâtissent à l'identique, plus haut encore.",
+    "body": "**Un chantier royal.** Hérodote rapporte que Crésus offrit à Éphèse des génisses d'or et la plupart des colonnes du temple. Des fragments de bases de colonnes, conservés au British Museum, portent une dédicace au nom du roi. Strabon et Pline nomment l'architecte Chersiphron, auquel Vitruve associe son fils Métagénès.\n\n**Des dimensions inédites.** Le temple mesure environ 55 mètres sur 115, avec plus d'une centaine de colonnes ioniques hautes de près de 18 mètres, dont certaines ont un tambour inférieur sculpté. Pline raconte que l'architecte fit glisser les énormes architraves sur des sacs de sable.\n\n**Une longue histoire.** Sous le temple, les fouilleurs ont trouvé des sanctuaires plus anciens et un dépôt d'offrandes contenant les plus anciennes monnaies connues. En 356, un certain Érostrate incendie le temple pour rendre son nom immortel ; les Éphésiens le rebâtissent sur le même plan, sur une plateforme plus haute. La scène 3D montre ce temple reconstruit, vers 200 av. J.-C.",
     "sources": [
       {
         "kind": "ancient",
@@ -1144,7 +1144,8 @@ export const events: HistoricalEvent[] = [
         "author": "Anton Bammer et Ulrike Muss",
         "work": "Das Artemision von Ephesos. Das Weltwunder Ioniens in archaischer und klassischer Zeit, Mayence, Philipp von Zabern, 1996"
       }
-    ]
+    ],
+    "scene": "artemision"
   },
   {
     "id": "sparte-soumet-tegee",

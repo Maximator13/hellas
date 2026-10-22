@@ -684,7 +684,7 @@ export const events: HistoricalEvent[] = [
     "start": -349,
     "precision": "decade",
     "certainty": "attested",
-    "certaintyNote": "Chantier daté vers 360 à 350 environ : commencé peut-être du vivant de Mausole (mort en 353), achevé après la mort d'Artémise (351).",
+    "certaintyNote": "Chantier daté d'environ 355 à 340 : commencé peut-être du vivant de Mausole (mort en 353/352 selon Diodore, en 351/350 selon Pline), poursuivi par Artémise (morte en 351/350) et achevé après elle selon Pline. Selon la notice du Perseus Art and Architecture Catalog, les travaux s'arrêtent vers 340, et certains pensent que le monument, l'enclos et son propylon ne furent jamais achevés.",
     "era": "classique",
     "track": "monde-grec",
     "category": "building",
@@ -694,8 +694,8 @@ export const events: HistoricalEvent[] = [
       "mausole",
       "artemise-ii"
     ],
-    "summary": "Vers 350, à Halicarnasse, en Carie, s'élève le tombeau monumental du dynaste Mausole, mort en 353, poursuivi par sa veuve Artémise puis achevé après elle. Haut d'environ 45 mètres, orné par les plus grands sculpteurs du temps, il compte parmi les Sept Merveilles du monde et a donné son nom à tous les mausolées.",
-    "body": "**Le monument.** Pline l'Ancien le décrit comme un haut soubassement portant une colonnade de 36 colonnes, coiffée d'une pyramide de 24 degrés et d'un quadrige de marbre, pour une hauteur totale de 140 pieds (environ 45 mètres). Les architectes Satyros et Pythéos en ont écrit une description, et quatre sculpteurs, Scopas, Bryaxis, Timothéos et Léocharès, se sont partagé les quatre côtés.\n\n**Mausole et Artémise.** Dynaste de Carie au service du roi perse de 377 à 353, Mausole fait d'Halicarnasse sa capitale et l'embellit. Sa sœur et épouse Artémise lui succède et poursuit le chantier ; selon Pline, les sculpteurs l'achèvent après la mort de la reine, en 351, pour leur propre gloire. Le tombeau était peut-être déjà en construction du vivant de Mausole.\n\n**Après l'Antiquité.** Ébranlé par des séismes, le monument est démantelé au début du XVIe siècle par les chevaliers de Saint-Jean, qui en réutilisent les pierres pour le château de Bodrum. Charles Newton en fouille les fondations en 1856 et 1857 ; des statues et des plaques de frise sont au British Museum.",
+    "summary": "Vers 350, à Halicarnasse, en Carie, s'élève le tombeau monumental du dynaste Mausole, mort en 353, poursuivi par sa veuve Artémise puis achevé après elle. Haut de 41 à 45 mètres environ selon Pline, orné par les plus grands sculpteurs du temps, il compte parmi les Sept Merveilles du monde et a donné son nom à tous les mausolées.",
+    "body": "**Le monument.** Pline l'Ancien le décrit comme un haut soubassement portant une colonnade de 36 colonnes, coiffée d'une pyramide de 24 degrés et d'un quadrige de marbre, pour une hauteur totale de 140 pieds (de 41 à 45 mètres selon le pied retenu ; davantage selon certaines restitutions modernes). Les architectes Satyros et Pythéos en ont écrit une description, et quatre sculpteurs, Scopas, Bryaxis, Timothéos et Léocharès, se sont partagé les quatre côtés.\n\n**Mausole et Artémise.** Dynaste de Carie au service du roi perse de 377 à 353, Mausole fait d'Halicarnasse sa capitale et l'embellit. Sa sœur et épouse Artémise lui succède et poursuit le chantier ; selon Pline, les sculpteurs l'achèvent après la mort de la reine, en 351/350, pour leur propre gloire. Le tombeau était peut-être déjà en construction du vivant de Mausole.\n\n**Après l'Antiquité.** Ébranlé par des séismes, le monument est démantelé par les chevaliers de Saint-Jean, de 1494 à 1522, qui en réutilisent les pierres pour le château de Bodrum et brûlent une partie du marbre pour en faire de la chaux. Charles Newton en fouille les fondations en 1857 et 1858 ; des statues et des plaques de frise sont au British Museum. Une équipe danoise menée par Kristian Jeppesen reprend la fouille de 1966 à 1977.",
     "sources": [
       {
         "kind": "ancient",
@@ -721,7 +721,8 @@ export const events: HistoricalEvent[] = [
         "author": "Simon Hornblower",
         "work": "Mausolus, Oxford, Clarendon Press, 1982"
       }
-    ]
+    ],
+    "scene": "mausolee"
   },
   {
     "id": "prise-d-olynthe",
