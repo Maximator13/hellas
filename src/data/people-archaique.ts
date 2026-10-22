@@ -51,6 +51,12 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "codros",
+    "name": "Codros",
+    "role": "Dernier roi légendaire d'Athènes, qui se serait laissé tuer pour sauver sa cité des Doriens ; père de Nélée selon la tradition",
+    "certainty": "legendary"
+  },
+  {
     "id": "cresus",
     "name": "Crésus",
     "role": "Dernier roi de Lydie, maître des cités grecques d'Asie, vaincu par Cyrus II",

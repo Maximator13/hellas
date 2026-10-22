@@ -28,6 +28,12 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "aspasie",
+    "name": "Aspasie de Milet",
+    "role": "Milésienne installée à Athènes, compagne de Périclès ; une partie de ce qu'on en sait vient d'auteurs comiques hostiles",
+    "certainty": "attested"
+  },
+  {
     "id": "brasidas",
     "name": "Brasidas",
     "role": "Général spartiate, conquérant d'Amphipolis en 424, tué en la défendant en 422 av. J.-C.",

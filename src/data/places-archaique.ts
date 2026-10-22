@@ -176,5 +176,13 @@ export const places: Place[] = [
     "lat": 37.9158,
     "lon": 22.9931,
     "pleiadesId": 570316
+  },
+  {
+    "id": "smyrne",
+    "name": "Vieille-Smyrne (Bayraklı, Izmir)",
+    "ancientName": "Smyrnē",
+    "lat": 38.464,
+    "lon": 27.1704,
+    "pleiadesId": 550771
   }
 ]

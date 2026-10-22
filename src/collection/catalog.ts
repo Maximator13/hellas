@@ -27,7 +27,7 @@ export interface CatalogSources {
 }
 
 export function eraOf(year: number, eras: Era[]): EraId {
-  const era = eras.find((candidate) => year >= candidate.start && year <= candidate.end) ?? (year < (eras[0]?.start ?? 0) ? eras[0] : eras.at(-1))
+  const era = eras.find((candidate) => year >= candidate.start && year < candidate.end) ?? (year < (eras[0]?.start ?? 0) ? eras[0] : eras.at(-1))
   if (!era) throw new Error('No era defined')
   return era.id
 }

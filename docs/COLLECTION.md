@@ -1,6 +1,6 @@
-# Collection de cartes : liste proposée
+# Collection de cartes : liste validée
 
-Statut : proposition à valider (étape 1). Aucune donnée ni aucun code n'est encore écrit. Une fois la liste validée, chaque ligne deviendra une entrée de `src/data/cards.ts` au format de Roma (`id`, `kind`, `rarity`, `year`, `person` ou `city`, `place`, `scene`, `name`, `subtitle`, `text`, `sources`).
+Statut : liste validée. Chaque ligne est une entrée de `src/data/cards.ts` au format de Roma (`id`, `kind`, `rarity`, `year`, `person` ou `city`, `place`, `scene`, `name`, `subtitle`, `text`, `sources`). Décisions de validation : Périclès passe légendaire et le Colosse de Rhodes épique ; l'Artémision montre le temple reconstruit de la scène 3D (vers 200 av. J.-C.) ; la règle des années frontières du catalogue est conservée.
 
 ## 1. Totaux
 
@@ -8,8 +8,8 @@ Statut : proposition à valider (étape 1). Aucune donnée ni aucun code n'est e
 
 | Type | Légendaire | Épique | Rare | Peu commune | Commune | Total |
 |---|---|---|---|---|---|---|
-| Personnages (`person`) | 4 | 8 | 11 | 18 | 9 | 50 |
-| Lieux (`place`) | 3 | 4 | 8 | 5 | 10 | 30 |
+| Personnages (`person`) | 5 | 7 | 11 | 18 | 9 | 50 |
+| Lieux (`place`) | 2 | 5 | 8 | 5 | 10 | 30 |
 | Reliques et objets (`relic`) | 1 | 2 | 3 | 5 | 9 | 20 |
 | Armées et unités (`unit`) | 0 | 2 | 4 | 4 | 10 | 20 |
 | **Total** | **8** | **16** | **26** | **32** | **38** | **120** |
@@ -21,18 +21,18 @@ Répartition par époque (hors Panthéon, puis Panthéon) :
 |---|---|---|---|---|---|---|---|
 | Âge du bronze (`bronze`) | 1 | 2 | 3 | 6 | 9 | 21 | 3 |
 | Âges obscurs (`ages-obscurs`) | 0 | 1 | 1 | 2 | 7 | 11 | 1 |
-| Époque archaïque (`archaique`) | 1 | 3 | 8 | 9 | 7 | 28 | 9 |
-| Époque classique (`classique`) | 4 | 6 | 11 | 10 | 5 | 36 | 5 |
-| Époque hellénistique (`hellenistique`) | 2 | 4 | 3 | 5 | 10 | 24 | 2 |
+| Époque archaïque (`archaique`) | 2 | 4 | 10 | 11 | 7 | 34 | 9 |
+| Époque classique (`classique`) | 4 | 4 | 8 | 8 | 5 | 29 | 5 |
+| Époque hellénistique (`hellenistique`) | 1 | 5 | 4 | 5 | 10 | 25 | 2 |
 | **Total** | **8** | **16** | **26** | **32** | **38** | **120** | **20** |
 
 Remarques :
 
 - Chaque série d'époque a au moins une carte épique ou légendaire (Zeus donne aux âges obscurs leur légendaire, dans le Panthéon) ; la plus courte, les âges obscurs, compte 12 cartes avec Zeus.
-- Les époques suivent la convention d'Hellas (`eraIndexAt` dans `src/timeline/keys.ts`) : début inclus, fin exclue. L'année -479 (480 av. J.-C.) est donc classique, -322 hellénistique, -799 archaïque. Voir la section 6, premier point.
-- Les sept lieux des scènes 3D ont leur carte, offerte à la première visite : `acropole`, `thermopyles`, `phare`, `colosse` (scènes prêtes), `olympie`, `artemision`, `mausolee` (scènes proposées dans `docs/scenes/`, pas encore dans `scenes.ts`).
+- Les époques suivent la règle du catalogue (`eraOf` dans `src/collection/catalog.ts`) : une année frontière appartient à l'époque la plus ancienne. Les sept cartes datées de -479 (480 av. J.-C. : Léonidas, Thémistocle, Xerxès, Thermopyles, Salamine, Spartiates, Immortels) entrent donc dans la série archaïque, -322 serait classique et -799 des âges obscurs. La frise, elle, range -479 dans l'époque classique (`eraIndexAt`).
+- Les sept lieux des scènes 3D ont leur carte, offerte à la première visite : `acropole`, `thermopyles`, `phare`, `colosse`, `olympie` (scènes présentes dans `scenes.ts`), `artemision`, `mausolee` (scènes en cours de construction : la référence `scene` sera ajoutée à leur carte quand elles entreront dans `scenes.ts`).
 - Les cartes de reliques, d'unités et de divinités n'ont aucune référence de données : le schéma de Roma réserve `city`, `place` et `scene` aux cartes de lieu, et `person` aux cartes de personnage. Leur `name` est donc obligatoire.
-- Années : historique, puis astronomique entre parenthèses, comme elle sera saisie.
+- Années : historique, puis astronomique entre parenthèses, telle qu'elle est saisie.
 - Illustrations : 9 rendus de scènes Hellas, 5 portraits Blender de figurines, le reste en œuvres du domaine public ou photos sous CC0, CC BY ou CC BY-SA. Aucune image du British Museum. Les licences seront vérifiées une par une lors de la recherche d'images.
 
 ## 2. Règle de rareté (texte de la page)
@@ -49,7 +49,7 @@ Remarques :
 | `minos` | Minos | commune | bronze | vers 1450 av. J.-C. (-1449) | person `minos` | Salle du trône du palais de Cnossos, dite « de Minos » (photo Commons, CC BY-SA) | Roi légendaire connu par le mythe du Minotaure ; le mot « minoen » est une création moderne. |
 | `ramses-iii` | Ramsès III | commune | bronze | 1177 av. J.-C. (-1176) | person `ramses-iii` | Peinture de la tombe de Ramsès III (KV11), Vallée des Rois (photo Commons, CC BY-SA) | Pharaon témoin de la crise des Peuples de la mer, acteur extérieur au monde grec. |
 | `lycurgue` | Lycurgue | épique | ages-obscurs | vers 820 av. J.-C. (-819), date traditionnelle | person `lycurgue` | Jacques-Louis David, *Lycurgue montre aux anciens de Sparte leur roi*, 1791, musée de Blois (domaine public) | Législateur auquel Sparte rapportait toutes ses institutions, qui ont façonné la cité la plus singulière de Grèce ; existence débattue. |
-| `codros` | Codros | peu commune | ages-obscurs | vers 1070 av. J.-C. (-1069), date traditionnelle | à ajouter : person `codros` | Coupe attique à figures rouges du Peintre de Codros, Codros en armes, vers 440, Museo civico archeologico de Bologne (photo Commons, licence libre à confirmer) | Dernier roi légendaire d'Athènes, mort pour sa cité selon la tradition, exemple cher aux orateurs. |
+| `codros` | Codros | peu commune | ages-obscurs | vers 1070 av. J.-C. (-1069), date traditionnelle | person `codros` | Coupe attique à figures rouges du Peintre de Codros, Codros en armes, vers 440, Museo civico archeologico de Bologne (photo Commons, licence libre à confirmer) | Dernier roi légendaire d'Athènes, mort pour sa cité selon la tradition, exemple cher aux orateurs. |
 | `nelee` | Nélée | commune | ages-obscurs | vers 1050 av. J.-C. (-1049), date traditionnelle | person `nelee` | Lion de Milet, marbre archaïque, Antikensammlung de Berlin (photo Commons, CC BY-SA), faute de portrait | Fondateur légendaire de Milet, figure secondaire de la migration ionienne. |
 | `homere` | Homère | légendaire | archaique | vers 750 av. J.-C. (-749) | person `homere` | Jean-Auguste-Dominique Ingres, *L'Apothéose d'Homère*, 1827, Louvre (domaine public), recadrée sur Homère | Poète de l'Iliade et de l'Odyssée, connu de tous depuis près de trois mille ans, même si son existence est débattue. |
 | `sappho` | Sappho | rare | archaique | vers 600 av. J.-C. (-599) | person `sappho` | Lawrence Alma-Tadema, *Sappho et Alcée*, 1881, Walters Art Museum (CC0) | La plus célèbre poétesse grecque, l'une des rares voix de femme conservées. |
@@ -65,7 +65,7 @@ Remarques :
 | `alexandre-le-grand` | Alexandre le Grand | légendaire | classique | 331 av. J.-C. (-330) | person `alexandre-le-grand` | Mosaïque d'Alexandre, maison du Faune à Pompéi, Musée archéologique national de Naples (photo Commons, domaine public), détail d'Alexandre | Conquérant de l'empire perse, le Grec le plus célèbre de l'histoire. |
 | `leonidas` | Léonidas | légendaire | classique | 480 av. J.-C. (-479) | person `leonidas` | Rendu Blender de la scène `thermopyles`, plan rapproché sur la garde spartiate ; secours : buste dit de Léonidas, musée archéologique de Sparte (photo Commons) | Roi de Sparte mort aux Thermopyles, symbole universel du sacrifice. |
 | `socrate` | Socrate | légendaire | classique | 399 av. J.-C. (-398) | person `socrate` | Jacques-Louis David, *La Mort de Socrate*, 1787 (The Met, CC0) | Fondateur de la philosophie morale, dont la mort reste l'une des plus célèbres de l'histoire. |
-| `pericles` | Périclès | épique | classique | 432 av. J.-C. (-431) | person `pericles` | Philipp von Foltz, *Périclès prononçant l'oraison funèbre*, 1852 (domaine public) | Stratège qui fait d'Athènes une puissance et bâtit l'Acropole, au point de donner son nom à un siècle. |
+| `pericles` | Périclès | légendaire | classique | 432 av. J.-C. (-431) | person `pericles` | Philipp von Foltz, *Périclès prononçant l'oraison funèbre*, 1852 (domaine public) | Stratège qui fait d'Athènes une puissance et bâtit l'Acropole, au point de donner son nom à un siècle. |
 | `themistocle` | Thémistocle | épique | classique | 480 av. J.-C. (-479) | person `themistocle` | Hermès de Thémistocle, copie romaine, musée d'Ostie (photo Commons, CC BY-SA) | Créateur de la flotte athénienne et vainqueur de Salamine, il arrête l'invasion perse. |
 | `platon` | Platon | épique | classique | 387 av. J.-C. (-386) | person `platon` | Raphaël, *L'École d'Athènes*, 1509 à 1511, Vatican (domaine public), détail de Platon | Fondateur de l'Académie, dont les dialogues fondent la philosophie occidentale. |
 | `aristote` | Aristote | épique | classique | 335 av. J.-C. (-334) | person `aristote` | Rembrandt, *Aristote contemplant le buste d'Homère*, 1653 (The Met, CC0) | Précepteur d'Alexandre et fondateur du Lycée, son œuvre embrasse presque tous les savoirs. |
@@ -77,7 +77,7 @@ Remarques :
 | `xerxes` | Xerxès Ier | rare | classique | 480 av. J.-C. (-479) | person `xerxes` | Porte de toutes les nations, Persépolis (photo Commons, CC BY-SA) | Roi perse de la seconde invasion, grand acteur des guerres médiques, connu par les sources grecques. |
 | `sophocle` | Sophocle | peu commune | classique | 441 av. J.-C. (-440) | person `sophocle` | Statue de Sophocle, type du Latran, musées du Vatican (photo Commons, domaine public) | Grand tragique dont Œdipe roi et Antigone sont encore joués, figure majeure de son siècle. |
 | `eschyle` | Eschyle | peu commune | classique | 472 av. J.-C. (-471), *Les Perses* | person `eschyle` | Buste d'Eschyle, copie romaine, musées du Capitole (photo Commons, CC BY) | Premier des trois grands tragiques, combattant de Marathon et auteur des Perses. |
-| `aspasie` | Aspasie | peu commune | classique | vers 440 av. J.-C. (-439) | à ajouter : person `aspasie` | Hermès inscrit au nom d'Aspasie, musées du Vatican (photo Commons) | Compagne de Périclès, l'une des rares femmes de l'Athènes classique connues par leur nom ; une partie de ce qu'on en sait vient d'auteurs comiques hostiles. |
+| `aspasie` | Aspasie | peu commune | classique | vers 440 av. J.-C. (-439) | person `aspasie` | Hermès inscrit au nom d'Aspasie, musées du Vatican (photo Commons) | Compagne de Périclès, l'une des rares femmes de l'Athènes classique connues par leur nom ; une partie de ce qu'on en sait vient d'auteurs comiques hostiles. |
 | `hippocrate` | Hippocrate | peu commune | classique | vers 420 av. J.-C. (-419) | person `hippocrate` | Anne-Louis Girodet, *Hippocrate refusant les présents d'Artaxerxès*, 1792, faculté de médecine de Paris (domaine public) | Père de la médecine selon la tradition, dont le serment porte encore le nom. |
 | `alcibiade` | Alcibiade | peu commune | classique | 415 av. J.-C. (-414) | person `alcibiade` | François-André Vincent, *Alcibiade recevant les leçons de Socrate*, 1776, musée Fabre (domaine public) | Homme politique brillant et versatile, acteur important mais pas décisif de la guerre du Péloponnèse. |
 | `demosthene` | Démosthène | peu commune | classique | 351 av. J.-C. (-350) | person `demosthene` | Jean-Jules-Antoine Lecomte du Nouÿ, *Démosthène s'exerçant à la parole*, 1870 (domaine public) | Le plus grand orateur athénien, adversaire de Philippe II, qui n'a pas pu changer le cours des choses. |
@@ -85,10 +85,10 @@ Remarques :
 | `cleopatre-vii` | Cléopâtre VII | épique | hellenistique | 31 av. J.-C. (-30) | person `cleopatre-vii` | Giambattista Tiepolo, *Le Banquet de Cléopâtre*, 1743 à 1744, National Gallery of Victoria (domaine public) | Dernière souveraine issue de l'empire d'Alexandre ; sa mort clôt l'époque hellénistique. |
 | `ptolemee-ier` | Ptolémée Ier | rare | hellenistique | 305 av. J.-C. (-304) | person `ptolemee-ier` | Buste de Ptolémée Ier, Louvre (photo Commons, domaine public) | Fondateur de la dynastie lagide et du Musée d'Alexandrie. |
 | `seleucos-ier` | Séleucos Ier | rare | hellenistique | 312 av. J.-C. (-311) | person `seleucos-ier` | Buste en bronze de Séleucos Ier, villa des Papyrus, Musée archéologique national de Naples (photo Commons) | Fondateur du plus vaste des royaumes issus de l'empire d'Alexandre. |
-| `epicure` | Épicure | peu commune | hellenistique | 306 av. J.-C. (-305) | à ajouter : person `epicure` | Tête d'Épicure, copie romaine (The Met, CC0) | Fondateur d'une école qui dure des siècles, connu par un adjectif plus que par ses œuvres, presque toutes perdues. |
+| `epicure` | Épicure | peu commune | hellenistique | 306 av. J.-C. (-305) | person `epicure` | Tête d'Épicure, copie romaine (The Met, CC0) | Fondateur d'une école qui dure des siècles, connu par un adjectif plus que par ses œuvres, presque toutes perdues. |
 | `euclide` | Euclide | peu commune | hellenistique | vers 300 av. J.-C. (-299) | person `euclide` | Juste de Gand, *Euclide*, vers 1474, Galleria nazionale delle Marche, Urbino (domaine public) | Auteur des Éléments, manuel de géométrie pendant deux mille ans, à la vie presque inconnue. |
 | `eratosthene` | Ératosthène | peu commune | hellenistique | vers 240 av. J.-C. (-239) | person `eratosthene` | Bernardo Strozzi, *Ératosthène enseignant à Alexandrie*, 1635, musée des Beaux-Arts de Montréal (domaine public) | Savant d'Alexandrie qui mesure la circonférence de la Terre. |
-| `arsinoe-ii` | Arsinoé II | peu commune | hellenistique | vers 275 av. J.-C. (-274) | à ajouter : person `arsinoe-ii` | Octodrachme d'or à l'effigie d'Arsinoé II (The Met ou Cleveland Museum of Art, CC0, exemplaire à choisir) | Reine lagide honorée comme une déesse dès son vivant, l'une des femmes les plus puissantes de son temps. |
+| `arsinoe-ii` | Arsinoé II | peu commune | hellenistique | vers 275 av. J.-C. (-274) | person `arsinoe-ii` | Octodrachme d'or à l'effigie d'Arsinoé II (The Met ou Cleveland Museum of Art, CC0, exemplaire à choisir) | Reine lagide honorée comme une déesse dès son vivant, l'une des femmes les plus puissantes de son temps. |
 | `pyrrhos` | Pyrrhos | commune | hellenistique | 280 av. J.-C. (-279) | person `pyrrhos` | Buste dit de Pyrrhos, villa des Papyrus, Musée archéologique national de Naples (photo Commons, CC BY-SA) | Roi d'Épire aux victoires devenues proverbiales, sans fondation durable. |
 | `polybe` | Polybe | commune | hellenistique | 146 av. J.-C. (-145) | person `polybe` | Stèle de Polybe trouvée à Kleitor, moulage (photo Commons, domaine public) | Historien de la conquête romaine, source précieuse lue surtout des spécialistes. |
 | `chares-de-lindos` | Charès de Lindos | commune | hellenistique | vers 280 av. J.-C. (-279) | person `chares-de-lindos` | Philips Galle d'après Maarten van Heemskerck, *Le Colosse de Rhodes*, 1572, Rijksmuseum (CC0) | Sculpteur du Colosse, connu par son œuvre plus que par sa vie. |
@@ -106,10 +106,10 @@ Remarques :
 | `pylos` | Palais de Pylos | commune | bronze | vers 1200 av. J.-C. (-1199) | city `pylos` (ou place `palais-de-nestor`) | Baignoire du palais (photo Commons, CC BY-SA) | Palais dit « de Nestor », précieux pour ses archives plus que connu du public. |
 | `lefkandi` | Lefkandi | rare | ages-obscurs | vers 950 av. J.-C. (-949) | place `lefkandi` | Site de Toumba ou maquette du grand édifice, musée d'Érétrie (photo Commons, licence libre à confirmer) | Le site le plus riche des âges obscurs, qui montre des chefs en contact avec le Levant. |
 | `ceramique` | Céramique | commune | ages-obscurs | vers 850 av. J.-C. (-849) | place `ceramique` | Nécropole du Céramique et porte du Dipylon (photo Commons, CC BY-SA) | Nécropole d'Athènes dont les vases fondent la chronologie de l'époque, lieu de spécialistes. |
-| `vieille-smyrne` | Vieille-Smyrne | commune | ages-obscurs | vers 850 av. J.-C. (-849) | à ajouter : place `smyrne` | Fouilles de Bayraklı ou restitution d'Ekrem Akurgal (photo Commons, licence libre à confirmer) | L'une des premières villes grecques fortifiées d'Ionie, connue des seuls archéologues. |
-| `olympie` | Olympie | épique | archaique | 776 av. J.-C. (-775) | city `olympie`, scene `olympie` (proposée) | Rendu Blender de la scène `olympie` ; secours : temple d'Héra (photo Commons, CC BY-SA) | Sanctuaire de Zeus et berceau des Jeux, dont la date de 776 servait de point de départ au calendrier grec. |
+| `vieille-smyrne` | Vieille-Smyrne | commune | ages-obscurs | vers 850 av. J.-C. (-849) | place `smyrne` | Fouilles de Bayraklı ou restitution d'Ekrem Akurgal (photo Commons, licence libre à confirmer) | L'une des premières villes grecques fortifiées d'Ionie, connue des seuls archéologues. |
+| `olympie` | Olympie | épique | archaique | 776 av. J.-C. (-775) | city `olympie`, scene `olympie` | Rendu Blender de la scène `olympie` ; secours : temple d'Héra (photo Commons, CC BY-SA) | Sanctuaire de Zeus et berceau des Jeux, dont la date de 776 servait de point de départ au calendrier grec. |
 | `delphes` | Delphes | épique | archaique | 582 av. J.-C. (-581), premiers concours pythiques à couronne | city `delphes` | Tholos du sanctuaire d'Athéna Pronaia (photo Commons, CC BY-SA) | Siège de l'oracle le plus consulté du monde grec, interrogé avant les grandes décisions. |
-| `artemision` | Artémision d'Éphèse | rare | archaique | vers 550 av. J.-C. (-549), temple de Crésus | place `artemision-d-ephese`, scene `artemision` (proposée) | Rendu Blender de la scène `artemision` ; secours : Philips Galle d'après Heemskerck, *Le Temple de Diane à Éphèse*, 1572, Rijksmuseum (CC0) | L'une des Sept Merveilles, réduite à une colonne : moins présente dans la mémoire commune que le Phare ou le Colosse. |
+| `artemision` | Artémision d'Éphèse | rare | hellenistique | vers 200 av. J.-C. (-199), temple reconstruit après 356, celui de la scène 3D et des listes de Merveilles | place `artemision-d-ephese`, scene `artemision` (proposée) | Rendu Blender de la scène `artemision` ; secours : Philips Galle d'après Heemskerck, *Le Temple de Diane à Éphèse*, 1572, Rijksmuseum (CC0) | L'une des Sept Merveilles, réduite à une colonne : moins présente dans la mémoire commune que le Phare ou le Colosse. |
 | `sparte` | Sparte | rare | archaique | vers 650 av. J.-C. (-649) | city `sparte` | Théâtre de Sparte et massif du Taygète (photo Commons, CC BY-SA) | Grande puissance militaire du monde grec et rivale d'Athènes. |
 | `marathon` | Marathon | rare | archaique | 490 av. J.-C. (-489) | place `marathon` | Le Sôros, tumulus des Athéniens tombés à Marathon (photo Commons, CC BY-SA) | Victoire fondatrice d'Athènes sur les Perses, dont le nom survit dans la course. |
 | `syracuse` | Syracuse | peu commune | archaique | 733 av. J.-C. (-732) | city `syracuse` | Décadrachme de Syracuse signé par Euainétos (The Met ou Cleveland Museum of Art, CC0) | La plus puissante cité grecque d'Occident, moins connue du public que celles de Grèce propre. |
@@ -124,7 +124,7 @@ Remarques :
 | `persepolis` | Persépolis | commune | classique | 330 av. J.-C. (-329) | city `persepolis` | Reliefs des délégations, escalier de l'Apadana (photo Commons, CC BY-SA) | Capitale perse incendiée par Alexandre, épisode d'une conquête plus vaste. |
 | `cheronee` | Chéronée | commune | classique | 338 av. J.-C. (-337) | place `cheronee` | Lion de Chéronée (photo Commons, CC BY-SA) | Champ de bataille de 338, connu surtout pour son lion. |
 | `phare` | Phare d'Alexandrie | légendaire | hellenistique | vers 280 av. J.-C. (-279) | place `ile-de-pharos`, scene `phare` | Rendu Blender de la scène `phare` | Merveille du monde qui a donné son nom aux phares dans plusieurs langues. |
-| `colosse` | Colosse de Rhodes | légendaire | hellenistique | vers 280 av. J.-C. (-279) | city `rhodes`, scene `colosse` | Rendu Blender de la scène `colosse` | Merveille connue de tous, alors qu'elle n'est restée debout qu'un demi-siècle environ. |
+| `colosse` | Colosse de Rhodes | épique | hellenistique | vers 280 av. J.-C. (-279) | city `rhodes`, scene `colosse` | Rendu Blender de la scène `colosse` | Merveille connue de tous, alors qu'elle n'est restée debout qu'un demi-siècle environ. |
 | `pergame` | Pergame | rare | hellenistique | vers 180 av. J.-C. (-179) | city `pergame` | Grand autel de Pergame, Pergamonmuseum, Berlin (photo Commons, CC BY-SA) | Capitale des Attalides et grand foyer artistique, rivale d'Alexandrie. |
 | `ai-khanoum` | Aï Khanoum | commune | hellenistique | vers 250 av. J.-C. (-249) | city `ai-khanoum` | Plaque dorée de Cybèle, musée de Kaboul (photo Livius.org, CC0) | Ville grecque d'Afghanistan, preuve de l'extension du monde hellénistique, inconnue du public. |
 | `antioche` | Antioche | commune | hellenistique | 300 av. J.-C. (-299) | city `antioche` | Tyché d'Antioche, copie romaine, musées du Vatican (photo Commons) | Capitale séleucide dont presque rien n'est visible aujourd'hui. |
@@ -212,23 +212,24 @@ Rareté : légendaire pour Zeus ; épique pour les trois cultes panhelléniques 
 | `isis` | Isis | commune | hellenistique | vers 150 av. J.-C. (-149), sanctuaires égyptiens de Délos | Déesse égyptienne de la magie, de la maternité et des marins | Délos ; Alexandrie | Aucun : honorée à Rome sous son nom, malgré les interdictions du Ier siècle av. J.-C. | Arétalogie de Maronée (inscription, vers 100 av. J.-C.) ; Plutarque, *Isis et Osiris* | Fresque d'Io accueillie par Isis à Canope, temple d'Isis de Pompéi, Musée archéologique national de Naples (photo Commons, domaine public) |
 | `serapis` | Sérapis | commune | hellenistique | vers 286 av. J.-C. (-285), culte fondé sous Ptolémée Ier | Dieu créé sous les Lagides à partir d'Osiris-Apis : guérison, fertilité, royauté | Sérapéum d'Alexandrie | Aucun : honoré à Rome sous son nom | Tacite, *Histoires*, IV, 83 et 84 ; Plutarque, *Isis et Osiris*, 28 | Buste de Sérapis, musées du Vatican (photo Commons) |
 
-## 8. Données à ajouter
+## 8. Données ajoutées
 
-Personnes et lieux absents d'Hellas, à ajouter avant les cartes (aucune modification faite) :
+Personnes et lieux absents d'Hellas, ajoutés avant les cartes :
 
 1. person `codros` : Codros, dernier roi légendaire d'Athènes, `certainty: legendary`. Sources : Lycurgue (orateur), *Contre Léocrate*, 84 à 87 ; Pausanias, I, 19, 5.
 2. person `aspasie` : Aspasie de Milet, compagne de Périclès, `certainty: attested`. Sources : Plutarque, *Périclès*, 24 ; Platon, *Ménexène*.
 3. person `arsinoe-ii` : Arsinoé II, reine de Thrace puis d'Égypte, sœur et épouse de Ptolémée II, née vers 316, morte en 270 ou 268. Sources : Pausanias, I, 7, 1 ; stèle de Mendès.
 4. person `epicure` : Épicure, philosophe, 341 à 270 (`born: -340`, `died: -269`). Source : Diogène Laërce, X.
-5. place `smyrne` : Vieille-Smyrne (Bayraklı, Izmir), ville ionienne fortifiée vers 850 ; identifiant Pleiades à vérifier.
+5. place `smyrne` : Vieille-Smyrne (Bayraklı, Izmir), ville ionienne fortifiée vers 850 ; Pleiades 550771 (Naulochon/Smyrna/Palaia Smyrna), dans `places-archaique.ts`.
 
-Scènes : `olympie`, `artemision` et `mausolee` existent comme propositions dans `docs/scenes/` mais pas dans `src/data/scenes.ts`. Tant qu'elles n'y sont pas, les trois cartes de lieu correspondantes se passent de `scene` (la validation refuserait une référence inconnue).
+Codros est dans `people-archaique.ts` (à côté de Lycurgue), Aspasie dans `people-classique-1.ts`, Arsinoé II et Épicure dans `people-hellenistique.ts`.
 
-## 9. Doutes (à reporter dans `docs/A_VERIFIER.md`)
+Scènes : `olympie` est dans `src/data/scenes.ts` et sa carte y renvoie. `artemision` et `mausolee` sont en construction ; tant qu'elles n'y sont pas, leurs cartes se passent de `scene` (la validation refuserait une référence inconnue).
 
-Formulés au format de ce fichier ; rien n'y est encore écrit.
+## 9. Doutes (reportés dans `docs/A_VERIFIER.md`)
 
-- **Époque des années frontières.** Le `eraOf` de Roma rattache une année frontière à l'époque la plus ancienne (bornes incluses des deux côtés) ; Hellas (`eraIndexAt`) inclut le début et exclut la fin. Sept cartes sont datées de -479 (Léonidas, Thémistocle, Xerxès, Thermopyles, Salamine, Spartiates, Immortels) : classiques pour Hellas, archaïques avec le code de Roma. Hypothèse : réutiliser la règle d'Hellas dans `catalog.ts` et adapter le test « époque des années frontières ».
+Les deux premiers points de la liste proposée sont tranchés (règle des années frontières du catalogue conservée ; Artémision daté vers 200) ; les autres sont reportés tels quels.
+
 - **Homère.** Existence débattue ; Hérodote (II, 53) le place quatre cents ans avant lui (vers 850), les modernes datent la fixation des poèmes de 750 à 700 environ. Hypothèse : vers 750 (-749), époque archaïque, avec mention de la tradition. Sources : Hérodote, II, 53 ; M. L. West, *The Making of the Iliad* (2011).
 - **Lycurgue.** Existence et date débattues dès l'Antiquité (Plutarque, *Lycurgue*, 1) ; Ératosthène et Apollodore le placent bien avant la première olympiade. Hypothèse : vers 820 (-819), « traditionnel », âges obscurs.
 - **Codros et Nélée.** Rois et fondateurs légendaires ; les dates (vers 1070 pour la mort de Codros, vers 1050 pour la fondation de Milet) viennent de chronographes tardifs. Hypothèse : dates traditionnelles, certitude « légendaire ». Sources : Marbre de Paros ; Hérodote, IX, 97 ; Strabon, XIV, 1, 3.
@@ -237,7 +238,6 @@ Formulés au format de ce fichier ; rien n'y est encore écrit.
 - **Buste dit de Léonidas.** L'hoplite casqué de Sparte (vers 480 à 470) n'est pas identifié avec certitude. Hypothèse : n'utiliser ce buste qu'en secours, avec « dit de Léonidas » dans le titre de l'illustration.
 - **Pseudo-Sénèque.** La tête de bronze de la villa des Papyrus est identifiée tantôt à Hésiode, tantôt à un poète inconnu. Hypothèse : titre « tête dite Pseudo-Sénèque, parfois identifiée à Hésiode ».
 - **Bustes de Pyrrhos et de Philippe II.** Identifications par comparaison avec les monnaies, discutées. Hypothèse : « buste dit de » dans le titre.
-- **Artémision.** Carte datée du temple de Crésus (vers 550), alors que la scène montre le temple reconstruit vers 200, celui des listes de Merveilles. Hypothèse : garder 550 pour équilibrer l'époque archaïque ; autre choix, -199 (hellénistique).
 - **Mécanisme d'Anticythère.** Dates proposées de 205 à 60 environ (épave vers 70 à 60). Hypothèse : « vers 100 », débattue. Sources : Freeth et al., *Nature* 454 (2008) ; Carman et Evans, *Archive for History of Exact Sciences* 68 (2014).
 - **Victoire de Samothrace.** Date et commanditaire débattus (victoire rhodienne vers 190, ou plus tôt). Hypothèse : vers 190, débattue.
 - **Cratère de Vix.** Atelier laconien ou corinthien de Grande-Grèce, vers 530 à 510. Hypothèse : vers 510, atelier non tranché.

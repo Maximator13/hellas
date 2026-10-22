@@ -393,3 +393,29 @@ Hypothèses prises en construisant la scène (`blender/olympie.py`, `blender/kit
 - **Hippodrome.** Deux talus bas de 720 m centrés vers E +430, N -110 : emplacement indicatif seulement.
 - **Mur de l'Altis.** Mur bas de 1 m sur un tracé dessiné à main levée, élargi à l'est jusqu'à E +100 ; tracé classique inconnu.
 - **Foule et campements.** Environ 1 500 figurants fixes, 1 900 tentes et abris dans six campements de la plaine et un campement argien et mantinéen à l'est du stade ; nombres et emplacements imaginés.
+
+## Collection de cartes
+
+- **Homère.** Existence débattue ; Hérodote (II, 53) le place quatre cents ans avant lui (vers 850), les modernes datent la fixation des poèmes de 750 à 700 environ. Hypothèse : vers 750 (-749), époque archaïque, avec mention de la tradition. Sources : Hérodote, II, 53 ; M. L. West, *The Making of the Iliad* (2011).
+- **Lycurgue.** Existence et date débattues dès l'Antiquité (Plutarque, *Lycurgue*, 1) ; Ératosthène et Apollodore le placent bien avant la première olympiade. Hypothèse : vers 820 (-819), « traditionnel », âges obscurs.
+- **Codros et Nélée.** Rois et fondateurs légendaires ; les dates (vers 1070 pour la mort de Codros, vers 1050 pour la fondation de Milet) viennent de chronographes tardifs. Hypothèse : dates traditionnelles, certitude « légendaire ». Sources : Marbre de Paros ; Hérodote, IX, 97 ; Strabon, XIV, 1, 3.
+- **Masque dit d'Agamemnon.** Daté de 1550 à 1500 environ, trois siècles avant la guerre de Troie traditionnelle ; l'accusation de faux de W. M. Calder (1972) est généralement rejetée. Hypothèse : « masque dit d'Agamemnon », vers 1550, nom donné par Schliemann signalé comme tel.
+- **Héros de l'Iliade.** Agamemnon, Ulysse, Thésée et Minos sont légendaires ; leurs années pivots sont tirées de la date de Troie d'Ératosthène (1184/1183) ou fixées à l'époque des palais. Hypothèse : le dire sur chaque carte.
+- **Buste dit de Léonidas.** L'hoplite casqué de Sparte (vers 480 à 470) n'est pas identifié avec certitude. Hypothèse : n'utiliser ce buste qu'en secours, avec « dit de Léonidas » dans le titre de l'illustration.
+- **Pseudo-Sénèque.** La tête de bronze de la villa des Papyrus est identifiée tantôt à Hésiode, tantôt à un poète inconnu. Hypothèse : titre « tête dite Pseudo-Sénèque, parfois identifiée à Hésiode ».
+- **Bustes de Pyrrhos et de Philippe II.** Identifications par comparaison avec les monnaies, discutées. Hypothèse : « buste dit de » dans le titre.
+- **Mécanisme d'Anticythère.** Dates proposées de 205 à 60 environ (épave vers 70 à 60). Hypothèse : « vers 100 », débattue. Sources : Freeth et al., *Nature* 454 (2008) ; Carman et Evans, *Archive for History of Exact Sciences* 68 (2014).
+- **Victoire de Samothrace.** Date et commanditaire débattus (victoire rhodienne vers 190, ou plus tôt). Hypothèse : vers 190, débattue.
+- **Cratère de Vix.** Atelier laconien ou corinthien de Grande-Grèce, vers 530 à 510. Hypothèse : vers 510, atelier non tranché.
+- **Aurige de Delphes.** Victoire pythique de 478 ou de 474 ; dédicace de Polyzalos. Hypothèse : 474.
+- **Statère à la tortue.** Date des premières frappes d'Égine discutée (vers 600 ou vers 550). Hypothèse : vers 550.
+- **Centaure de Lefkandi.** Tête et corps trouvés dans deux tombes ; datation protogéométrique, vers 950 à 900. Hypothèse : vers 900.
+- **Vieille-Smyrne.** Date de la première enceinte discutée (IXe ou VIIIe siècle). Hypothèse : vers 850, débattue.
+- **Arès en linéaire B.** Ényalios (KN V 52) et la forme a-re sont-ils Arès ? Rapprochement admis par beaucoup, discuté. Hypothèse : « nom associé à Arès ».
+- **Hermès et Poséidon en linéaire B.** Lectures e-ma-a2 (PY Tn 316) et po-se-da-o admises ; nature exacte du culte inconnue.
+- **Zeus à Olympie.** Ex-voto dès le Xe siècle environ, continuité du culte discutée. Hypothèse : vers 900, débattue ; la carte rappelle aussi la statue de Phidias.
+- **Trône Ludovisi.** Sujet (naissance d'Aphrodite) et authenticité parfois contestés. Hypothèse : « dit trône Ludovisi », lecture habituelle.
+- **Pan et Philippidès.** Apparition rapportée par Hérodote (VI, 105) : tradition.
+- **Aspasie.** Les textes viennent en partie de la comédie, hostile ; le reconnaître sur la carte.
+- **Arsinoé II.** Mort en 270 ou en 268 selon la lecture de la stèle de Mendès. Hypothèse : 270.
+- **Mercenaires d'Abou Simbel.** Graffiti datés de la campagne de Psammétique II en Nubie, 593 ou 591. Hypothèse : 591.

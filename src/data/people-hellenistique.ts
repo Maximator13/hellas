@@ -31,9 +31,25 @@ export const people: Person[] = [
     "certainty": "attested"
   },
   {
+    "id": "arsinoe-ii",
+    "name": "Arsinoé II",
+    "role": "Fille de Ptolémée Ier, reine de Thrace puis d'Égypte, sœur et épouse de Ptolémée II, honorée comme déesse de son vivant",
+    "born": -315,
+    "died": -269,
+    "certainty": "attested"
+  },
+  {
     "id": "demetrios-de-phalere",
     "name": "Démétrios de Phalère",
     "role": "Philosophe péripatéticien, gouverneur d'Athènes pour Cassandre de 317 à 307 av. J.-C., puis conseiller de Ptolémée Ier à Alexandrie",
+    "certainty": "attested"
+  },
+  {
+    "id": "epicure",
+    "name": "Épicure",
+    "role": "Philosophe né à Samos, fondateur à Athènes de l'école du Jardin vers 306 av. J.-C.",
+    "born": -340,
+    "died": -269,
     "certainty": "attested"
   },
   {
