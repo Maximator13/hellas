@@ -78,3 +78,20 @@ Site : https://maximator13.github.io/hellas/ ; scènes : `#/scene/acropole` et `
 
 **Suite** : phase 3 (environ 200 événements, figures, lieux, territoires de toutes les époques, recherche, quiz, mini-jeux), après validation ; ou reprise des défauts ci-dessus.
 
+## Phase 3 : contenu et apprentissage (22 octobre 2026, faite sans validation, en autonomie)
+
+**Fait**
+- 207 événements sourcés (8, 21 et 3 à l'âge du bronze par importance ; 1, 1, 1 aux âges obscurs ; 7, 30, 10 à l'époque archaïque ; 7, 65, 11 à l'époque classique ; 7, 26, 9 à l'époque hellénistique), environ 150 personnes et une centaine de lieux reliés à Pleiades ; données réparties par période (`src/data/events-*.ts`, `people-*.ts`, `places-*.ts`).
+- Relecture contradictoire des trois blocs : dates, loci, références modernes et identifiants Pleiades contrôlés ; convention fixée : un fait sûr dont la date est discutée reste « attesté » avec une note de certitude ; « débattu » est réservé aux faits eux-mêmes discutés. Doutes restants dans `docs/A_VERIFIER.md`.
+- Apprendre (`#/apprendre`) : quiz de dix questions (dates, puissances, lieux), « Remets dans l'ordre », « Situe la date », « Où ? » avec clic sur la carte et repères de réponse ; filtre par époque.
+- Recherche (`#/recherche`) : événements, personnes et lieux, sans accents ni casse.
+- Progression sur l'appareil seulement (`localStorage`, protégé contre un stockage absent) : fiches ouvertes et meilleurs scores.
+
+**Problèmes connus**
+- Liens Perseus parfois indisponibles (serveur saturé) : à recontrôler.
+- Théâtre d'Épidaure : vers 330 ou vers 300, à trancher.
+- Fin des Séleucides : 64 ou 63, à harmoniser entre la fiche et `A_VERIFIER.md`.
+- Les territoires restent limités aux tracés de Cliopatria et aux 34 tracés à la main.
+
+**Suite** : phase 4 (scènes de la section 10 du brief : Salamine, Cnossos, Mycènes, Olympie, Delphes, Gaugamèles, Alexandrie, Rhodes, Pergame, Syracuse), après validation.
+

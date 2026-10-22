@@ -90,7 +90,7 @@ export const events: HistoricalEvent[] = [
       {
         "kind": "modern",
         "author": "Giorgio Buchner et David Ridgway",
-        "work": "Pithekoussai I. La necropoli : tombe 1-723 scavate dal 1952 al 1961, Rome, Giorgio Bretschneider, 1993"
+        "work": "Pithekoussai I. La necropoli : tombe 1-723 scavate dal 1952 al 1961, Rome, Giorgio Bretschneider, 1993 (Monumenti antichi, serie monografica, 4)"
       }
     ]
   },
@@ -100,8 +100,8 @@ export const events: HistoricalEvent[] = [
     "start": -749,
     "end": -669,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Aucune date antique sûre : Hérodote place Homère environ 400 ans avant lui, soit vers 850. Les modernes datent l'Iliade de 750 à 700 environ, l'Odyssée un peu après ; d'autres descendent jusqu'au milieu du VIIe siècle.",
+    "certainty": "attested",
+    "certaintyNote": "La composition est certaine, sa date discutée. Aucune date antique sûre : Hérodote place Homère environ 400 ans avant lui, soit vers 850. Les modernes datent l'Iliade de 750 à 700 environ, l'Odyssée un peu après ; d'autres descendent jusqu'au milieu du VIIe siècle.",
     "era": "archaique",
     "track": "monde-grec",
     "category": "culture",
@@ -148,7 +148,7 @@ export const events: HistoricalEvent[] = [
       "theopompe"
     ],
     "summary": "Selon la tradition, Sparte mène pendant vingt ans une guerre contre ses voisins de Messénie, retranchés sur le mont Ithôme, et finit par conquérir leur riche plaine. Les Messéniens deviennent des hilotes, qui cultivent la terre pour les Spartiates : ce travail forcé fonde le mode de vie spartiate.",
-    "body": "**Le témoignage de Tyrtée.** Le poète spartiate Tyrtée, au VIIe siècle, chante le roi Théopompe, « par qui nous avons pris la vaste Messène », et dit que les pères de leurs pères combattirent dix-neuf ans avant que les Messéniens n'abandonnent l'Ithôme la vingtième année. C'est le seul témoignage proche des faits.\n\n**Le récit de Pausanias.** Pausanias raconte la guerre en détail, de 743 à 724, mais il suit des auteurs hellénistiques (Myron de Priène, le poète Rhianos) dont il reconnaît lui-même les invraisemblances. Ses épisodes héroïques sont en partie des inventions de l'époque où la Messénie, libérée en 369, se cherchait un passé.\n\n**Les conséquences.** La conquête double le territoire de Sparte. Les Messéniens soumis deviennent hilotes et livrent une partie de leurs récoltes ; la crainte de leurs révoltes pèse ensuite sur toute la politique spartiate.",
+    "body": "**Le témoignage de Tyrtée.** Le poète spartiate Tyrtée, au VIIe siècle, chante le roi Théopompe, « par qui nous avons pris la vaste Messène », et dit que les pères de leurs pères combattirent dix-neuf ans avant que les Messéniens n'abandonnent l'Ithôme la vingtième année. C'est le seul témoignage proche des faits.\n\n**Le récit de Pausanias.** Pausanias raconte la guerre en détail, de 743 à 724, mais il suit pour cette guerre un auteur hellénistique, Myron de Priène, dont il relève lui-même les invraisemblances. Ses épisodes héroïques sont en partie des inventions de l'époque où la Messénie, libérée en 369, se cherchait un passé.\n\n**Les conséquences.** La conquête double le territoire de Sparte. Les Messéniens soumis deviennent hilotes et livrent une partie de leurs récoltes ; la crainte de leurs révoltes pèse ensuite sur toute la politique spartiate.",
     "sources": [
       {
         "kind": "ancient",
@@ -160,7 +160,7 @@ export const events: HistoricalEvent[] = [
         "kind": "ancient",
         "author": "Pausanias",
         "work": "Description de la Grèce",
-        "locus": "IV, 5 à 13",
+        "locus": "IV, 5 à 13 (dates : IV, 5, 10 et IV, 13, 7)",
         "url": `${PAUSANIAS}:book=4:chapter=5`
       },
       {
@@ -175,8 +175,8 @@ export const events: HistoricalEvent[] = [
     "title": "Fondation de Cumes",
     "start": -739,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Les auteurs antiques en font la plus ancienne colonie d'Italie, sans date fiable ; les tombes grecques les plus anciennes du site datent de 740 à 720 environ.",
+    "certainty": "attested",
+    "certaintyNote": "Fondation certaine, date discutée. Les auteurs antiques en font la plus ancienne colonie d'Italie, sans date fiable ; les tombes grecques les plus anciennes du site datent de 740 à 720 environ.",
     "era": "archaique",
     "track": "monde-grec",
     "category": "politics",
@@ -281,7 +281,7 @@ export const events: HistoricalEvent[] = [
       {
         "kind": "modern",
         "author": "Michel Gras, Henri Tréziny et Henri Broise",
-        "work": "Mégara Hyblaea 5. La ville archaïque, Rome, École française de Rome, 2004"
+        "work": "Mégara Hyblaea 5. La ville archaïque : l'espace urbain d'une cité grecque de Sicile orientale, Rome, École française de Rome, 2004"
       }
     ]
   },
@@ -329,8 +329,8 @@ export const events: HistoricalEvent[] = [
     "title": "Hésiode compose la Théogonie et les Travaux et les Jours",
     "start": -699,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Date déduite des poèmes eux-mêmes et de leur langue : vers 700, à une génération près ; certains placent Hésiode avant Homère.",
+    "certainty": "attested",
+    "certaintyNote": "Les poèmes sont conservés, leur date est discutée. Date déduite des poèmes eux-mêmes et de leur langue : vers 700, à une génération près ; certains placent Hésiode avant Homère.",
     "era": "archaique",
     "track": "monde-grec",
     "category": "culture",
@@ -347,6 +347,12 @@ export const events: HistoricalEvent[] = [
         "author": "Hésiode",
         "work": "Les Travaux et les Jours",
         "locus": "v. 633 à 640 et 650 à 659"
+      },
+      {
+        "kind": "ancient",
+        "author": "Hésiode",
+        "work": "Théogonie",
+        "locus": "v. 22 à 34 (les Muses sur l'Hélicon)"
       },
       {
         "kind": "ancient",
@@ -414,7 +420,7 @@ export const events: HistoricalEvent[] = [
     "start": -659,
     "precision": "decade",
     "certainty": "traditional",
-    "certaintyNote": "Date des chronographes (vers 660 selon la chronique d'Eusèbe) ; Hérodote dit seulement que Chalcédoine fut fondée dix-sept ans plus tôt. Les plus anciens objets grecs du site datent du VIIe siècle.",
+    "certaintyNote": "Date des chronographes (vers 660 à 657 selon les versions de la chronique d'Eusèbe) ; Hérodote dit seulement que Chalcédoine fut fondée dix-sept ans plus tôt, ce qui, avec la date d'Eusèbe pour Chalcédoine (685), donnerait 668. Les plus anciens objets grecs du site datent du VIIe siècle.",
     "era": "archaique",
     "track": "monde-grec",
     "category": "politics",
@@ -453,7 +459,7 @@ export const events: HistoricalEvent[] = [
     "end": -582,
     "precision": "decade",
     "certainty": "traditional",
-    "certaintyNote": "Dates traditionnelles (de 657 à 583) reconstruites à partir des durées de règne données par Aristote ; une chronologie basse, défendue par certains, descend d'une quarantaine d'années.",
+    "certaintyNote": "Dates traditionnelles (de 657 à 583) reconstruites d'après la chronique d'Eusèbe, héritière d'Apollodore, et les durées de règne données par Aristote ; une chronologie basse, défendue depuis Beloch, descend d'une quarantaine d'années.",
     "era": "archaique",
     "track": "corinthe",
     "category": "politics",
@@ -515,7 +521,7 @@ export const events: HistoricalEvent[] = [
         "kind": "ancient",
         "author": "Pausanias",
         "work": "Description de la Grèce",
-        "locus": "IV, 14 à 24",
+        "locus": "IV, 14 à 24 (dates : IV, 15, 1 et IV, 23, 4)",
         "url": `${PAUSANIAS}:book=4:chapter=14`
       },
       {
@@ -584,7 +590,7 @@ export const events: HistoricalEvent[] = [
     "start": -630,
     "precision": "decade",
     "certainty": "traditional",
-    "certaintyNote": "Date traditionnelle de 631, transmise par les chronographes ; la céramique la plus ancienne du site date du dernier tiers du VIIe siècle.",
+    "certaintyNote": "Date traditionnelle de 631, couramment admise mais dont le fondement antique précis est discuté ; la céramique grecque la plus ancienne du site date de la seconde moitié du VIIe siècle.",
     "era": "archaique",
     "track": "monde-grec",
     "category": "politics",
@@ -622,8 +628,8 @@ export const events: HistoricalEvent[] = [
     "start": -629,
     "end": -599,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Date tirée surtout du dépôt de fondation de l'Artémision d'Éphèse, daté selon les fouilleurs entre 650 et 600 environ ; les premières frappes elles-mêmes ne sont pas datées avec précision.",
+    "certainty": "attested",
+    "certaintyNote": "Monnaies conservées, date discutée. Date tirée surtout du dépôt de fondation de l'Artémision d'Éphèse, daté selon les fouilleurs entre 650 et 600 environ ; les premières frappes elles-mêmes ne sont pas datées avec précision.",
     "era": "archaique",
     "track": "ionie",
     "category": "society",
@@ -700,8 +706,8 @@ export const events: HistoricalEvent[] = [
     "title": "Sappho et Alcée à Lesbos",
     "start": -599,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Les deux poètes sont contemporains de Pittacos, au pouvoir à Mytilène vers 590 à 580 ; leurs dates de naissance et de mort sont inconnues.",
+    "certainty": "attested",
+    "certaintyNote": "Activité certaine, dates discutées. Les deux poètes sont contemporains de Pittacos, au pouvoir à Mytilène vers 590 à 580 ; leurs dates de naissance et de mort sont inconnues.",
     "era": "archaique",
     "track": "monde-grec",
     "category": "culture",
@@ -747,8 +753,8 @@ export const events: HistoricalEvent[] = [
     "title": "Temple d'Héra à Olympie et premiers temples doriques",
     "start": -599,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Le temple d'Héra est daté vers 600 par la plupart des archéologues, entre 650 et 590 selon les études ; ses colonnes de bois ont été remplacées une à une par des colonnes de pierre.",
+    "certainty": "attested",
+    "certaintyNote": "Temple conservé, date discutée. Le temple d'Héra est daté vers 600 par la plupart des archéologues, entre 650 et 590 selon les études ; ses colonnes de bois ont été remplacées une à une par des colonnes de pierre.",
     "era": "archaique",
     "track": "monde-grec",
     "category": "building",
@@ -1293,7 +1299,7 @@ export const events: HistoricalEvent[] = [
     "id": "conquete-perse-de-l-ionie",
     "title": "Conquête perse de l'Ionie, exil des Phocéens",
     "start": -545,
-    "precision": "year",
+    "precision": "decade",
     "certainty": "attested",
     "certaintyNote": "Campagnes de Mazarès puis d'Harpage dans les années qui suivent la prise de Sardes, vers 546 à 540 ; Hérodote ne donne pas d'année.",
     "era": "archaique",
@@ -1312,7 +1318,7 @@ export const events: HistoricalEvent[] = [
         "kind": "ancient",
         "author": "Hérodote",
         "work": "Histoires",
-        "locus": "I, 141, 152 et 153, 162 à 170",
+        "locus": "I, 141, 152 et 153, 156 à 170",
         "url": `${HERODOTE}:book=1:chapter=162`
       },
       {

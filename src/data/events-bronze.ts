@@ -379,7 +379,8 @@ export const events: HistoricalEvent[] = [
       {
         "kind": "modern",
         "author": "Joseph Maran",
-        "work": "Tiryns, dans Eric H. Cline (dir.), The Oxford Handbook of the Bronze Age Aegean, Oxford, Oxford University Press, 2010"
+        "work": "Tiryns, dans Eric H. Cline (dir.), The Oxford Handbook of the Bronze Age Aegean, Oxford, Oxford University Press, 2010",
+        "locus": "p. 722 à 734"
       }
     ]
   },
@@ -435,7 +436,7 @@ export const events: HistoricalEvent[] = [
     "category": "society",
     "importance": 3,
     "placeId": "thebes",
-    "summary": "Sous la ville moderne de Thèbes, les fouilles de la Cadmée ont mis au jour les restes d'un grand palais mycénien et ses archives : plusieurs centaines de tablettes et de scellés en linéaire B, dont quelque 250 trouvés de 1993 à 1995 rue Pélopidas, et un trésor de sceaux-cylindres orientaux. Elles font de Thèbes l'un des grands royaumes de la fin du XIIIe siècle.",
+    "summary": "Sous la ville moderne de Thèbes, les fouilles de la Cadmée ont mis au jour les restes d'un grand palais mycénien et ses archives : plusieurs centaines de tablettes et de scellés en linéaire B, dont environ 240 tablettes trouvées de 1993 à 1995 rue Pélopidas, et un trésor de sceaux-cylindres orientaux. Elles font de Thèbes l'un des grands royaumes de la fin du XIIIe siècle.",
     "body": "**Un palais sous la ville.** Thèbes n'a jamais cessé d'être habitée, et son palais ne se fouille que par morceaux, au gré des chantiers de construction. On y a retrouvé depuis le début du XXe siècle des ateliers, des magasins, des fresques et, en 1963 et 1964, une quarantaine de sceaux-cylindres, pour la plupart en lapis-lazuli, venus de Mésopotamie et de Syrie, dont certains d'époque kassite : sans doute un cadeau diplomatique ou un butin.\n\n**Des archives en grec.** Les tablettes de la rue Pélopidas enregistrent surtout des distributions d'orge, de vin et d'autres denrées à des personnes, à des lieux et peut-être à des sanctuaires. Elles nomment des lieux de Béotie et d'Eubée, comme Amarynthos, et un homme dit « de Lacédémone ». D'autres séries comptent la laine et les tissus.\n\n**Ce qui est discuté.** Les éditeurs ont lu dans certaines tablettes des offrandes à des divinités et à des animaux sacrés ; d'autres linguistes contestent ces lectures. Le rang de Thèbes, que certains proposent comme siège du roi d'Ahhiyawa des textes hittites, est lui aussi débattu.",
     "sources": [
       {
@@ -453,7 +454,7 @@ export const events: HistoricalEvent[] = [
       {
         "kind": "modern",
         "author": "Vassilis L. Aravantinos, Louis Godart et Anna Sacconi",
-        "work": "Thèbes. Fouilles de la Cadmée, I, Les tablettes en linéaire B de la Odos Pelopidou, Pise et Rome, Istituti editoriali e poligrafici internazionali, 2001"
+        "work": "Thèbes. Fouilles de la Cadmée, I, Les tablettes en linéaire B de la Odos Pelopidou. Édition et commentaire, Pise et Rome, Istituti editoriali e poligrafici internazionali, 2001"
       },
       {
         "kind": "modern",
@@ -467,8 +468,8 @@ export const events: HistoricalEvent[] = [
     "title": "Ramsès III contre les Peuples de la mer",
     "start": -1176,
     "precision": "year",
-    "certainty": "debated",
-    "certaintyNote": "L'an 8 de Ramsès III correspond à 1177 environ selon la chronologie égyptienne courante, à quelques années près ; le récit est celui de la propagande royale, et l'identité de ces peuples comme leur rôle dans la chute des palais égéens sont débattus.",
+    "certainty": "attested",
+    "certaintyNote": "Campagne attestée par des textes contemporains ; l'an 8 de Ramsès III correspond à 1177 environ selon la chronologie égyptienne courante, à quelques années près. Le récit est celui de la propagande royale, et l'identité de ces peuples comme leur rôle dans la chute des palais égéens sont débattus.",
     "era": "bronze",
     "track": "myceniens",
     "category": "war",
@@ -487,7 +488,7 @@ export const events: HistoricalEvent[] = [
         "kind": "ancient",
         "author": "Ramsès IV (au nom de Ramsès III)",
         "work": "Grand papyrus Harris I",
-        "locus": "76, 7 à 9"
+        "locus": "76, 6 à 11 (les guerres de Ramsès III)"
       },
       {
         "kind": "modern",

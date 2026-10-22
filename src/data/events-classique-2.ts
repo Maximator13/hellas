@@ -26,7 +26,7 @@ export const events: HistoricalEvent[] = [
       "lysandre"
     ],
     "summary": "Après la capitulation d'Athènes, en 404, Lysandre fait installer un gouvernement de trente oligarques, les Trente, qui exécutent ou chassent leurs adversaires. Les démocrates exilés de Thrasybule reprennent le Pirée en 403 ; la démocratie est restaurée à l'automne, avec une amnistie générale.",
-    "body": "**La terreur des Trente.** À l'été 404, sous la pression de Lysandre, l'assemblée confie le pouvoir à trente hommes chargés de rédiger de nouvelles lois. Menés par Critias, ils s'appuient sur une garnison spartiate, réservent les droits politiques à 3 000 citoyens et font exécuter sans jugement des métèques riches et des opposants ; Théramène, qui proteste, est lui-même mis à mort. Selon Aristote, au moins 1 500 personnes périssent.\n\n**Le retour des démocrates.** Pendant l'hiver 404/403, Thrasybule s'empare de la forteresse de Phylé avec environ soixante-dix exilés selon Xénophon, puis du Pirée. Critias est tué au combat de Mounychie au printemps 403. Le roi spartiate Pausanias, rival de Lysandre, arbitre alors une réconciliation : les démocrates rentrent en ville, et les derniers oligarques se retirent à Éleusis, réintégrée en 401/400.\n\n**L'amnistie.** Les Athéniens jurent de « ne pas rappeler les maux passés » : seuls les Trente et quelques magistrats sont exclus du pardon. Cette amnistie, l'une des premières connues, a été largement respectée, même si les procès de la décennie suivante, dont celui de Socrate, portent la trace de ces années.",
+    "body": "**La terreur des Trente.** À l'été 404, sous la pression de Lysandre, l'assemblée confie le pouvoir à trente hommes chargés de rédiger de nouvelles lois. Menés par Critias, ils s'appuient sur une garnison spartiate, réservent les droits politiques à 3 000 citoyens et font exécuter sans jugement des métèques riches et des opposants ; Théramène, qui proteste, est lui-même mis à mort. Selon la Constitution d'Athènes (35, 4), au moins 1 500 personnes périssent.\n\n**Le retour des démocrates.** Pendant l'hiver 404/403, Thrasybule s'empare de la forteresse de Phylé avec environ soixante-dix exilés selon Xénophon, puis du Pirée. Critias est tué au combat de Mounychie au printemps 403. Le roi spartiate Pausanias, rival de Lysandre, arbitre alors une réconciliation : les démocrates rentrent en ville, et les derniers oligarques se retirent à Éleusis, réintégrée en 401/400.\n\n**L'amnistie.** Les Athéniens jurent de « ne pas rappeler les maux passés » : seuls les Trente et quelques magistrats sont exclus du pardon. Cette amnistie, l'une des premières connues, a été largement respectée, même si les procès de la décennie suivante, dont celui de Socrate, portent la trace de ces années.",
     "sources": [
       {
         "kind": "ancient",
@@ -37,8 +37,8 @@ export const events: HistoricalEvent[] = [
       },
       {
         "kind": "ancient",
-        "author": "Aristote",
-        "work": "Constitution des Athéniens",
+        "author": "Aristote (école d')",
+        "work": "Constitution d'Athènes",
         "locus": "34 à 40"
       },
       {
@@ -73,7 +73,7 @@ export const events: HistoricalEvent[] = [
       "xenophon"
     ],
     "summary": "Au printemps 399, Socrate, âgé de 70 ans, est accusé d'impiété et de corruption de la jeunesse. Un tribunal de 500 ou 501 citoyens le condamne à mort ; il boit le poison un mois plus tard, après avoir refusé de s'enfuir. Sa mort, racontée par Platon, devient l'un des récits fondateurs de la philosophie.",
-    "body": "**L'accusation.** Selon l'acte d'accusation, que Diogène Laërce dit encore conservé de son temps, Socrate « ne reconnaît pas les dieux de la cité, introduit des divinités nouvelles et corrompt la jeunesse » ; les accusateurs sont Mélétos, Anytos et Lycon. Socrate se défend lui-même. D'après l'Apologie de Platon, il est déclaré coupable à une trentaine de voix près ; invité à proposer sa peine, il suggère d'abord d'être nourri au prytanée, ce qui aggrave le second vote.\n\n**La mort.** L'exécution est retardée d'environ trente jours, le temps du retour du navire sacré envoyé à Délos, pendant lequel aucune mise à mort n'est permise. Socrate refuse l'évasion que lui propose son ami Criton et boit le poison, entouré de ses disciples ; Platon, absent ce jour-là, décrit la scène dans le Phédon. Le texte parle seulement du « poison » : l'identification avec la ciguë vient de la tradition.\n\n**Pourquoi ?** L'amnistie de 403 interdisait de poursuivre les actes politiques passés, mais Socrate avait eu pour proches Alcibiade et Critias, et Anytos était un chef démocrate : beaucoup d'historiens voient dans le procès une affaire politique autant que religieuse. Socrate n'ayant rien écrit, on ne le connaît que par Platon, Xénophon et la caricature d'Aristophane, qui ne concordent pas toujours.",
+    "body": "**L'accusation.** Selon l'acte d'accusation, que l'érudit Favorinus, cité par Diogène Laërce, disait encore conservé aux archives d'Athènes, Socrate « ne reconnaît pas les dieux de la cité, introduit des divinités nouvelles et corrompt la jeunesse » ; les accusateurs sont Mélétos, Anytos et Lycon. Socrate se défend lui-même. D'après l'Apologie de Platon, il est déclaré coupable à une trentaine de voix près ; invité à proposer sa peine, il suggère d'abord d'être nourri au prytanée, ce qui aggrave le second vote.\n\n**La mort.** L'exécution est retardée d'environ trente jours, le temps du retour du navire sacré envoyé à Délos, pendant lequel aucune mise à mort n'est permise. Socrate refuse l'évasion que lui propose son ami Criton et boit le poison, entouré de ses disciples ; Platon, absent ce jour-là, décrit la scène dans le Phédon. Le texte parle seulement du « poison » : l'identification avec la ciguë vient de la tradition.\n\n**Pourquoi ?** L'amnistie de 403 interdisait de poursuivre les actes politiques passés, mais Socrate avait eu pour proches Alcibiade et Critias, et Anytos était un chef démocrate : beaucoup d'historiens voient dans le procès une affaire politique autant que religieuse. Socrate n'ayant rien écrit, on ne le connaît que par Platon, Xénophon et la caricature d'Aristophane, qui ne concordent pas toujours.",
     "sources": [
       {
         "kind": "ancient",
@@ -338,8 +338,8 @@ export const events: HistoricalEvent[] = [
     "title": "Platon fonde l'Académie",
     "start": -386,
     "precision": "decade",
-    "certainty": "traditional",
-    "certaintyNote": "Date déduite (vers 387) du retour de Platon de son premier voyage en Sicile ; aucune source antique ne donne l'année de la fondation.",
+    "certainty": "attested",
+    "certaintyNote": "Fondation attestée ; date déduite (vers 387) du retour de Platon de son premier voyage en Sicile ; aucune source antique ne donne l'année de la fondation.",
     "era": "classique",
     "track": "athenes",
     "category": "culture",
@@ -1664,15 +1664,15 @@ export const events: HistoricalEvent[] = [
     "title": "Le théâtre d'Épidaure",
     "start": -329,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Date discutée : vers 340 à 330 d'après l'attribution de Pausanias à Polyclète, sans doute le Jeune ; vers 300 pour la première phase selon l'étude architecturale d'Armin von Gerkan et Wolfgang Müller-Wiener (1961).",
+    "certainty": "attested",
+    "certaintyNote": "Date discutée : vers 340 à 330 d'après l'attribution de Pausanias à Polyclète, sans doute le Jeune ; vers 300 pour la première phase selon l'étude architecturale d'Armin von Gerkan et Wolfgang Müller-Wiener (1961) ; fin du IVe siècle selon Lutz Käppel (1989). Le site le laisse à la fin de l'époque classique, mais le monument peut appartenir aux débuts de l'époque hellénistique.",
     "era": "classique",
     "track": "monde-grec",
     "category": "building",
     "importance": 2,
     "placeId": "theatre-d-epidaure",
     "summary": "Dans le sanctuaire d'Asclépios à Épidaure, un grand théâtre de pierre est construit à la fin du IVe siècle ou vers 300. Pausanias le jugeait sans rival pour son harmonie et sa beauté. Remarquablement conservé, réputé pour son acoustique, il accueille encore des représentations chaque été.",
-    "body": "**Le sanctuaire d'Asclépios.** Au IVe siècle, le sanctuaire du dieu guérisseur, à environ 8 km de la ville d'Épidaure, connaît un grand essor : on y bâtit un nouveau temple, la tholos et de vastes portiques où dorment les malades venus chercher un rêve de guérison. Le théâtre, adossé au mont Kynortion, sert aux concours organisés en l'honneur du dieu.\n\n**Le monument.** Les gradins, un peu plus qu'un demi-cercle, entourent un orchestre circulaire de près de 20 mètres de diamètre. Les 34 rangées du bas ont été complétées plus tard par 21 rangées supplémentaires, ce qui porte la capacité à 12 000 ou 14 000 spectateurs. La pente régulière et la forme des gradins assurent une acoustique remarquable.\n\n**Une date discutée.** Pausanias attribue le théâtre à Polyclète, sans doute le Jeune, architecte de la tholos, ce qui a conduit à le dater vers 340 à 330. L'étude architecturale d'Armin von Gerkan et Wolfgang Müller-Wiener place plutôt la première phase vers 300 et l'agrandissement au IIe siècle av. J.-C. Le site le place vers 330, avec cette incertitude.",
+    "body": "**Le sanctuaire d'Asclépios.** Au IVe siècle, le sanctuaire du dieu guérisseur, à environ 8 km de la ville d'Épidaure, connaît un grand essor : on y bâtit un nouveau temple, la tholos et de vastes portiques où dorment les malades venus chercher un rêve de guérison. Le théâtre, adossé au mont Kynortion, sert aux concours organisés en l'honneur du dieu.\n\n**Le monument.** Les gradins, un peu plus qu'un demi-cercle, entourent un orchestre circulaire de près de 20 mètres de diamètre. Les 34 rangées du bas ont été complétées plus tard par 21 rangées supplémentaires, ce qui porte la capacité à 12 000 ou 14 000 spectateurs. La pente régulière et la forme des gradins assurent une acoustique remarquable.\n\n**Une date discutée.** Pausanias attribue le théâtre à Polyclète, sans doute le Jeune, architecte de la tholos, ce qui a conduit à le dater vers 340 à 330. L'étude architecturale d'Armin von Gerkan et Wolfgang Müller-Wiener place plutôt la première phase vers 300 et l'agrandissement vers 170 à 160 av. J.-C. ; Lutz Käppel revient à la fin du IVe siècle. Le site le place vers 330, à la fin de l'époque classique, mais il peut tout aussi bien dater des premières années de l'époque hellénistique.",
     "sources": [
       {
         "kind": "ancient",
@@ -1685,6 +1685,12 @@ export const events: HistoricalEvent[] = [
         "kind": "modern",
         "author": "Armin von Gerkan et Wolfgang Müller-Wiener",
         "work": "Das Theater von Epidauros, Stuttgart, Kohlhammer, 1961"
+      },
+      {
+        "kind": "modern",
+        "author": "Lutz Käppel",
+        "work": "Das Theater von Epidauros, Jahrbuch des Deutschen Archäologischen Instituts, 104, 1989",
+        "locus": "p. 83 à 106"
       },
       {
         "kind": "modern",

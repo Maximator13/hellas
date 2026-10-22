@@ -382,7 +382,7 @@ export const events: HistoricalEvent[] = [
     "start": -463,
     "precision": "year",
     "certainty": "attested",
-    "certaintyNote": "Plutarque date le séisme de la quatrième année du roi Archidamos, soit vers 464 ; Diodore le place en 469/468. La durée de la révolte (de quatre à dix ans) dépend d'un passage de Thucydide (I, 103) au texte discuté.",
+    "certaintyNote": "Séisme attesté ; la date de 464 se déduit du récit de Thucydide, qui le place pendant la révolte de Thasos. Plutarque le date de la quatrième année du roi Archidamos, dont l'avènement est lui-même discuté, et Diodore de 469/468. La durée de la révolte (de quatre à dix ans) dépend d'un passage de Thucydide (I, 103) au texte discuté.",
     "era": "classique",
     "track": "sparte",
     "category": "nature",

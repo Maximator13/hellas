@@ -141,3 +141,43 @@ Remplace ou complète les points de la section « Scène des Thermopyles » ci-d
 - **Hignett et Macan.** Les renvois à Hignett (1963, p. 371 à 378) et à la note de Macan sur VIII, 25 ont été retirés faute de vérification ; Evans (GRBS 5, 1964) est confirmé.
 - **Plutarque sur les Thébains.** De la malignité d'Hérodote : chapitres exacts (vers 31 à 33) à vérifier.
 - **Équipement.** Le manteau pourpre est attesté dès 411 (Aristophane, Lysistrata, 1140) : correction de la mention « décrit seulement au IVe siècle ». Hérodote ne dit pas que les flèches perses ont des pointes de bronze (VII, 61) : la précision vient de l'archéologie.
+
+## Événements de l'époque hellénistique
+
+- **Euclide, Septante, Ératosthène, Grand Autel, Vénus de Milo, Anticythère, César à Alexandrie.** Passés de « debated » à « attested » : l'œuvre ou le fait est sûr, seule la date est discutée (précisé dans `certaintyNote`). À revoir si l'on préfère réserver « attested » aux dates sûres.
+- **Siège de Syracuse.** Début ramené à 213 (au lieu de 214, ce que donnait `start: -213`) ; Marcellus arrive en 214 et Tite-Live place les premiers assauts cette année-là. La chute est datée de 212, certains la mettent en 211.
+- **Raphia.** Le décret donne le 10 Pachôns de l'an 5 ; l'équivalence avec le 22 juin 217 est la plus citée, mais une notice d'autorité allemande donne le 18 juin. Précision laissée au mois.
+- **Pydna.** 22 juin 168, à partir de l'éclipse de lune du 21 juin 168 (Tite-Live XLIV, 37 ; Polybe XXIX, 16) ; calcul astronomique non refait ici.
+- **Vénus de Milo.** Le Louvre donne 2,04 m et vers 150 à 125 ; d'autres catalogues donnent 2,02 m et vers 130 à 100. Lecture de la plinthe perdue non vérifiée sur les dessins.
+- **Léosthène.** `died: -322` (323) alors qu'il meurt pendant l'hiver 323/322 devant Lamia : 323 ou 322 à trancher.
+- **Habicht.** Chapitres (2 pour la guerre lamiaque, 5 pour la guerre chrémonidéenne, 13 pour Sylla) vérifiés sur la table de l'édition anglaise ; à confirmer sur la traduction française.
+- **Cléomède.** Renvoi I, 7 selon l'édition Todd (I, 10 dans Ziegler), donné de mémoire, non contrôlé sur le texte.
+- **Polybe sur Attale Ier.** Section 7 retirée de XVIII, 41, faute de vérification ; Tite-Live XXXVIII, 16, 14 et Pausanias I, 25, 2 non contrôlés sur le texte.
+- **Phare, Musée, Colosse.** Dates déduites (achèvement du Phare vers 283 à 280 d'après des chronographes tardifs ; Musée vers 290 ; Colosse de 294 à 282, chute vers 227 ou 226 d'après les 56 ans de Pline) : fourchettes usuelles, sans source primaire exacte.
+
+## Événements de l'âge du bronze et de l'époque archaïque
+
+- **Convention de certitude.** Homère, Hésiode, Cumes, premières monnaies lydiennes, Sappho et Alcée, temple d'Héra à Olympie et Peuples de la mer passés de « debated » à « attested » : le fait est sûr, seule la date (ou l'interprétation) est discutée, précisé dans `certaintyNote`. Restent « debated » : Ahhiyawa, Pheidon, seconde guerre de Messénie, éclipse de Thalès.
+- **Papyrus Harris I.** Renvoi élargi à 76, 6 à 11 (section des guerres de Ramsès III selon le catalogue du British Museum) ; le renvoi courant 76, 7 à 9 pour les Peuples de la mer n'a pas été contrôlé sur une édition (Erichsen, Grandet).
+- **Tablettes.** KN V 52, PY An 657, PY Tn 316 et les séries thébaines Fq, Av, Gp sont conformes à la littérature courante, mais non contrôlées sur les corpus (KT5 pour Cnossos, PTT pour Pylos, édition de 2001 pour Thèbes). Thèbes : 238 tablettes publiées en 2001 (résumé corrigé, « environ 240 » au lieu de « quelque 250 »).
+- **Porada, AfO 28.** Article confirmé (1981), pagination donnée tantôt p. 1 à 70, tantôt p. 1 à 78 ; laissée sans pages.
+- **Fragments de Tyrtée.** Numéros West (fr. 5, 10, 11, 12) et Solon fr. 36 West donnés selon l'usage, non contrôlés sur l'édition (Iambi et elegi Graeci, 2e éd., 1992).
+- **Byzance.** Eusèbe donne selon les versions de 660 à 657 ; Hérodote, combiné à la date d'Eusèbe pour Chalcédoine (685), conduirait à 668. Entrée de l'Inventory de Hansen et Nielsen non consultée.
+- **Cyrène.** La date de 631 est universellement reprise, mais son fondement antique précis (chronographes, calcul sur les Battiades) n'a pas été retrouvé ; note rendue neutre.
+- **Cypsélides.** Note corrigée : chronologie haute issue d'Eusèbe et d'Apollodore, plus les durées d'Aristote (73 ans et demi) ; chronologie basse depuis Beloch.
+- **Jeux isthmiques et néméens.** Isthmiques en 582 (Der Neue Pauly) ou 581 selon les auteurs ; Néméens en 573 (Ol. 51, 4, Eusèbe). Dates gardées, à confirmer sur l'édition de Helm.
+- **Pheidon.** Date laissée flottante (748 de Pausanias, 668 par correction, ou VIe siècle d'après Hérodote).
+- **Uluburun.** Chiffres (354 lingots en peau de bœuf, 175 lingots de verre, 44 à 52 m de fond) repris de Pulak sans contrôle de l'article de 1998.
+- **Conquête de l'Ionie.** Précision passée de l'année à la décennie, puisque Hérodote ne donne pas d'année ; renvoi étendu à I, 156 pour Mazarès.
+
+## Événements de l'époque classique
+
+- **Convention de certitude.** Théâtre d'Épidaure (de « debated ») et fondation de l'Académie (de « traditional ») passés à « attested » : le fait est sûr, seule la date est discutée, précisé dans `certaintyNote`. Reste « debated » : la paix de Callias, dont l'existence même est discutée.
+- **Théâtre d'Épidaure.** Gardé vers 330 dans l'époque classique, avec une note : vers 340 à 330 d'après Pausanias (Polyclète), vers 300 pour la première phase et vers 170 à 160 pour l'agrandissement selon von Gerkan et Müller-Wiener (1961, p. 79 et 80, connus par une citation secondaire), fin du IVe siècle selon Käppel (JdI 104, 1989). Si l'on retient 300, l'événement passe en époque hellénistique (piste « monde-grec » active).
+- **Séisme de Sparte.** Note corrigée : la date de 464 vient du récit de Thucydide (révolte de Thasos) ; la « quatrième année d'Archidamos » de Plutarque dépend d'une date d'avènement elle-même discutée (469 ou 476).
+- **Procès de Socrate.** L'acte d'accusation conservé aux archives est un témoignage de Favorinus rapporté par Diogène Laërce (II, 40), non une affirmation de Diogène lui-même : corrigé.
+- **Perseus.** Les liens Perseus (Hérodote 0126, Thucydide 0200, Xénophon 0206, Diodore 0084, Strabon 0198) n'ont pas pu être ouverts, le serveur répondant « busy » ; seul Pausanias (0160) a répondu. Identifiants conformes à l'usage du reste du site, à recontrôler.
+- **Références confirmées.** Liens Thayer (Agésilas, Artaxerxès, Sylla, Alexandre et les autres Vies) ouverts ; Plutarque, Agésilas, 23 traite bien de la paix d'Antalcidas ; Lysistrata v. 1137 à 1144 (Périclidas, Cimon et 4 000 hoplites), Marbre de Paros A 56 (Sophocle), Mossé (Complexe, 1987), Ira S. Mark (Hesperia Suppl. 26, 1993) et Marriner, Morhange et Meulé (PNAS 104, 22, 2007) confirmés. Les 46 identifiants Pleiades des lieux classiques renvoient au bon lieu, avec des coordonnées identiques.
+- **Donnés de mémoire, non contrôlés sur le texte.** Diodore XI, 34 à 36 et XI, 54 à 59, XIV, 47 et XV, 84 ; Plutarque, Cimon, 12 (Phanodémos 600, Éphore 350) ; IG I³ 363 (environ 1 400 talents restitués) ; Vitruve II, 8, 10 à 15 ; Badian (Historia 7, 1958) ; Ryder (Koine Eirene, 1965) ; Pasquier et Martinez (Praxitèle, 2007) ; Mallwitz et Schiering (Olympische Forschungen V, 1964). Tous concordent avec la littérature courante, sans lecture directe.
+- **Counaxa.** Pleiades ne donne pas de coordonnées ; le point (33,1 ; 44,1) reste une approximation.
+- **Ostracisme de Thémistocle, Eurymédon, Zeus de Phidias, temple d'Athéna Nikè.** Dates gardées avec leurs fourchettes (472 à 470 ; 469 à 466 ; 435 à 430 ou années 450 ; 448 ou 427 à 424), sans tranchage possible ici.

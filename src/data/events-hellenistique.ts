@@ -52,10 +52,16 @@ export const events: HistoricalEvent[] = [
         "locus": "27 à 30"
       },
       {
+        "kind": "ancient",
+        "author": "Plutarque",
+        "work": "Vie de Camille",
+        "locus": "19, 5"
+      },
+      {
         "kind": "modern",
         "author": "Christian Habicht",
         "work": HABICHT,
-        "locus": "chap. 1"
+        "locus": "chap. 2"
       }
     ]
   },
@@ -247,8 +253,8 @@ export const events: HistoricalEvent[] = [
     "title": "Euclide écrit les Éléments",
     "start": -299,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Euclide n'est daté que par Proclus, philosophe du Ve siècle apr. J.-C., qui le place sous Ptolémée Ier ; aucun document contemporain ne parle de sa vie.",
+    "certainty": "attested",
+    "certaintyNote": "L'œuvre est conservée, mais Euclide n'est daté que par Proclus, philosophe du Ve siècle apr. J.-C., qui le place sous Ptolémée Ier ; aucun document contemporain ne parle de sa vie.",
     "era": "hellenistique",
     "track": "monde-grec",
     "category": "culture",
@@ -631,8 +637,8 @@ export const events: HistoricalEvent[] = [
     "title": "Traduction grecque de la Bible : la Septante",
     "start": -269,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "La traduction du Pentateuque est placée par les historiens vers le milieu du IIIe siècle ; le récit de la Lettre d'Aristée, qui la rattache à Ptolémée II, est légendaire dans ses détails.",
+    "certainty": "attested",
+    "certaintyNote": "Traduction attestée ; celle du Pentateuque est placée par les historiens vers le milieu du IIIe siècle ; le récit de la Lettre d'Aristée, qui la rattache à Ptolémée II, est légendaire dans ses détails.",
     "era": "hellenistique",
     "track": "lagides",
     "category": "religion",
@@ -700,7 +706,7 @@ export const events: HistoricalEvent[] = [
       {
         "kind": "ancient",
         "author": "Décret de Chrémonidès",
-        "work": "Inscription d'Athènes, IG II² 687 (Syll.³ 434/435)"
+        "work": "Inscription d'Athènes, IG II² 686 et 687 (Syll.³ 434/435)"
       },
       {
         "kind": "ancient",
@@ -775,7 +781,7 @@ export const events: HistoricalEvent[] = [
         "kind": "ancient",
         "author": "Polybe",
         "work": "Histoires",
-        "locus": "XVIII, 41, 7"
+        "locus": "XVIII, 41"
       },
       {
         "kind": "ancient",
@@ -806,8 +812,8 @@ export const events: HistoricalEvent[] = [
     "title": "Ératosthène mesure la Terre",
     "start": -239,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "La méthode n'est connue que par Cléomède, auteur bien plus tardif ; ni la date de la mesure ni la longueur du stade employé ne sont connues.",
+    "certainty": "attested",
+    "certaintyNote": "Mesure attestée, mais sa méthode n'est connue que par Cléomède, auteur bien plus tardif ; ni la date de la mesure ni la longueur du stade employé ne sont connues.",
     "era": "hellenistique",
     "track": "monde-grec",
     "category": "culture",
@@ -823,13 +829,13 @@ export const events: HistoricalEvent[] = [
         "kind": "ancient",
         "author": "Cléomède",
         "work": "Théorie élémentaire (Caelestia)",
-        "locus": "I, 7"
+        "locus": "I, 7 (édition Todd ; I, 10 dans les éditions anciennes)"
       },
       {
         "kind": "ancient",
         "author": "Strabon",
         "work": "Géographie",
-        "locus": "II, 5, 7"
+        "locus": "II, 5, 7 et II, 5, 34"
       },
       {
         "kind": "modern",
@@ -890,7 +896,7 @@ export const events: HistoricalEvent[] = [
     "month": 6,
     "precision": "month",
     "certainty": "attested",
-    "certaintyNote": "Le décret de Raphia, rédigé par les prêtres égyptiens, permet de placer la bataille vers le 22 juin 217 ; la conversion des calendriers laisse une petite marge.",
+    "certaintyNote": "Le décret de Raphia place la victoire le 10 Pachôns de l'an 5 de Ptolémée IV, soit vers le 22 juin 217 ; la conversion des calendriers laisse une petite marge.",
     "era": "hellenistique",
     "track": "lagides",
     "category": "war",
@@ -924,11 +930,11 @@ export const events: HistoricalEvent[] = [
   {
     "id": "archimede-et-le-siege-de-syracuse",
     "title": "Archimède et le siège de Syracuse",
-    "start": -213,
+    "start": -212,
     "end": -211,
     "precision": "year",
     "certainty": "attested",
-    "certaintyNote": "Siège attesté, de 213 à 212 ; la mort d'Archimède est racontée en plusieurs versions, et les miroirs ardents sont une légende tardive.",
+    "certaintyNote": "Siège attesté, de 213 à 212 ; Marcellus arrive en Sicile dès 214 et Tite-Live fait commencer les assauts cette année-là ; la mort d'Archimède est racontée en plusieurs versions, et les miroirs ardents sont une légende tardive.",
     "era": "hellenistique",
     "track": "occident",
     "category": "war",
@@ -1178,7 +1184,7 @@ export const events: HistoricalEvent[] = [
         "kind": "ancient",
         "author": "Polybe",
         "work": "Histoires",
-        "locus": "XXI, 42 à 46"
+        "locus": "XXI, 42 à 45 (numérotation de l'édition Loeb)"
       },
       {
         "kind": "ancient",
@@ -1204,8 +1210,8 @@ export const events: HistoricalEvent[] = [
     "start": -179,
     "end": -159,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Date discutée : la plupart des historiens placent l'autel sous Eumène II, entre 180 et 160 environ ; certains le rattachent aux victoires sur les Galates de 168 à 166.",
+    "certainty": "attested",
+    "certaintyNote": "Monument conservé, à la date discutée : la plupart des historiens placent l'autel sous Eumène II, entre 180 et 160 environ ; certains le rattachent aux victoires sur les Galates de 168 à 166.",
     "era": "hellenistique",
     "track": "pergame",
     "category": "building",
@@ -1304,7 +1310,7 @@ export const events: HistoricalEvent[] = [
       "popilius-laenas"
     ],
     "summary": "À l'été 168, Antiochos IV, qui marche sur Alexandrie, reçoit à Éleusis, faubourg de la ville, l'ambassadeur romain Popillius Laenas. Celui-ci lui remet l'ordre du Sénat de quitter l'Égypte, trace un cercle autour du roi avec son bâton et exige une réponse avant qu'il n'en sorte. Antiochos cède.",
-    "body": "**La sixième guerre de Syrie.** Antiochos IV a envahi l'Égypte en 170 et 169, profitant de la faiblesse des jeunes Ptolémée VI et Ptolémée VIII ; en 168, il occupe Chypre et Memphis et marche sur Alexandrie. Les Lagides demandent l'aide de Rome, alors occupée par la guerre contre Persée.\n\n**Le cercle.** Polybe, contemporain et bien informé, raconte la scène : Popillius refuse la main que lui tend le roi, qu'il avait connu à Rome, et lui donne la tablette du Sénat. Antiochos demande à consulter ses conseillers ; Popillius trace un cercle dans le sable autour de lui. Le roi, après un moment de stupeur, accepte, et Popillius lui serre enfin la main.\n\n**La portée.** La nouvelle de Pydna, arrivée peu avant, rendait la menace crédible. Sans un soldat, Rome impose sa volonté au plus puissant roi d'Orient : l'épisode symbolise la fin de l'autonomie des royaumes hellénistiques.",
+    "body": "**La sixième guerre de Syrie.** Antiochos IV a envahi l'Égypte en 170 et 169, profitant de la faiblesse des jeunes Ptolémée VI et Ptolémée VIII ; en 168, il occupe Chypre et Memphis et marche sur Alexandrie. Les Lagides demandent l'aide de Rome, alors occupée par la guerre contre Persée.\n\n**Le cercle.** Polybe, contemporain et bien informé, raconte la scène : Popillius refuse la main que lui tend le roi, qu'il avait connu à Rome, et lui donne la tablette du Sénat. Antiochos demande à consulter ses conseillers ; Popillius trace un cercle autour de lui avec son bâton de sarment. Le roi, après un moment de stupeur, accepte, et Popillius lui serre enfin la main.\n\n**La portée.** La nouvelle de Pydna, arrivée peu avant, rendait la menace crédible. Sans un soldat, Rome impose sa volonté au plus puissant roi d'Orient : l'épisode symbolise la fin de l'autonomie des royaumes hellénistiques.",
     "sources": [
       {
         "kind": "ancient",
@@ -1358,7 +1364,7 @@ export const events: HistoricalEvent[] = [
         "kind": "ancient",
         "author": "Polybe",
         "work": "Histoires",
-        "locus": "I, 1, 5 ; XXX, 13 et XXXI, 23 à 25"
+        "locus": "I, 1, 5 ; XXX, 13 et 32 ; XXXI, 23 à 25"
       },
       {
         "kind": "ancient",
@@ -1438,20 +1444,26 @@ export const events: HistoricalEvent[] = [
     "start": -149,
     "end": -124,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Date tirée du style et de l'inscription d'une plinthe perdue, dont le rattachement à la statue est discuté ; on propose en général la seconde moitié du IIe siècle.",
+    "certainty": "attested",
+    "certaintyNote": "Statue conservée ; sa date, tirée du style et de l'inscription d'une plinthe perdue dont le rattachement est discuté, est placée par le Louvre vers 150 à 125, par d'autres jusque vers 100.",
     "era": "hellenistique",
     "track": "monde-grec",
     "category": "culture",
     "importance": 2,
     "placeId": "melos",
     "summary": "Dans la seconde moitié du IIe siècle, un sculpteur, peut-être Alexandros d'Antioche du Méandre, taille pour Mélos une Aphrodite de marbre plus grande que nature. Découverte en 1820 par un paysan de l'île et offerte au roi Louis XVIII, la Vénus de Milo est devenue au Louvre l'une des œuvres antiques les plus célèbres.",
-    "body": "**L'œuvre.** Haute de 2,02 m, faite de deux blocs de marbre de Paros, la déesse se tient debout, le torse nu, une draperie glissant sur les hanches. Elle reprend des modèles du IVe siècle, mais la torsion du corps et le contraste entre la peau et l'étoffe sont typiques de l'art hellénistique. Ses bras, perdus, ont suscité des dizaines de restitutions : tenait-elle une pomme, un bouclier, un miroir ?\n\n**La découverte.** En avril 1820, le paysan Yorgos Kentrotas la trouve dans les ruines de l'antique Mélos. Des officiers de marine français, dont Dumont d'Urville, la signalent, et l'ambassadeur de France à Constantinople, le marquis de Rivière, l'acquiert et l'offre à Louis XVIII.\n\n**L'énigme de la plinthe.** Un fragment de base portant la signature d'Alexandros, fils de Ménidès, d'Antioche du Méandre, fut trouvé avec la statue puis perdu au Louvre ; il n'est connu que par des dessins, et sa lecture est en partie restituée. Son lien avec la statue reste discuté, mais il a fait abandonner l'attribution à Praxitèle.",
+    "body": "**L'œuvre.** Haute de 2,04 m selon le Louvre, faite de deux blocs de marbre de Paros, la déesse se tient debout, le torse nu, une draperie glissant sur les hanches. Elle reprend des modèles du IVe siècle, mais la torsion du corps et le contraste entre la peau et l'étoffe sont typiques de l'art hellénistique. Ses bras, perdus, ont suscité des dizaines de restitutions : tenait-elle une pomme, un bouclier, un miroir ?\n\n**La découverte.** En avril 1820, le paysan Yorgos Kentrotas la trouve dans les ruines de l'antique Mélos. Des officiers de marine français, dont Dumont d'Urville, la signalent, et l'ambassadeur de France à Constantinople, le marquis de Rivière, l'acquiert et l'offre à Louis XVIII.\n\n**L'énigme de la plinthe.** Un fragment de base portant la signature d'Alexandros, fils de Ménidès, d'Antioche du Méandre, fut trouvé avec la statue puis perdu au Louvre ; il n'est connu que par des dessins, et sa lecture est en partie restituée. Son lien avec la statue reste discuté, mais il a fait abandonner l'attribution à Praxitèle.",
     "sources": [
       {
         "kind": "ancient",
         "author": "Signature d'Alexandros d'Antioche du Méandre",
         "work": "Inscription de la plinthe perdue, connue par des dessins faits peu après la découverte"
+      },
+      {
+        "kind": "modern",
+        "author": "Musée du Louvre",
+        "work": "Notice de la Vénus de Milo, inv. Ma 399, collections.louvre.fr",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010277627"
       },
       {
         "kind": "modern",
@@ -1486,7 +1498,7 @@ export const events: HistoricalEvent[] = [
       "mithridate-vi"
     ],
     "summary": "En 88, Athènes se range aux côtés de Mithridate VI, roi du Pont, en guerre contre Rome. Sylla assiège la ville et le Pirée pendant l'hiver 87/86 et prend Athènes d'assaut le 1er mars 86 : le massacre est terrible, le tyran Aristion est exécuté et le Pirée détruit peu après. La ville perd ce qui lui restait de puissance.",
-    "body": "**Mithridate en Grèce.** En 88, Mithridate VI envahit l'Asie romaine et y fait massacrer en un jour des dizaines de milliers d'Italiens. À Athènes, le philosophe Athénion, puis Aristion, prennent le pouvoir et rallient la ville au roi, dont le général Archélaos occupe le Pirée.\n\n**Le siège.** Sylla débarque en 87 et assiège à la fois Athènes et le Pirée ; il fait abattre les arbres de l'Académie et du Lycée pour construire ses machines et puise dans les trésors de Delphes, d'Olympie et d'Épidaure pour payer ses troupes. Athènes, affamée, est prise par une brèche entre la porte du Pirée et la porte Sacrée ; Plutarque décrit le sang qui coule jusqu'au faubourg du Céramique.\n\n**Après le sac.** Sylla déclare épargner les vivants par égard pour les morts, les grands Athéniens du passé ; Aristion, réfugié sur l'Acropole, se rend et est exécuté. Le Pirée et ses arsenaux sont détruits. Sylla bat ensuite les armées de Mithridate à Chéronée et à Orchomène, et emporte à Rome la bibliothèque d'Apellicon, qui contenait des œuvres d'Aristote.",
+    "body": "**Mithridate en Grèce.** En 88, Mithridate VI envahit l'Asie romaine et y fait massacrer en un jour des dizaines de milliers d'Italiens. À Athènes, le philosophe Athénion, puis Aristion, prennent le pouvoir et rallient la ville au roi, dont le général Archélaos occupe le Pirée.\n\n**Le siège.** Sylla débarque en 87 et assiège à la fois Athènes et le Pirée ; il fait abattre les arbres de l'Académie et du Lycée pour construire ses machines et puise dans les trésors de Delphes, d'Olympie et d'Épidaure pour payer ses troupes. Athènes, affamée, est prise par une brèche entre la porte du Pirée et la porte Sacrée ; Plutarque décrit le sang qui inonde le Céramique jusqu'à la porte du Dipylon.\n\n**Après le sac.** Sylla déclare épargner les vivants par égard pour les morts, les grands Athéniens du passé ; Aristion, réfugié sur l'Acropole, se rend et est exécuté. Le Pirée et ses arsenaux sont détruits. Sylla bat ensuite les armées de Mithridate à Chéronée et à Orchomène, et emporte à Rome la bibliothèque d'Apellicon, qui contenait des œuvres d'Aristote.",
     "sources": [
       {
         "kind": "ancient",
@@ -1510,7 +1522,7 @@ export const events: HistoricalEvent[] = [
         "kind": "modern",
         "author": "Christian Habicht",
         "work": HABICHT,
-        "locus": "chap. 11"
+        "locus": "chap. 13"
       },
       {
         "kind": "modern",
@@ -1525,8 +1537,8 @@ export const events: HistoricalEvent[] = [
     "start": -69,
     "end": -59,
     "precision": "decade",
-    "certainty": "debated",
-    "certaintyNote": "Le naufrage est daté vers 70 à 60 par les monnaies et la céramique ; la date de construction de la machine reste discutée, de la fin du IIIe siècle au début du Ier siècle.",
+    "certainty": "attested",
+    "certaintyNote": "Épave et machine conservées ; le naufrage est daté vers 70 à 60 par les monnaies et la céramique ; la date de construction de la machine reste discutée, de la fin du IIIe siècle au début du Ier siècle.",
     "era": "hellenistique",
     "track": "monde-grec",
     "category": "culture",
@@ -1672,8 +1684,8 @@ export const events: HistoricalEvent[] = [
     "end": -46,
     "month": 10,
     "precision": "month",
-    "certainty": "debated",
-    "certaintyNote": "La guerre d'Alexandrie, d'octobre 48 à mars 47, est attestée ; l'ampleur de l'incendie et les dégâts subis par la Bibliothèque sont discutés, car les sources anciennes ne concordent pas.",
+    "certainty": "attested",
+    "certaintyNote": "La guerre d'Alexandrie, d'octobre 48 à mars 47, et l'incendie sont attestés ; l'ampleur de l'incendie et les dégâts subis par la Bibliothèque sont discutés, car les sources anciennes ne concordent pas.",
     "era": "hellenistique",
     "track": "rome",
     "category": "war",
