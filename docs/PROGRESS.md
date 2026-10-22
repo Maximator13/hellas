@@ -47,4 +47,34 @@ Site en ligne : https://maximator13.github.io/hellas/ (dépôt https://github.co
 - Six pistes sans événement : Perse, Séleucides, Rome, Pergame, Rhodes, ligues.
 - Graduation « 1 apr. J.-C. » visible au bout de la frise, dans la marge au-delà de 30 av. J.-C.
 
-**Suite** : phase 2 (tranche verticale), après validation.
+**Suite** : phase 2 (tranche verticale), validée par l'utilisateur le 21 octobre, à faire en autonomie.
+
+## Phase 2 : tranche verticale (21 et 22 octobre 2026, faite sans validation, en autonomie)
+
+Site : https://maximator13.github.io/hellas/ ; scènes : `#/scene/acropole` et `#/scene/thermopyles`.
+
+**Fait**
+- Accueil sur la frise de 800 à 30 av. J.-C., centrée sur l'époque classique (au lieu des âges obscurs, trop sombres pour un premier regard).
+- Plan de design (`docs/DESIGN.md`) : palette « Nuit égéenne », Marbre de Paros, Pierre du Pentélique, Or de Phidias ; Didact Gothic et EB Garamond ; principes. Contrastes mesurés : 16,2, 10,6 et 9,3 pour 1.
+- Lien de fin de frise vers Roma (« la suite : l'Empire romain », vers le principat d'Auguste) et lien depuis la fiche d'Actium.
+- Piste « Mythes et héros » : 13 mythes placés aux dates des chronographes antiques (Marbre de Paros, Ératosthène, Eusèbe et Jérôme), tous légendaires ; la guerre de Troie y passe.
+- Carte : 34 territoires tracés à la main là où Cliopatria manque (ligue de Délos et empire athénien en quatre périodes, Sparte et la Messénie, Corinthie, Syracuse de Gélon à Hiéron II, Tarente, Ionie, Béotie, Égypte de Ptolémée de 322 à 308, Rhodes et sa pérée), sans simplification ; itinéraires d'Alexandre (55 étapes) et des Dix Mille (21 étapes).
+- Kit Blender grec : ordres dorique et ionique grecs, temple périptère, stoa, propylon, polychromie, figurines (citoyens, hoplites, Spartiates, Perses).
+- Moteur de bataille porté depuis Roma avec des camps génériques, et enrichi (reddition, unités au camp, colonnes le long d'un sentier, sol en plusieurs morceaux, largeur des flèches).
+- Scène des Thermopyles : proposition, relecture contradictoire, terrain Copernicus avec la côte de 480 restituée, 10 phases, 1 figurine pour 5 soldats, compteurs sourcés ; 4,2 Mo.
+- Scène de l'Acropole vers 432 : proposition, relecture contradictoire, relief restitué, Parthénon peint avec l'Athéna Parthénos, Propylées inachevés, grande Athéna de bronze, vieux temple, pente sud, agora, Pnyx, ville, Longs Murs et ports, passants et fumées ; 14,2 Mo, environ 1,78 million de triangles, 340 appels de dessin.
+- Script d'assets : plafond des textures réglable par texture (`largeTextures`) pour les terrains.
+
+**Mesures**
+- Thermopyles : 4,2 Mo ; Acropole : 14,2 Mo (budget 20 Mo).
+- `npm run check` : 159 tests ; déploiements verts.
+- Images par seconde : à relever sur le portable de mesure avec `?debug`, sur la carte et dans les deux scènes.
+
+**Problèmes connus**
+- Acropole : visage de l'Athéna Parthénos encore stylisé ; plafond à caissons très vif ; les points de vue tournés vers le soleil du matin restent en contre-jour ; le point « grande Athéna de bronze » est recadré dans la configuration de la scène (`views`) plutôt que dans le modèle.
+- Thermopyles : légère irrégularité de la côte au loin ; figurines encore petites au dernier combat ; pas de clair de lune pour la marche de nuit ; sources chaudes déplacées au pied de la falaise (hypothèse).
+- Figurines très simples (bras en bâtons, bouclier octogonal) : à affiner.
+- Deux scènes seulement parmi celles de la section 10 du brief ; plans pré-rendus (vidéo) non encore produits.
+
+**Suite** : phase 3 (environ 200 événements, figures, lieux, territoires de toutes les époques, recherche, quiz, mini-jeux), après validation ; ou reprise des défauts ci-dessus.
+
