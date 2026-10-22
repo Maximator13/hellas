@@ -296,7 +296,7 @@ export const events: HistoricalEvent[] = [
     "era": "hellenistique",
     "track": "rhodes",
     "category": "building",
-    "importance": 2,
+    "importance": 1,
     "placeId": "rhodes",
     "people": [
       "chares-de-lindos"
@@ -389,7 +389,7 @@ export const events: HistoricalEvent[] = [
     "era": "hellenistique",
     "track": "lagides",
     "category": "building",
-    "importance": 2,
+    "importance": 1,
     "placeId": "ile-de-pharos",
     "people": [
       "sostrate-de-cnide",

@@ -688,7 +688,7 @@ export const events: HistoricalEvent[] = [
     "era": "classique",
     "track": "monde-grec",
     "category": "building",
-    "importance": 2,
+    "importance": 1,
     "placeId": "halicarnasse",
     "people": [
       "mausole",

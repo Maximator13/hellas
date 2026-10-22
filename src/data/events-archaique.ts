@@ -1111,7 +1111,7 @@ export const events: HistoricalEvent[] = [
     "era": "archaique",
     "track": "ionie",
     "category": "building",
-    "importance": 2,
+    "importance": 1,
     "placeId": "artemision-d-ephese",
     "people": [
       "cresus"

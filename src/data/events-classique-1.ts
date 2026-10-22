@@ -905,7 +905,7 @@ export const events: HistoricalEvent[] = [
     "era": "classique",
     "track": "monde-grec",
     "category": "culture",
-    "importance": 2,
+    "importance": 1,
     "placeId": "olympie",
     "people": [
       "phidias"
